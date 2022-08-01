@@ -1,0 +1,14 @@
+/* componentes da navbar no layout main */
+@import "navbar/navbar.css";
+@import "navbar/navbar_logo.css";
+@import "navbar/navbar_menu.css";
+@import "navbar/panel.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
