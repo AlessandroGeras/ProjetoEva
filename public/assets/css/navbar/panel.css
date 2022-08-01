@@ -14,6 +14,11 @@
     width: 35px;
 }
 
+#panel > ul > li > a {
+    font-size:30px;
+    text-decoration: none;
+}
+
 .menu_open,
 .menu_close {
     display: none;
