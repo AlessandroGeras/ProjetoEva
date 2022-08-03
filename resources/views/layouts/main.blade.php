@@ -17,6 +17,8 @@
       <x-navbar.navbar_menu />
     </div>    
   </navbar>
+
+  @yield("corpo")
   
 </body>
 </html>
