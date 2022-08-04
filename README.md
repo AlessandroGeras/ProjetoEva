@@ -8,7 +8,7 @@
     <li><a href="#projeto">Sobre o projeto</a></li>
     <li><a href="#estrutura">Estrutura do projeto</a></li>
      <li><a href="#backlog">Backlog do projeto</a></li>
-    <li><a href="#dia1">Dia 1</a></li>
+    <li><a href="#log">Log de eventos</a></li>
     <li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li>
     <li><a href="#link">Projeto online</a></li>
   </ol>
@@ -27,5 +27,26 @@ Site com 2 páginas até o momento.<br /><br />
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="backlog">Backlog do projeto</h2>
-<a href="https://trello.com/b/eadpGobh/projeto-eva">Ver SCRUM</a>
+<a href="https://trello.com/b/eadpGobh/projeto-eva">Ver SCRUM</a><br/>
+<a href="https://trello.com/b/IrQOIx85/projeto-eva-kanban">Ver KANBAN - Alessandro</a>
+<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
+
+<h2 name="log">Log de eventos</h2>
+
+<h4>01/08 - Alessandro</h4>
+Criado repositório no Github chamado ProjetoEva <br/>
+Criado repositório no Github chamado ProjetoEva <br/>
+Criado banco de dados PostgreSQL no Heroku<br/>
+Criado layout com cabeçalho
+<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
+
+<h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
+<a href="https://laravel.com/">Laravel</a> <br/>
+<a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
+<a href="https://spatie.be/">Laravel</a> <br/>
+<a href="https://jetstream.laravel.com/">PostgreSQL</a> <br/>
+<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
+
+<h2 name="link">Projeto online</h2>
+<a href="https://projetoeva.herokuapp.com/">Projeto Eva</a> <br/>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
