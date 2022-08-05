@@ -35,7 +35,7 @@ Site com 2 páginas até o momento.<br /><br />
 
 <h4>01/08 - Alessandro</h4>
 Criado repositório no Github chamado ProjetoEva <br/>
-Criado repositório no Github chamado ProjetoEva <br/>
+Criado conta no Heroku chamado ProjetoEva <br/>
 Criado banco de dados PostgreSQL no Heroku<br/>
 Criado layout com cabeçalho
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
@@ -43,8 +43,8 @@ Criado layout com cabeçalho
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
 <a href="https://laravel.com/">Laravel</a> <br/>
 <a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
-<a href="https://spatie.be/">Laravel</a> <br/>
-<a href="https://jetstream.laravel.com/">PostgreSQL</a> <br/>
+<a href="https://spatie.be/">Spatie</a> <br/>
+<a href="https://jetstream.laravel.com/">Jetstream</a> <br/>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="link">Projeto online</h2>
