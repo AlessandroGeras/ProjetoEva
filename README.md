@@ -40,6 +40,11 @@ Criado banco de dados PostgreSQL no Heroku<br/>
 Criado layout com cabeçalho
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
+<h4>03/08 - Eliabe </h4>
+Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
+e outra seção com flex-box com links atrelados a outras páginas
+<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
+
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
 <a href="https://laravel.com/">Laravel</a> <br/>
 <a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
