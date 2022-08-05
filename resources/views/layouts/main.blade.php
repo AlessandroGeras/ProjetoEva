@@ -19,6 +19,8 @@
   </navbar>
 
   @yield("corpo")
+
+  <x-footer />
   
 </body>
 </html>
