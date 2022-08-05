@@ -38,11 +38,14 @@ Criado repositório no Github chamado ProjetoEva <br/>
 Criado conta no Heroku chamado ProjetoEva <br/>
 Criado banco de dados PostgreSQL no Heroku<br/>
 Criado layout com cabeçalho
-<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h4>03/08 - Eliabe </h4>
 Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
 e outra seção com flex-box com links atrelados a outras páginas
+
+<h4>05/08 - Vinícius </h4>
+Criada a estrutura do rodapé da página principal do site junto com a sua estilização, contendo dados como contatos e localização, além de possuir link e QR code de acesso ao grupo de Whatsapp da instituição.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
