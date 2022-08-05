@@ -1,0 +1,6 @@
+/* Configurações da div navbar no layout main */
+
+#navbar {
+    height: 100px;
+    background: rgb(255, 255, 255);
+}

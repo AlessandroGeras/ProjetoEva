@@ -1,0 +1,15 @@
+/* Configurações do componente navbar_logo no layout main */
+
+#navbar_logo {
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+
+#navbar_logo > img {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
