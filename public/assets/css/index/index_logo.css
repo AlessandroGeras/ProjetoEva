@@ -1,5 +1,6 @@
 /* Configurações do componente index_logo na página index */
 
+/* Container principal de todos os elementos do componente */
 #index_logo {
     display: inline-block;
     width: 100%;
@@ -7,11 +8,13 @@
     background: rgb(0, 0, 0);
 }
 
+/* Configurações mobile do container principal de todos os elementos do componente */
 .index_logo_margin,
 .index_logo_nomargin {
     margin-top: 0px;
 }
 
+/* Container da mensagem de boas vindas e da botão de login */
 #index_login {
     display: block;
     margin: auto;
@@ -20,12 +23,14 @@
     transform: translateY(-50%);
 }
 
+/* Mensagem de boas vindas */
 #index_login > h1 {
     font-size: clamp(2.5rem, 4vw, 8rem);
     text-align: center;
     color: white;
 }
 
+/* Botão de login */
 #login_link {
     display: flex;
     margin: auto;

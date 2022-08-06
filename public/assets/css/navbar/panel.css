@@ -1,5 +1,6 @@
 /* Configurações do componente panel no layout main */
 
+/* Controlador para abertura e fechamento da navbar mobile */
 #panel {
     display: none;
     float: right;
@@ -7,6 +8,7 @@
     height: 100%;
 }
 
+/* Elementos do controlador para abertura e fechamento da navbar mobile */
 #panel > ul {
     position: relative;
     top: 50%;
@@ -14,11 +16,7 @@
     width: 35px;
 }
 
-#panel > ul > li > a {
-    font-size:30px;
-    text-decoration: none;
-}
-
+/* Configuração para ocultar o controlador para abertura e fechamento da navbar mobile caso o site não esteja na responsividade mobile */
 .menu_open,
 .menu_close {
     display: none;

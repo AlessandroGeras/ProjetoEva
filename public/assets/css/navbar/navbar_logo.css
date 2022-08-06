@@ -1,5 +1,6 @@
 /* Configurações do componente navbar_logo no layout main */
 
+/* Container principal da imagem de logo */
 #navbar_logo {
     float: left;
     width: 300px;
