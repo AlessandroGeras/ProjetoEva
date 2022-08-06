@@ -37,7 +37,7 @@ Site com 2 páginas até o momento.<br /><br />
 Criado repositório no Github chamado ProjetoEva <br/>
 Criado conta no Heroku chamado ProjetoEva <br/>
 Criado banco de dados PostgreSQL no Heroku<br/>
-Criado layout com cabeçalho
+Criado layout com cabeçalho, contendo o logo da instituição e um menu responsivo que ganha características de um menu mobile.
 
 <h4>03/08 - Eliabe </h4>
 Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
