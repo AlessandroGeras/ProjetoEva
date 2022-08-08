@@ -35,16 +35,24 @@ Site com 2 páginas até o momento.<br /><br />
 
 <h4>01/08 - Alessandro</h4>
 Criado repositório no Github chamado ProjetoEva <br/>
-Criado repositório no Github chamado ProjetoEva <br/>
+Criado conta no Heroku chamado ProjetoEva <br/>
 Criado banco de dados PostgreSQL no Heroku<br/>
-Criado layout com cabeçalho
+Criado layout com cabeçalho, contendo o logo da instituição e um menu responsivo que ganha características de um menu mobile.
+
+<h4>03/08 - Eliabe </h4>
+Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
+e outra seção com flex-box com links atrelados a outras páginas
+
+<h4>05/08 - Vinícius </h4>
+Criada a estrutura do rodapé da página principal do site junto com a sua estilização, contendo dados como contatos e localização, além de possuir link e QR code de acesso ao grupo de Whatsapp da instituição.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
 <a href="https://laravel.com/">Laravel</a> <br/>
 <a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
-<a href="https://spatie.be/">Laravel</a> <br/>
-<a href="https://jetstream.laravel.com/">PostgreSQL</a> <br/>
+<a href="https://spatie.be/">Spatie</a> <br/>
+<a href="https://jetstream.laravel.com/">Jetstream</a> <br/>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="link">Projeto online</h2>
