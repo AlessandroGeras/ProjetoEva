@@ -16,6 +16,10 @@
     width: 35px;
 }
 
+#panel > ul > li > a{
+    text-decoration: none;
+}
+
 /* Configuração para ocultar o controlador para abertura e fechamento da navbar mobile caso o site não esteja na responsividade mobile */
 .menu_open,
 .menu_close {
