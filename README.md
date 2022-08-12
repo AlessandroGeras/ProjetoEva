@@ -49,6 +49,9 @@ Criada a estrutura do rodapé da página principal do site junto com a sua estil
 <h4><b>08/08</b> - <strong>Eliabe</strong> </h4>
 Criada a branch <em>courses</em> para a permitir ao usuário a possibilidade de inserção de cursos na agenda exibida na plataforma.
 
+<h4>08/08 - Vinícius </h4>
+Realizado o merge das branchs <em>master</em> e <em>index</em>.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
