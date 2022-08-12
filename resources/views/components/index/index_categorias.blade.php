@@ -3,7 +3,7 @@
         <div>EVENTOS</div>
     </div>
     <div class="box box_cursos">
-        <div><a href="/courses">PALESTRAS</a></div>
+        <div><a href="/palestras">PALESTRAS</a></div>
     </div>
     <div class="box box_cursos">
         <div>PALESTRAS</div>
