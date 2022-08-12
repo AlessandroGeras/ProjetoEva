@@ -7,13 +7,13 @@
           (48) 99937-8166
         </div>
         <div id="footer_info">
-          terça-feira 13:30–20:00 <br>
-          quarta-feira 13:30–20:00 <br>
-          quinta-feira 13:30–20:00 <br>
+          segunda-feira 14:00–21:00 <br>
+          terça-feira 14:00–21:00 <br>
+          quarta-feira 14:00–21:00 <br>
+          quinta-feira 14:00–21:00 <br>
           sexta-feira Fechado <br>
           sábado Fechado <br>
-          domingo Fechado <br>
-          segunda-feira 13:30–20:00 <br>
+          domingo Fechado <br>          
         </div>
         <div id="footer_info">
           <h4>Cadastre-se no nosso <br>
