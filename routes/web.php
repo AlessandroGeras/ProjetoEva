@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\PalestrasController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 
 Route::get('/', [UsersController::class, "index"]);
+
+Route::get('/palestras', [PalestrasController::class, "show"]);
+
+Route::post('/criar_palestra', [PalestrasController::class, "store"]);
