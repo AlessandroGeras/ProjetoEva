@@ -53,7 +53,7 @@ Criada a branch <em>courses</em> para a permitir ao usuário a possibilidade de 
 Realizado o merge das branchs <em>master</em> e <em>index</em>.
 
 <h4>17/08 - Vinícius </h4>
-Criado o formulário de criação e busca de palestras da página "palestras".
+Criado o formulário de criação e busca de palestras da página "palestras". <br/>
 Adicionados os estilos do formulário.
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
