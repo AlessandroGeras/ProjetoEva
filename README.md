@@ -52,6 +52,10 @@ Criada a branch <em>courses</em> para a permitir ao usuário a possibilidade de 
 <h4>08/08 - Vinícius </h4>
 Realizado o merge das branchs <em>master</em> e <em>index</em>.
 
+<h4>17/08 - Vinícius </h4>
+Criado o formulário de criação e busca de palestras da página "palestras".
+Adicionados os estilos do formulário.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
