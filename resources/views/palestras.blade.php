@@ -3,5 +3,9 @@
 @section("title","Cursos")
 
 @section("corpo")
-<x-courses.cursos_title />
+<x-palestras.palestras_title />
+
+<x-palestras.form_criar_palestras />
+
+<x-palestras.form_pesquisar_palestras />
 @endsection
