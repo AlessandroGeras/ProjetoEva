@@ -1,3 +1,5 @@
+<?php date_default_timezone_set('America/Sao_Paulo'); ?>
+
 <div id="form_criar_palestras" class="hidden">
     <form action="/criar_palestra" method="POST" onsubmit="if((document.getElementById('form_criar_palestras_date').value)>=('<?php echo date('Y-m-d\TH:i') ?>')){loading('Criando palestra');}">
         @csrf

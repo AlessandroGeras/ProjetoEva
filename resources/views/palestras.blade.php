@@ -8,4 +8,6 @@
 <x-palestras.form_criar_palestras />
 
 <x-palestras.form_pesquisar_palestras />
+
+<x-palestras.timeline :palestras="$palestras" :months="$months" :search="$search"/>
 @endsection
