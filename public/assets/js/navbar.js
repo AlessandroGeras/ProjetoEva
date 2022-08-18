@@ -17,7 +17,7 @@ const menu_click = (clicked_id) => {
             index_logo.className = "margin";
             } 
         
-        let cursos_title = document.getElementById("cursos_title");
+        let cursos_title = document.getElementById("palestras_title");
             if (cursos_title) {
                 cursos_title.className = "margin";
             } 
@@ -39,7 +39,7 @@ const menu_click = (clicked_id) => {
                 index_logo.className = "no_margin";
             }
 
-        let cursos_title = document.getElementById("cursos_title");
+        let cursos_title = document.getElementById("palestras_title");
             if (cursos_title) {
                 cursos_title.className = "no_margin";
          }

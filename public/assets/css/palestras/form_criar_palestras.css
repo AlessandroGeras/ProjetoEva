@@ -1,0 +1,23 @@
+/* Configurações do componente form_criar_palestras na página palestras */
+
+/* Configuração do container para o form */
+#form_criar_palestras {
+    display:inline-block;
+    width: 100%;
+}
+
+.form_criar_palestras_margin{
+    margin-bottom: 225px;
+}
+
+#form_criar_palestras > form { 
+    width:250px;   
+    margin:-52px auto 0 auto;
+    padding:0px 0 20px 0;
+    text-align: center;
+    background: black;
+}
+
+#form_criar_palestras > form > input {
+    text-align: center;
+}
