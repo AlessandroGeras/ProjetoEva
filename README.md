@@ -14,15 +14,19 @@
   </ol>
 </details>
 <h2 name="projeto"> Sobre o projeto  </h2>
-Este projeto foi realizado pelos colaboradores Alessandro Geras, <a href="https://github.com/Eliabe-Ribeiro-22">Eliabe Ribeiro</a> e <a href="https://github.com/Vinnie-Jung">Vinícius Jung</a> com o objetivo de ajudar uma instituição não governamental, chamada Espaço Vida e Saúde, localizada na cidade de Garopaba, no qual são realizados vários tipos de atendimentos para atender pacientes com autismo.
+Este projeto foi realizado pelos colaboradores Alessandro Geras, <a href="https://github.com/Eliabe-Ribeiro-22">Eliabe Ribeiro</a> e <a href="https://github.com/Vinnie-Jung">Vinícius Jung</a> com o objetivo de ajudar uma instituição não governamental, chamada Espaço Vida e Saúde, localizada na cidade de Garopaba, no qual são realizados vários tipos de atendimentos para atender pacientes com autismo. <br><br>
+
+O projeto está totalmente responsivo e seguindo os padrões REST.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
  
 <h2 name="estrutura"> Estrutura do projeto  </h2>
-Site com 2 páginas até o momento.<br /><br />
+Site com 4 páginas até o momento.<br /><br />
 
 <ul>
     <li>Cabeçalho adicionado como layout, contendo logo e menu, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
     <li>Rodapé adicionado como layout, contendo informações do projeto, link e QR Code para o usuário se cadastrar no grupo de Whatsapp da instituição, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
+    <li>Página Home, contendo uma seção de boas-vindas com opção de login da plataforma e outra seção com flex-box com links atrelados a outras páginas.</li>
+    <li>Página Palestras, contendo um formulário para criação de palestras e outro para pesquisar palestras na qual são mostradas em uma timeline em ordem de data descrescente.</li>
 </ul>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
