@@ -1,6 +1,6 @@
 @extends("layouts.main")
 
-@section("title","Cursos")
+@section("title","Palestras")
 
 @section("corpo")
 <x-palestras.palestras_title />
