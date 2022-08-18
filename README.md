@@ -39,14 +39,14 @@ Criado conta no Heroku chamado ProjetoEva <br/>
 Criado banco de dados PostgreSQL no Heroku<br/>
 Criado layout com cabeçalho, contendo o logo da instituição e um menu responsivo que ganha características de um menu mobile.
 
-<h4><b>03/08</b> - <strong>Eliabe</strong> </h4>
+<h4>03/08 - Eliabe</h4>
 Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
 e outra seção com flex-box com links atrelados a outras páginas
 
 <h4>05/08 - Vinícius </h4>
 Criada a estrutura do rodapé da página principal do site junto com a sua estilização, contendo dados como contatos e localização, além de possuir link e QR code de acesso ao grupo de Whatsapp da instituição.
 
-<h4><b>08/08</b> - <strong>Eliabe</strong> </h4>
+<h4>08/08 - Eliabe</h4>
 Criada a branch <em>courses</em> para a permitir ao usuário a possibilidade de inserção de cursos na agenda exibida na plataforma.
 
 <h4>08/08 - Vinícius </h4>
@@ -55,6 +55,10 @@ Realizado o merge das branchs <em>master</em> e <em>index</em>.
 <h4>17/08 - Vinícius </h4>
 Criado o formulário de criação e busca de palestras da página "palestras". <br/>
 Adicionados os estilos do formulário.
+
+<h4>18/08 - Alessandro </h4>
+Criada a timeline de eventos da página "palestras". <br/>
+Adicionado os estilos da timeline e configurado para ser responsivo, fazendo com que a timeline de duas colunas, fique apenas com uma na versão mobile.
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
