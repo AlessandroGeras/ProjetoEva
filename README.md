@@ -16,11 +16,11 @@
 <h2 name="projeto"> Sobre o projeto  </h2>
 Este projeto foi realizado pelos colaboradores Alessandro Geras, <a href="https://github.com/Eliabe-Ribeiro-22">Eliabe Ribeiro</a> e <a href="https://github.com/Vinnie-Jung">Vinícius Jung</a> com o objetivo de ajudar uma instituição não governamental, chamada Espaço Vida e Saúde, localizada na cidade de Garopaba, no qual são realizados vários tipos de atendimentos para atender pacientes com autismo. <br><br>
 
-O projeto está totalmente responsivo e seguindo os padrões REST.
+No projeto, estão presentes recursos que permitem o contato e a divulgação dos profissionais da área da psicologia, bem como a democratização do acesso a esse tipo de serviço. Existirá um recurso em que as pessoas cadastradas terão seu atendimento documentado e disponibilizado para acompanhamento familiar. Também será adicionada uma página de eventos onde serão exibidas diversas palestras educacionais a respeito do autismo. <br>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
  
 <h2 name="estrutura"> Estrutura do projeto  </h2>
-Site com 4 páginas até o momento.<br /><br />
+Site com 4 páginas até o momento. O projeto está totalmente responsivo e seguindo os padrões REST.<br /><br />
 
 <ul>
     <li>Cabeçalho adicionado como layout, contendo logo e menu, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
@@ -70,10 +70,14 @@ Criado JS para redirecionar uma palestra clicada na página "palestras" para uma
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
+<a href="heroku.com">Heroku</a> <br/>
 <a href="https://laravel.com/">Laravel</a> <br/>
+<a href="https://www.php.net/">PHP</a> <br/>
+<a href="https://www.javascript.com/">Javascript</a> <br/>
 <a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
 <a href="https://spatie.be/">Spatie</a> <br/>
 <a href="https://jetstream.laravel.com/">Jetstream</a> <br/>
+<a href="https://github.com/CodeSeven/toastr">Toastr</a> <br/>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="link">Projeto online</h2>
