@@ -77,7 +77,9 @@ Criado JS para redirecionar uma palestra clicada na página "palestras" para uma
 <a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
 <a href="https://spatie.be/">Spatie</a> <br/>
 <a href="https://jetstream.laravel.com/">Jetstream</a> <br/>
-<a href="https://github.com/CodeSeven/toastr">Toastr</a> <br/>
+<a href="https://github.com/CodeSeven/toastr">Toastr</a> <br/><br/>
+
+O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um vínculo com o sistema de cadastros do JetStream para criar, editar e excluir usuários de acordo com as regras do Spatie sobre hierarquia de usuários. O projeto terá seu deploy feito no Heroku.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="link">Projeto online</h2>
