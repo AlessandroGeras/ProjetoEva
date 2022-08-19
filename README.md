@@ -64,6 +64,9 @@ Adicionados os estilos do formulário.
 Criada a timeline de eventos da página "palestras". <br/>
 Adicionado os estilos da timeline e configurado para ser responsivo, fazendo com que a timeline de duas colunas, fique apenas com uma na versão mobile.
 
+<h4>19/08 - Alessandro </h4>
+Criado JS para redirecionar uma palestra clicada na página "palestras" para uma rota dinâmica na página "palestra". Também para fazer a passagem de dados desta palestra para autocompletar o formulário de edição de palestras e para identificar a palestra nas rotas dinâmicas de edição e exclusão para administradores e ingresso e saída para usuários. 
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
