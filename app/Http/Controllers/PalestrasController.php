@@ -30,9 +30,9 @@ class PalestrasController extends Controller
         } 
         else {
             $palestras = Palestra::all()->sortByDesc("date");
-        }
+        }        
 
-        return view('palestras', ["palestras" => $palestras,"search"=>$search,"months"=>$months]);
+        return response()->view('palestras', ["palestras" => $palestras,"search"=>$search,"months"=>$months])->setStatusCode(200);
     }
 
 
@@ -46,6 +46,6 @@ class PalestrasController extends Controller
 
         $palestra->save();
 
-        return redirect('/palestras')->with("msg", "Palestra adicionada com sucesso");
+        return redirect('palestras')->with("msg", "Palestra adicionada com sucesso");
     }
 }

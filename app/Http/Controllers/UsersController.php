@@ -9,6 +9,6 @@ class UsersController extends Controller
 {
     public function index()
     {
-        return view('index');
+        return response()->view('index')->setStatusCode(200);
     }
 }
