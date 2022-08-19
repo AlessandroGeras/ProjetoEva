@@ -50,3 +50,24 @@ const pesquisar_palestra = (clicked_id) => {
         form_pesquisar_palestras.className = "hidden"; 
     }
 };
+
+
+// Repassar os dados da palestra clicada para autocompletar o formulário editar palestra e definir as rotas para editar e excluir a palestra
+const palestra_events = (id,nome,info,date) => {        
+
+    let apagar_palestra_form = document.getElementById("apagar_palestra_form");
+    apagar_palestra_form.method = "post";
+    apagar_palestra_form.action = "/palestras/destroy/"+id;
+
+    let form_editar_palestras_action = document.getElementById("form_editar_palestras_action");
+    form_editar_palestras_action.action = "/palestras/edit/"+id; 
+
+    let form_editar_palestras_nome = document.getElementById("form_editar_palestras_nome");
+    form_editar_palestras_nome.value = nome;    
+
+    let form_editar_palestras_info = document.getElementById("form_editar_palestras_info");
+    form_editar_palestras_info.value = info;
+
+    let form_editar_palestras_date = document.getElementById("form_editar_palestras_date");
+    form_editar_palestras_date.value = date;
+};
