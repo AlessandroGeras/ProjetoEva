@@ -2,11 +2,11 @@
     <div class="box box_eventos">
         <div>EVENTOS</div>
     </div>
-    <div class="box box_cursos">
+    <div class="box box_palestras">
         <div><a href="/palestras">PALESTRAS</a></div>
     </div>
-    <div class="box box_cursos">
-        <div>PALESTRAS</div>
+    <div class="box box_palestras">
+        <div><a href="/palestras">PALESTRAS</a></div>
     </div>
     <div class="box box_eventos">
         <div>EVENTOS</div>
