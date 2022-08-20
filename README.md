@@ -42,6 +42,7 @@ Criado repositório no Github chamado ProjetoEva <br/>
 Criado conta no Heroku chamado ProjetoEva <br/>
 Criado banco de dados PostgreSQL no Heroku<br/>
 Criado layout com cabeçalho, contendo o logo da instituição e um menu responsivo que ganha características de um menu mobile.
+Criada a branch <em>index</em> para ser utilizada como página principal.
 
 <h4>03/08 - Eliabe</h4>
 Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
@@ -65,8 +66,9 @@ Criada a timeline de eventos da página "palestras". <br/>
 Adicionado os estilos da timeline e configurado para ser responsivo, fazendo com que a timeline de duas colunas, fique apenas com uma na versão mobile.
 
 <h4>19/08 - Alessandro </h4>
-Criado JS para redirecionar uma palestra clicada na página "palestras" para uma rota dinâmica na página "palestra". Também para fazer a passagem de dados desta palestra para autocompletar o formulário de edição de palestras e para identificar a palestra nas rotas dinâmicas de edição e exclusão para administradores e ingresso e saída para usuários. 
-
+Criado JS para redirecionar uma palestra clicada na página "palestras" para uma rota dinâmica na página "palestra". Também para fazer a passagem de dados desta palestra para autocompletar o formulário de edição de palestras e para identificar a palestra nas rotas dinâmicas de edição e exclusão para administradores e ingresso e saída para usuários. <br>
+Realizado o merge das branchs <em>master</em> e <em>palestras</em>.<br>
+Criada a branch <em>palestra</em> para ser utilizada para visualizar dinamicamente cada palestra, na qual os administradores e usuários poderão interagir com suas respectivas regras de usuário.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
