@@ -102,7 +102,7 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 [Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22) <br>
 [Linkedin](https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/) <br>
 [Github](https://github.com/Eliabe-Ribeiro-22) <br>
-[Gmail](malito:developer.eliabe@gmail.com) <br>
+[Gmail](mailto:developer.eliabe@gmail.com) <br>
 #
 <strong>Vinícius Jung</strong> <br>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
