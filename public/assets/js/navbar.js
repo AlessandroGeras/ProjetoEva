@@ -12,8 +12,15 @@ const menu_click = (clicked_id) => {
         let menu_close = document.getElementById("menu_close");
         menu_close.className = "menu_open";
         
-        let navbar = document.getElementById("index_logo");
-        navbar.className = "index_logo_margin";
+        let index_logo = document.getElementById("index_logo");
+            if (index_logo) {
+            index_logo.className = "margin";
+            } 
+        
+        let cursos_title = document.getElementById("palestras_title");
+            if (cursos_title) {
+                cursos_title.className = "margin";
+            } 
     }
     
     else {
@@ -27,7 +34,14 @@ const menu_click = (clicked_id) => {
         let menu_close = document.getElementById("menu_close");
         menu_close.className = "menu_close";
         
-        let navbar = document.getElementById("index_logo");
-        navbar.className = "index_logo_nomargin";
+        let index_logo = document.getElementById("index_logo");
+            if (index_logo) {
+                index_logo.className = "no_margin";
+            }
+
+        let cursos_title = document.getElementById("palestras_title");
+            if (cursos_title) {
+                cursos_title.className = "no_margin";
+         }
     }
 };

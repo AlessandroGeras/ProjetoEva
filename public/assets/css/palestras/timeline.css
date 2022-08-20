@@ -1,0 +1,247 @@
+/* Configurações da timeline na página palestras */
+
+#main_container_timeline{
+    margin-top:-210px;
+    height: 500px;
+    overflow:auto;
+}
+
+#main_container_timeline::-webkit-scrollbar {
+    display: none;
+}
+
+/* Mensagem para 0 ocorrências de pesquisa */
+#fail_search {
+    position:relative;
+    width: 100%;
+    text-align: center;
+    color:black;
+}
+
+/* Linha vertical */
+.main_timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0px auto 0 auto;
+}
+
+.main_timeline::after {
+    content: "";
+    position: absolute;
+    width: 0.1px;
+    background-color: #bdbdbd;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 0px;
+}
+
+/* Container das palestras */
+.timeline {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    cursor: pointer;
+}
+
+/* Circulos na linha vertical */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -13.5px;
+    background-color: #bdbdbd;
+    border: 8px solid #f7f7f7;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Configuração para o container das palestras a esquerda */
+.timeline_left {
+    left: 0;
+}
+
+/* Configuração para o container das palestras a direita */
+.timeline_right {
+    left: 50%;
+}
+
+/* Setas para o container das palestras a esquerda */
+.timeline_left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 23.5px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+}
+
+/* Setas para o container das palestras a direita */
+.timeline_right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 23.5px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #46b8e9 transparent transparent;
+}
+
+/* Ajuste para os circulos no container de palestras a direita */
+.timeline_right::after {
+    left: -12.5px;
+}
+
+/* Área do elemento dia do container de palestras */
+.timeline_data {
+    padding: 2.5px 0 0 0;
+    position: relative;
+    border-radius: 0px;
+}
+
+/* Container do elemento dia, do elemento mês e do elemento nome da palestra */
+.palestras_data {
+    display: flex;
+}
+
+.palestras_data > h2 {
+    color: white;
+    position: relative;
+    top: -6px;
+    left: 13.5px;
+    padding: 5px 5px 0 5px;
+}
+
+.palestras_data > h4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 8.5px 0 7.5px 15px;
+    position: relative;
+    top: -6px;
+    left: 5px;
+}
+
+.palestras_data > h5 {
+    font-size: 20px;
+    font-family: "Poiret One", cursive;
+    color: #ffffff;
+    padding: 8.5px 0 7.5px 15px;
+    position: relative;
+    top: -6px;
+    left: 5px;
+}
+
+#nopalestra {
+    text-align: center;
+}
+
+/* Área do elemento informações do container de palestras */
+.palestras_info {
+    background: white;
+    padding: 10px 15px;
+    text-align: justify;
+    color: black;
+}
+
+/* Cor da seta do container de palestras 0 */
+.parent_color0:before {
+    border-color: transparent transparent transparent #46b8e9;
+}
+
+/* Cor do elemento mês do container de palestras 0 */
+.parent_color0 > div {
+    background: hsl(198, 79%, 59%);
+}
+
+/* Cor do elemento dia do container de palestras 0 */
+.parent_color0 > div > div > h2 {
+    background: hsl(198, 54%, 49%);
+}
+
+/* Cor da seta do container de palestras 1 */
+.parent_color1:before {
+    border-color: transparent #009900 transparent transparent;
+}
+
+/* Cor do elemento mês do container de palestras 1 */
+.parent_color1 > div {
+    background: hsl(120, 100%, 30%);
+}
+
+/* Cor do elemento dia do container de palestras 1 */
+.parent_color1 > div > div > h2 {
+    background: hsl(120, 75%, 28%);
+}
+
+/* Cor da seta do container de palestras 2 */
+.parent_color2:before {
+    border-color: transparent transparent transparent #ce43eb;
+}
+
+/* Cor do elemento mês do container de palestras 2 */
+.parent_color2 > div {
+    background: hsl(290, 81%, 59%);
+}
+
+/* Cor do elemento dia do container de palestras 2 */
+.parent_color2 > div > div > h2 {
+    background: hsl(290, 55%, 49%);
+}
+
+/* Cor da seta do container de palestras 3 */
+.parent_color3:before {
+    border-color: transparent #d8ca00 transparent transparent;
+}
+
+/* Cor do elemento mês do container de palestras 3 */
+.parent_color3 > div {
+    background: hsl(56, 100%, 42%);
+}
+
+/* Cor do elemento dia do container de palestras 3 */
+.parent_color3 > div > div > h2 {
+    background: hsl(56, 75%, 39%);
+}
+
+@media screen and (max-width: 600px) {
+    .main_timeline::after {
+        left: 31px;
+    }
+
+    .timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline::before {
+        left: 60px;
+        border-width: 10px 10px 10px 0;
+    }
+
+    .parent_color0:before {
+        border-color: transparent #46b8e9 transparent transparent;
+    }
+
+    .parent_color2:before {
+        border-color: transparent #ce43eb transparent transparent;
+    }
+
+    .timeline_left::after,
+    .timeline_right::after {
+        left: 18px;
+    }
+
+    .timeline_right {
+        left: 0%;
+    }
+}

@@ -1,0 +1,24 @@
+/* Configurações do componente form_pesquisar_palestras na página palestras */
+
+/* Configuração do container para o form */
+#form_pesquisar_palestras {
+    display:inline-block;
+    width: 100%;
+}
+
+#form_pesquisar_palestras > form {
+    width:250px;   
+    margin:-292px auto 0px auto;
+    padding:0px 0 20px 0;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+
+#form_pesquisar_palestras > form > input {
+    text-align: center;
+}
+
+#form_pesquisar_palestras_nome{
+    position: relative;
+    top:0px;
+}
