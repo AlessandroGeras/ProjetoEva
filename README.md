@@ -43,14 +43,14 @@ Criado conta no Heroku chamado ProjetoEva <br/>
 Criado banco de dados PostgreSQL no Heroku<br/>
 Criado layout com cabeçalho, contendo o logo da instituição e um menu responsivo que ganha características de um menu mobile.
 
-<h4>03/08 - Eliabe</h4>
+<h4><b>03/08 - </b><strong>Eliabe</strong></h4>
 Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
 e outra seção com flex-box com links atrelados a outras páginas
 
 <h4>05/08 - Vinícius </h4>
 Criada a estrutura do rodapé da página principal do site junto com a sua estilização, contendo dados como contatos e localização, além de possuir link e QR code de acesso ao grupo de Whatsapp da instituição.
 
-<h4>08/08 - Eliabe</h4>
+<h4><b>08/08 - </b><strong>Eliabe</strong></h4>
 Criada a branch <em>courses</em> para a permitir ao usuário a possibilidade de inserção de cursos na agenda exibida na plataforma.
 
 <h4>08/08 - Vinícius </h4>
@@ -67,6 +67,15 @@ Adicionado os estilos da timeline e configurado para ser responsivo, fazendo com
 <h4>19/08 - Alessandro </h4>
 Criado JS para redirecionar uma palestra clicada na página "palestras" para uma rota dinâmica na página "palestra". Também para fazer a passagem de dados desta palestra para autocompletar o formulário de edição de palestras e para identificar a palestra nas rotas dinâmicas de edição e exclusão para administradores e ingresso e saída para usuários. 
 
+<h4><b>20/08 - </b><strong>Eliabe</strong></h4>
+ 
+Realizada <b>instalação</b> do framework <strong>Jetstream</strong> no site <strong>ProjetoEva</strong>.
+<br/>
+Neste commit foi realizada a instalação do Framework Jetstream no ProjetoEva.<br/>
+A função dele é criar uma <strong>tela de login</strong> para que somente o usuário administrador do sistema seja capaz de realizar <strong>alterações</strong> e <strong>exclusões</strong> de palestras cadastradas.<br/>
+Para isso, o site somente irá exibir os botões alterar e excluir de uma palestra, se o usuário estiver logado e sua sessão não tenha expirado.<br/>
+Vale ressaltar que cada <strong>sessão</strong> de um usuário terá <b>15 minutos de duração</b>,
+ sendo que a sessão é armazenada em um <strong>Cookie</strong>.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
