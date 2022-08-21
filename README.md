@@ -31,7 +31,7 @@ Site com 4 páginas até o momento. O projeto está totalmente responsivo e segu
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="backlog">Backlog do projeto</h2>
-<a href="https://trello.com/b/eadpGobh/projeto-eva">Ver SCRUM</a><br/>
+<a href="https://trello.com/b/eadpGobh/projeto-eva-scrum">Ver SCRUM</a><br/>
 <a href="https://trello.com/b/IrQOIx85/projeto-eva-kanban">Ver KANBAN - Alessandro</a><br/>
 <a href="https://trello.com/b/txmJC7si/projeto-adad-kanban-eliabe">Ver KANBAN - Eliabe</a>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
@@ -70,6 +70,10 @@ Adicionado os estilos da timeline e configurado para ser responsivo, fazendo com
 Criado JS para redirecionar uma palestra clicada na página "palestras" para uma rota dinâmica na página "palestra". Também para fazer a passagem de dados desta palestra para autocompletar o formulário de edição de palestras e para identificar a palestra nas rotas dinâmicas de edição e exclusão para administradores e ingresso e saída para usuários. <br>
 Realizado o merge das branchs <em>master</em> e <em>palestras</em>.<br>
 Criada a branch <em>palestra</em> para ser utilizada para visualizar dinamicamente cada palestra, na qual os administradores e usuários poderão interagir com suas respectivas regras de usuário.
+
+<h4>20/08 - Eliabe </h4>
+Realizado a instalação do Jetstream para implementação de sistema de autenticação com registro de usuários e login.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
@@ -99,10 +103,12 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 [Gmail](mailto:alessandrogeras@gmail.com) <br>
 #
 <strong>Eliabe</strong><br>
-[Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22) <br>
+[Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br>
 [Linkedin](https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/) <br>
 [Github](https://github.com/Eliabe-Ribeiro-22) <br>
 [Gmail](mailto:developer.eliabe@gmail.com) <br>
+[Outlook](mailto:eliaberibeiro06@hotmail.com)<br/>
+
 #
 <strong>Vinícius Jung</strong> <br>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
