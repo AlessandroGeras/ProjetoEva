@@ -96,13 +96,13 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 ## Developers<br /> <a name="developers"></a>
-<strong>Alessandro Geras</strong> <br>
-[Curriculum Vitae](https://alessandrogeras.github.io/Curriculum) <br>
-[Linkedin](https://www.linkedin.com/in/alessandrogeras) <br>
+Alessandro Geras<br/>
+[Curriculum Vitae](https://alessandrogeras.github.io/Curriculum) <br/>
+[Linkedin](https://www.linkedin.com/in/alessandrogeras) <br/>
 [Github](https://github.com/AlessandroGeras) <br>
 [Gmail](mailto:alessandrogeras@gmail.com) <br>
 #
-<strong>Eliabe</strong><br>
+Eliabe<br/>
 [Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br>
 [Linkedin](https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/) <br>
 [Github](https://github.com/Eliabe-Ribeiro-22) <br>
@@ -110,7 +110,7 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 [Outlook](mailto:eliaberibeiro06@hotmail.com)<br/>
 
 #
-<strong>Vinícius Jung</strong> <br>
+Vinícius Jung<br/>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
