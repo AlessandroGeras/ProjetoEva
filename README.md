@@ -74,6 +74,10 @@ Criada a branch <em>palestra</em> para ser utilizada para visualizar dinamicamen
 <h4>20/08 - Eliabe </h4>
 Realizado a instalação do Jetstream para implementação de sistema de autenticação com registro de usuários e login.
 
+<h4>22/08 - Alessandro </h4>
+Atualizado a migration de usuários e seu model.<br>
+Customizado as páginas "login" e "cadastro" do Jetstream.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
