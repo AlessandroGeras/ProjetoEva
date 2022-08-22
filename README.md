@@ -33,7 +33,7 @@ Site com 4 páginas até o momento. O projeto está totalmente responsivo e segu
 <h2 name="backlog">Backlog do projeto</h2>
 <a href="https://trello.com/b/eadpGobh/projeto-eva-scrum">Ver SCRUM</a><br/>
 <a href="https://trello.com/b/IrQOIx85/projeto-eva-kanban">Ver KANBAN - Alessandro</a><br/>
-<a href="https://trello.com/b/txmJC7si/projeto-adad-kanban-eliabe">Ver KANBAN - Eliabe</a>
+<a href="https://trello.com/b/tEHIGePz/projeto-eva-kanban-eliabe">Ver KANBAN - Eliabe</a>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="log">Log de eventos</h2>
