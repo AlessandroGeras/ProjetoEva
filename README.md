@@ -33,7 +33,8 @@ Site com 4 páginas até o momento. O projeto está totalmente responsivo e segu
 <h2 name="backlog">Backlog do projeto</h2>
 <a href="https://trello.com/b/eadpGobh/projeto-eva-scrum">Ver SCRUM</a><br/>
 <a href="https://trello.com/b/IrQOIx85/projeto-eva-kanban">Ver KANBAN - Alessandro</a><br/>
-<a href="https://trello.com/b/tEHIGePz/projeto-eva-kanban-eliabe">Ver KANBAN - Eliabe</a>
+<a href="https://trello.com/b/tEHIGePz/projeto-eva-kanban-eliabe">Ver KANBAN - Eliabe</a><br/>
+<a href="https://trello.com/b/MHHX9mSR/projeto-eva-kanban">Ver KANBAN - Vinícius</a>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="log">Log de eventos</h2>
@@ -81,6 +82,9 @@ Customizado as páginas "login" e "cadastro" do Jetstream.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
+
+O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um vínculo com o sistema de cadastros do JetStream para criar, editar e excluir usuários de acordo com as regras do Spatie sobre hierarquia de usuários. O projeto terá seu deploy feito no Heroku.
+
 <a href="heroku.com">Heroku</a> <br/>
 <a href="https://laravel.com/">Laravel</a> <br/>
 <a href="https://www.php.net/">PHP</a> <br/>
@@ -92,7 +96,6 @@ Customizado as páginas "login" e "cadastro" do Jetstream.
 <a href="https://github.com/CodeSeven/toastr">Toastr</a> <br/>
 <a href="https://jquery.com/">jQuery</a> <br/><br/>
 
-O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um vínculo com o sistema de cadastros do JetStream para criar, editar e excluir usuários de acordo com as regras do Spatie sobre hierarquia de usuários. O projeto terá seu deploy feito no Heroku.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="link">Projeto online</h2>
