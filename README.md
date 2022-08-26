@@ -70,15 +70,10 @@ Adicionado os estilos da timeline e configurado para ser responsivo, fazendo com
 <h4>19/08 - Alessandro </h4>
 Criado JS para redirecionar uma palestra clicada na página "palestras" para uma rota dinâmica na página "palestra". Também para fazer a passagem de dados desta palestra para autocompletar o formulário de edição de palestras e para identificar a palestra nas rotas dinâmicas de edição e exclusão para administradores e ingresso e saída para usuários. <br>
 Realizado o merge das branchs <em>master</em> e <em>palestras</em>.<br>
-Criada a branch <em>palestra</em> para ser utilizada para visualizar dinamicamente cada palestra, na qual os administradores e usuários poderão interagir com suas respectivas regras de usuário.
 
-<h4>20/08 - Eliabe </h4>
-Realizado a instalação do Jetstream para implementação de sistema de autenticação com registro de usuários e login.
-
-<h4>22/08 - Alessandro </h4>
-Atualizado a migration de usuários e seu model.<br>
-Customizado as páginas "login" e "cadastro" do Jetstream.
-
+<h4>26/08 - Alessandro </h4>
+Criada a branch <em>palestra</em> para ser utilizada para visualizar dinamicamente cada palestra, na qual os administradores e usuários poderão interagir com suas respectivas regras de usuário.<br>
+Configurado rotas para autenticação de usuários.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
