@@ -17,8 +17,22 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UsersController;
 
+//Rotas de Autenticação
+Route::get('/auth/login', [UsersController::class, "login"])->name('login');
+
+Route::post('/autenticar', [UsersController::class, "autorizar"]);
+
+//Home
 Route::get('/', [UsersController::class, "index"]);
 
-Route::get('/palestras', [PalestrasController::class, "show"]);
+//Rotas das Palestras
+Route::get('/palestras', [PalestrasController::class, "show"])->middleware('auth');
 
 Route::post('/criar_palestra', [PalestrasController::class, "store"]);
+
+Route::get('/palestras/{id}', [PalestrasController::class, "palestra"]);
+
+
+
+
+?>
