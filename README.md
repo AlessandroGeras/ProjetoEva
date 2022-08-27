@@ -89,7 +89,7 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 <a href="https://www.javascript.com/">Javascript</a> <br/>
 <a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
 <a href="https://spatie.be/">Spatie</a> <br/>
-<a href="https://jetstream.laravel.com/">Jetstream</a> <br/>
+<a href="https://laravel.com/docs/9.x/sanctum">Sanctum</a> <br/>
 <a href="https://nodejs.org/">NodeJS</a> <br/>
 <a href="https://github.com/CodeSeven/toastr">Toastr</a> <br/>
 <a href="https://jquery.com/">jQuery</a> <br/><br/>
