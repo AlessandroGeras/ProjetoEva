@@ -21,8 +21,8 @@ class UsersController extends Controller
     public function autorizar(Request $request)
     {
         $credentials = $request->validate([
-            'email' => ['email'],
-            'password' => ['password'],
+            'email' => ['required', 'email'],
+            'password' => ['required'],
         ]);
  
         if (Auth::attempt($credentials)) { 
