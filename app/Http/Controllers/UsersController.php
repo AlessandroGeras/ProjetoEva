@@ -15,7 +15,7 @@ class UsersController extends Controller
 
     public function login()
     {
-        return response()->view('login')->setStatusCode(200);
+         return response()->view('auth/login')->setStatusCode(200);
     }
 
     public function autorizar(Request $request)
