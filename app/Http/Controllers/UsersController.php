@@ -29,7 +29,7 @@ class UsersController extends Controller
             return redirect()->intended();
         }
         else{
-            return back()->with("msg", "Erro de autenticação: Verifique seu email e a senha")->setStatusCode(401);
+            return back()->with("msg", "Erro de autenticação: Verifique seu email e a senha");
         }
     }
 }
