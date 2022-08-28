@@ -78,6 +78,10 @@ Criado rotas para autenticação de usuários.
 
 <h4>27/08 - Alessandro </h4>
 Criado funções de autenticação de usuários no controller <em>UsersController</em>. 
+
+<h4>28/08 - Alessandro </h4>
+Por segurança, foi migrado a configuração de todas as rotas de estavam definidas por caminhos, para rotas por nome. 
+Criada página de <em>login</em>.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
