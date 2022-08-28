@@ -5,7 +5,7 @@
     <li><a class="menu_link" href="#">ACOMPANHAMENTO FAMILIAR</a></li>
 
     @guest
-    <li><a class="menu_link" href="/login">LOGIN</a></li>
+    <li><a class="menu_link" href="{{route('login')}}">LOGIN</a></li>
     <li><a class="menu_link" href="/register">CADASTRAR</a></li>
     @endguest
 
