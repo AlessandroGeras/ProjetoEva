@@ -22,6 +22,8 @@ Route::get('/auth/login', [UsersController::class, "login"])->name('login');
 
 Route::post('/autenticar', [UsersController::class, "autorizar"])->name('autenticar');
 
+Route::get('/logout', [UsersController::class, "logout"])->name('logout');
+
 //Home
 Route::get('/', [UsersController::class, "index"]);
 
