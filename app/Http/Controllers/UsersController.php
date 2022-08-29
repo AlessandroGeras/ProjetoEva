@@ -32,4 +32,10 @@ class UsersController extends Controller
             return back()->with("msg", "Erro de autenticação: Verifique seu email e a senha");
         }
     }
+    
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/');
+    }
 }
