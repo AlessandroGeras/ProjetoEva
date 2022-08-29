@@ -11,12 +11,7 @@
 
     @auth
     <li><a class="menu_link" href="/dashboard">MINHA CONTA</a></li>
-    <li>
-      <form action="{{route('logout')}}" method="POST">
-        @csrf
-        <a class="menu_link" href="/logout" onclick="event.preventDefault();this.closest('form').submit();">LOGOUT</a>
-      </form>
-    </li>
+    <li><a class="menu_link" href="{{route('logout')}}">LOGOUT</a></li> 
     @endauth
 
   </ul>
