@@ -24,6 +24,10 @@ Route::post('/autenticar', [UsersController::class, "autorizar"])->name('autenti
 
 Route::get('/logout', [UsersController::class, "logout"])->name('logout');
 
+Route::get('/register', [UsersController::class, "register"])->name('register');
+
+Route::post('/newuser', [UsersController::class, "store"])->name('newuser');
+
 //Home
 Route::get('/', [UsersController::class, "index"]);
 
