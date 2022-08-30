@@ -86,6 +86,10 @@ Criada página de <em>login</em>.
 <h4>29/08 - Alessandro </h4>
 A equipe definiu que por excesso de rotas, funções e views sobre autenticação que estão sendo criadas neste momento na branch <em>palestra</em>, seria melhor renomear esta branch para <em>auth</em> e mais tarde será criada uma nova branch <em>palestra</em> para os futuros commits sobre a devida rota.<br>
 Criada rota de logout.
+
+<h4>30/08 - Alessandro </h4>
+Criada rota e página para cadastro de usuários.<br>
+Atualização de bibliotecas no controller <em>UsersController</em> para funções de autenticação, hash e mail.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
