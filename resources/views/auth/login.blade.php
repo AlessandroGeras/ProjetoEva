@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="flex items-center justify-between mt-4">
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="href="{{route('register')}}">
+                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{route('register')}}">
                             Cadastrar novo usuário
                         </a>
 
