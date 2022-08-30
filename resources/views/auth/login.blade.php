@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="/assets/css/auth/login.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
     <title>Login</title>
 </head>
 
