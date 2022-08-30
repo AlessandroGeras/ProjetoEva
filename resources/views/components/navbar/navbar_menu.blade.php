@@ -6,7 +6,7 @@
 
     @guest
     <li><a class="menu_link" href="{{route('login')}}">LOGIN</a></li>
-    <li><a class="menu_link" href="/register">CADASTRAR</a></li>
+    <li><a class="menu_link" href="{{route('register')}}">CADASTRAR</a></li>
     @endguest
 
     @auth
