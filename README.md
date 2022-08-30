@@ -82,10 +82,14 @@ Criado funções de autenticação de usuários no controller <em>UsersControlle
 <h4>28/08 - Alessandro </h4>
 Por segurança, foi migrado a configuração de todas as rotas de estavam definidas por caminhos, para rotas por nome. 
 Criada página de <em>login</em>.
+
+<h4>29/08 - Alessandro </h4>
+A equipe definiu que por excesso de rotas, funções e views sobre autenticação que estão sendo criadas neste momento na branch <em>palestra</em>, seria melhor renomear esta branch para <em>auth</em> e mais tarde será criada uma nova branch <em>palestra</em> para os futuros commits sobre a devida rota.<br>
+Criada rota de logout.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
-O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um vínculo com o sistema de cadastros do JetStream para criar, editar e excluir usuários de acordo com as regras do Spatie sobre hierarquia de usuários. O projeto terá seu deploy feito no Heroku.
+O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um vínculo com o sistema de cadastros do JetStream para criar, editar e excluir usuários de acordo com as regras do Spatie sobre hierarquia de usuários. O projeto terá seu deploy feito no Heroku.<br><br>
 
 <a href="heroku.com">Heroku</a> <br/>
 <a href="https://laravel.com/">Laravel</a> <br/>
