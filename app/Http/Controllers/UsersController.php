@@ -8,11 +8,39 @@ use Illuminate\Support\Facades\Auth;
 
 class UsersController extends Controller
 {
-    public function index()
+    public function register()
     {
-        return response()->view('index')->setStatusCode(200);
+        return response()->view('auth/register')->setStatusCode(200);
     }
 
+    public function store(Request $request)
+    {
+        $request->validate([
+            'email' => ['required', 'email'],
+            'password' => [
+                'required',
+                'min:8',              // must be at least 8 characters in length
+                //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                //    'regex:/[0-9]/',       must contain at least one digit
+                'regex:/[@$!%*#?&]/', // must contain a special character
+            ]
+        ]);
+
+        $user = new User();
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->phone_number = $request->phone_number;
+        $user->address = $request->address;
+        $user->password = Hash::make($request->password);
+
+        $user->save();
+
+        Auth::login($user);
+        return redirect()->intended('/');
+    }      
+    
     public function login()
     {
          return response()->view('auth/login')->setStatusCode(200);
@@ -37,5 +65,10 @@ class UsersController extends Controller
     {
         Auth::logout();
         return redirect('/');
+    }
+    
+     public function index()
+    {
+        return response()->view('index')->setStatusCode(200);
     }
 }
