@@ -90,6 +90,10 @@ Criada rota de logout.
 <h4>30/08 - Alessandro </h4>
 Criada rota e página para cadastro de usuários.<br>
 Atualização de bibliotecas no controller <em>UsersController</em> para funções de autenticação, hash e mail.
+
+<h4>31/08 - Vinícius (MUDANÇA NO PEDIDO DO CLIENTE)</h4>
+A pedido do cliente, a base PostgreSQL foi migrada do Heroku para o ElephantSQL. O motivo da migração se deve ao fato de que o serviço de banco de dados do Heroku passará a ser cobrado e, por tal razão, foi solicitada a mudança para que se mantenha um serviço gratuito.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
