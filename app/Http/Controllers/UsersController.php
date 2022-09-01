@@ -71,6 +71,11 @@ class UsersController extends Controller
         return redirect('/');
     }
     
+     public function showForgetPasswordForm()
+    {
+        return view('auth.forgetPassword');
+    }
+    
      public function index()
     {
         return response()->view('index')->setStatusCode(200);
