@@ -30,6 +30,8 @@ Route::post('/newuser', [UsersController::class, "store"])->name('newuser');
 
 Route::get('forget-password', [UsersController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
 
+Route::post('forget-password', [UsersController::class, 'submitForgetPasswordForm'])->name('submitForgetPasswordForm'); 
+
 //Home
 Route::get('/', [UsersController::class, "index"]);
 
