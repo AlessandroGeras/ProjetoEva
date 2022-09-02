@@ -76,6 +76,34 @@ class UsersController extends Controller
         return view('auth.forgetPassword');
     }
     
+     public function submitForgetPasswordForm(Request $request)
+    {
+        $credentials = $request->validate([
+            'email' => ['required', 'email']
+        ]);
+
+        if ($credentials) {
+            if (User::where('email', '=', $request->email)->exists()) {
+                $token = Str::random(64);
+
+                DB::table('password_resets')->insert([
+                    'email' => $request->email,
+                    'token' => $token,
+                    'created_at' => date('Y-m-d\TH:i')
+                ]);
+
+                Mail::send('email.forgetPassword', ['token' => $token], function ($message) use ($request) {
+                    $message->to($request->email);
+                    $message->subject('Reset Password');
+                });
+
+                return back()->with('message', 'We have e-mailed your password reset link!');
+            } else {
+                dd('merda');
+            }
+        }
+    }
+    
      public function index()
     {
         return response()->view('index')->setStatusCode(200);
