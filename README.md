@@ -94,6 +94,13 @@ Atualização de bibliotecas no controller <em>UsersController</em> para funçõ
 <h4>31/08 - Vinícius (MUDANÇA NO PEDIDO DO CLIENTE)</h4>
 A pedido do cliente, a base PostgreSQL foi migrada do Heroku para o ElephantSQL. O motivo da migração se deve ao fato de que o serviço de banco de dados do Heroku passará a ser cobrado e, por tal razão, foi solicitada a mudança para que se mantenha um serviço gratuito.
 
+<h4>01/09 - Alessandro </h4>
+Criada rota e página para recuperação de senha por e-mail.<br>
+
+<h4>02/09 - Alessandro </h4>
+Criada conta no Gmail para o serviço de SMTP do Laravel.<br>
+Configurada a função para envio de email com token para recuperação da senha.<br>
+Executada migration da tabela password_resets.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
