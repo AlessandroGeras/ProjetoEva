@@ -97,9 +97,9 @@ class UsersController extends Controller
                     $message->subject('Reset Password');
                 });
 
-                return back()->with('message', 'We have e-mailed your password reset link!');
+                return back()->with("msg", "O email de recuperação de senha foi enviado");
             } else {
-                dd('merda');
+                 return back()->with('message', "Falha ao enviar o email de recuperação de senha");
             }
         }
     }
