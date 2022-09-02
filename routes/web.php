@@ -28,9 +28,11 @@ Route::get('/register', [UsersController::class, "register"])->name('register');
 
 Route::post('/newuser', [UsersController::class, "store"])->name('newuser');
 
-Route::get('forget-password', [UsersController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
+Route::get('forget_password', [UsersController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
 
-Route::post('forget-password', [UsersController::class, 'submitForgetPasswordForm'])->name('submitForgetPasswordForm'); 
+Route::post('forget_password', [UsersController::class, 'submitForgetPasswordForm'])->name('submitForgetPasswordForm'); 
+
+Route::get('reset_password/{token}', [UsersController::class, 'showResetPasswordForm'])->name('resetPassword');
 
 //Home
 Route::get('/', [UsersController::class, "index"]);
