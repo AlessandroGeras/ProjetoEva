@@ -97,9 +97,9 @@ class UsersController extends Controller
                     $message->subject('Reset Password');
                 });
 
-                return back()->with("msg", "O email de recuperação de senha foi enviado");
+                return redirect('/')->with("msg", "O email de recuperação de senha foi enviado");
             } else {
-                 return back()->with('message', "Falha ao enviar o email de recuperação de senha");
+                return redirect('/')->with('message', "Falha ao enviar o email de recuperação de senha. Tente mais tarde");
             }
         }
     }
