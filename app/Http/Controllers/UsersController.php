@@ -94,6 +94,7 @@ class UsersController extends Controller
 
                 Mail::send('email.forgetPassword', ['token' => $token], function ($message) use ($request) {
                     $message->to($request->email);
+                    $message->from('projetoevagaropaba@gmail.com', 'Projeto Eva');
                     $message->subject('Recuperação de senha');
                 });
 
