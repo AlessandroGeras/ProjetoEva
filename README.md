@@ -101,6 +101,10 @@ Criada rota e página para recuperação de senha por e-mail.<br>
 Criada conta no Gmail para o serviço de SMTP do Laravel.<br>
 Configurada a função para envio de email com token para recuperação da senha.<br>
 Executada migration da tabela password_resets.
+
+<h4>03/09 - Alessandro </h4>
+Criada rota para receber o link do email de recuperação de senha.<br>
+Criado formulário para receber o token enviado pelo link do email de recuperação de senha e para inserir a nova senha.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
