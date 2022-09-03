@@ -73,7 +73,7 @@ class UsersController extends Controller
     
      public function showForgetPasswordForm()
     {
-        return view('auth.forgetPassword');
+        return view('auth.forgetPassword')->setStatusCode(200);
     }
     
      public function submitForgetPasswordForm(Request $request)
@@ -107,7 +107,7 @@ class UsersController extends Controller
     
     public function showResetPasswordForm($token)
     {
-        return view('auth.forgetPasswordLink', ['token' => $token]);
+        return view('auth.forgetPasswordLink', ['token' => $token])->setStatusCode(200);
     }
     
      public function index()
