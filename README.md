@@ -119,6 +119,7 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 <a href="https://laravel.com/docs/9.x/sanctum">Sanctum</a> <br/>
 <a href="https://nodejs.org/">NodeJS</a> <br/>
 <a href="https://github.com/CodeSeven/toastr">Toastr</a> <br/>
+<a href="https://kenwheeler.github.io/slick/">Slick</a> <br/>
 <a href="https://jquery.com/">jQuery</a> <br/><br/>
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
