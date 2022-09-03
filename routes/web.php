@@ -34,6 +34,8 @@ Route::post('forget_password', [UsersController::class, 'submitForgetPasswordFor
 
 Route::get('reset_password/{token}', [UsersController::class, 'showResetPasswordForm'])->name('resetPassword');
 
+Route::post('reset_password', [UsersController::class, 'submitResetPasswordForm'])->name('submitPassword');
+
 //Home
 Route::get('/', [UsersController::class, "index"]);
 
