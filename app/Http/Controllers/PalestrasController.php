@@ -29,7 +29,8 @@ class PalestrasController extends Controller
             $palestras = Palestra::where([["name", "like", "%" . $search . "%"]])->get();
         } 
         else {
-            $palestras = Palestra::all()->sortByDesc("date");
+            $palestras = Palestra::all()->whereDate('date', '>=', date('Y-m-d\TH:i'))->get();
+            //$palestras = Palestra::all()->sortByDesc("date");
         }        
 
         return response()->view('palestras', ["palestras" => $palestras,"search"=>$search,"months"=>$months])->setStatusCode(200);
