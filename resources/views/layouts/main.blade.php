@@ -2,7 +2,9 @@
 
 <head>
   <meta charset="UTF-8">
+  
   <title>@yield("title")</title>
+  
   <link rel="stylesheet" href="/assets/css/main.css">
   <script src="/assets/js/navbar.js"></script>
   <script src="/assets/js/palestras.js"></script>
