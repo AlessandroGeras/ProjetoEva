@@ -158,7 +158,7 @@ class UsersController extends Controller
 
         DB::table('password_resets')->where(['email'=> $request->email])->delete();
 
-        return redirect('/login')->with('message', 'Sua senha foi alterada com sucesso');
+        return redirect('auth/login')->with('message', 'Sua senha foi alterada com sucesso');
     }
     
      public function index()
