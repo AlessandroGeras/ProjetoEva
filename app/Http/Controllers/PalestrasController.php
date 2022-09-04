@@ -30,9 +30,9 @@ class PalestrasController extends Controller
             $palestras = Palestra::where([["name", "like", "%" . $search . "%"]])->get();
         } 
         else {
-            $palestras = Palestra::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get();
-            
+            $palestras = Palestra::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get();            
             //$palestras = Palestra::all()->sortByDesc("date");
+            dd(date("Y-m-d H:i"));
         }        
 
         return response()->view('palestras', ["palestras" => $palestras,"search"=>$search,"months"=>$months])->setStatusCode(200);
