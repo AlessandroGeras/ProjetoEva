@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\Palestra;
 use Carbon\Carbon;
@@ -34,7 +33,6 @@ class PalestrasController extends Controller
         else {
             $palestras = Palestra::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get();            
             //$palestras = Palestra::all()->sortByDesc("date");
-            dd(date("Y-m-d H:i"));
         }        
 
         return response()->view('palestras', ["palestras" => $palestras,"search"=>$search,"months"=>$months])->setStatusCode(200);
