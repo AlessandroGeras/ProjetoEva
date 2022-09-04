@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Palestra;
+use Carbon\Carbon;
 
 class PalestrasController extends Controller
 {
@@ -29,7 +30,8 @@ class PalestrasController extends Controller
             $palestras = Palestra::where([["name", "like", "%" . $search . "%"]])->get();
         } 
         else {
-            $palestras = Palestra::whereDate('date','>=',date('Y-m-d\TH:i'))->get();
+            $palestras = Palestra::where('date' , '>=' , Carbon::now()->toDateTimeString())->get();
+            //$palestras = Palestra::whereDate('date','>=',date('Y-m-d\TH:i'))->get();
             //$palestras = Palestra::all()->sortByDesc("date");
         }        
 
