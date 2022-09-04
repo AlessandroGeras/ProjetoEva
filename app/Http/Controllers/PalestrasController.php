@@ -30,8 +30,8 @@ class PalestrasController extends Controller
             $palestras = Palestra::where([["name", "like", "%" . $search . "%"]])->get();
         } 
         else {
-            $palestras = Palestra::where('date' , '>=' , Carbon::now()->toDateTimeString())->get();
-            //$palestras = Palestra::whereDate('date','>=',date('Y-m-d\TH:i'))->get();
+            $palestras = Palestra::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get();
+            
             //$palestras = Palestra::all()->sortByDesc("date");
         }        
 
