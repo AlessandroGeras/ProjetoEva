@@ -109,7 +109,9 @@ Criado formulário para receber o token enviado pelo link do email de recuperaç
 
 <h4>04/09 - Alessandro </h4>
 Criada função para validar o token recebido pelo email de recuperação de senha e salvar a nova senha inserida.<br>
-Realizado o merge das branchs <em>master</em> e <em>auth</em>.
+Realizado o merge das branchs <em>master</em> e <em>auth</em>.<br>
+Atualizado o filtro de dados para remover eventos com data expirada.<br>
+Atualizado a timezone para GMT-3.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
