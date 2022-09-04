@@ -116,7 +116,7 @@ class UsersController extends Controller
     
     public function showResetPasswordForm($token)
     {
-        return view('auth.forgetPasswordLink', ['token' => $token])->setStatusCode(200);
+        return response()->view('auth.forgetPasswordLink', ['token' => $token])->setStatusCode(200);
     }
     
      public function submitResetPasswordForm(Request $request)
