@@ -119,6 +119,48 @@ class UsersController extends Controller
         return view('auth.forgetPasswordLink', ['token' => $token])->setStatusCode(200);
     }
     
+     public function submitResetPasswordForm(Request $request)
+    {
+        $request->validate([
+            'email' => ['required', 'email'],
+            'password' => [
+                'required',
+                'min:8',              // must be at least 8 characters in length
+                //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                //    'regex:/[0-9]/',       must contain at least one digit
+                'regex:/[@$!%*#?&]/', // must contain a special character
+            ],
+             'password_confirmation' => [
+                'required',
+                'min:8',              // must be at least 8 characters in length
+                //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                //    'regex:/[0-9]/',       must contain at least one digit
+                'regex:/[@$!%*#?&]/', // must contain a special character
+                 'same:password',
+            ]
+        ]);
+
+        $updatePassword = DB::table('password_resets')
+                            ->where([
+                              'email' => $request->email, 
+                              'token' => $request->token
+                            ])
+                            ->first();
+
+        if(!$updatePassword){
+            return redirect('/')->with("msg", "Falha no link de verificação");
+        }
+
+        $user = User::where('email', $request->email)
+                    ->update(['password' => Hash::make($request->password)]);
+
+        DB::table('password_resets')->where(['email'=> $request->email])->delete();
+
+        return redirect('/login')->with('message', 'Sua senha foi alterada com sucesso');
+    }
+    
      public function index()
     {
         return response()->view('index')->setStatusCode(200);
