@@ -21,7 +21,8 @@ No projeto, estão presentes recursos que permitem o contato e a divulgação do
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="estrutura"> Estrutura do projeto  </h2>
-Site com 4 páginas até o momento. O projeto está totalmente responsivo e seguindo os padrões REST.<br /><br />
+Site com 4 páginas até o momento. O projeto está totalmente responsivo e seguindo os padrões REST.<br />
+Implantado sistema de recuperação de senhas por email<br /><br />
 
 <ul>
     <li>Cabeçalho adicionado como layout, contendo logo e menu, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
@@ -105,6 +106,10 @@ Executada migration da tabela password_resets.
 <h4>03/09 - Alessandro </h4>
 Criada rota para receber o link do email de recuperação de senha.<br>
 Criado formulário para receber o token enviado pelo link do email de recuperação de senha e para inserir a nova senha.
+
+<h4>04/09 - Alessandro </h4>
+Criada função para validar o token recebido pelo email de recuperação de senha e salvar a nova senha inserida.<br>
+Realizado o merge das branchs <em>master</em> e <em>auth</em>.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
