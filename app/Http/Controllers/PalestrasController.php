@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Palestra;
 use Carbon\Carbon;
 
+date_default_timezone_set('America/Sao_Paulo');
+
 class PalestrasController extends Controller
 {
     public function show()
