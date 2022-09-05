@@ -112,6 +112,11 @@ Criada função para validar o token recebido pelo email de recuperação de sen
 Realizado o merge das branchs <em>master</em> e <em>auth</em>.<br>
 Atualizado o filtro de dados para remover eventos com data expirada.<br>
 Atualizado a timezone para GMT-3.
+<h4>05/09 - Eliabe </h4>
+Criada branch <em>palestra</em>.
+Criada página palestra para visualizar os eventos por ID.
+Atualizado os models User e Palestra para relação many to many.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
