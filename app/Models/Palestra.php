@@ -9,7 +9,8 @@ class Palestra extends Model
 {
     use HasFactory;
 
-     /**
+    
+    /**
      * The attributes that are mass assignable.
      *
      * @var string[]
@@ -20,4 +21,8 @@ class Palestra extends Model
         'info',
         'date',
     ];  
+
+    public function users(){
+        return $this->belongsToMany('App\Models\User');
+    }
 }
