@@ -15,7 +15,6 @@ class User extends Authenticatable
 {
     use HasApiTokens;
     use HasFactory;
-    use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
     use HasRoles;
@@ -59,9 +58,6 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $appends = [
-        'profile_photo_url',
-    ];
 
     public function palestras(){
         return $this->belongsToMany('App\Models\Palestra');
