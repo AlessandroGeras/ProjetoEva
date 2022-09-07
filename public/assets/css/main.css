@@ -2,7 +2,7 @@
 @import "navbar/navbar.css";
 @import "navbar/navbar_logo.css";
 @import "navbar/navbar_menu.css";
-@import "navbar/panel.css";
+@import "navbar/navbar_panel.css";
 
 /* footer no layout main */
 @import "footer.css";
