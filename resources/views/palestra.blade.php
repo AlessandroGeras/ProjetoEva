@@ -36,4 +36,6 @@ $inscritos++;
 @endforeach
 @endisset
 <x-palestra.palestra_nome :palestra="$palestra" :day="$day" :month="$month" :hours="$hours" :minutes="$minutes"/>
+
+<x-palestra.palestra_info :palestra="$palestra" />
 @endsection
