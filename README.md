@@ -120,7 +120,11 @@ Atualizado os models User e Palestra para relação many to many.
 
 <h4>06/09 - Eliabe </h4>
 Atualizada página de palestra para visualizar as informações de um palestra. <br/>
-Instalação virtual do Toastr. <br/>
+Instalação virtual do Toastr.
+
+<h4>07/09 - Eliabe </h4>
+Criado interfaces sobre regras de usuário para administradores e usuários comuns na página "palestra".<br/>
+Configurado Toastr.<br/><br/>
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
