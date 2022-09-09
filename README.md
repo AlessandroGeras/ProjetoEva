@@ -124,7 +124,10 @@ Instalação virtual do Toastr.
 
 <h4>07/09 - Eliabe </h4>
 Criado interfaces sobre regras de usuário para administradores e usuários comuns na página "palestra".<br/>
-Configurado Toastr.<br/><br/>
+Configurado Toastr.
+
+<h4>09/09 - Eliabe </h4>	
+Criado formulário para editar palestras na página "palestra". 
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
