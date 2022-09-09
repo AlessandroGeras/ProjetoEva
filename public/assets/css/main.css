@@ -9,7 +9,6 @@
 /* componentes da página index */
 @import "index/index_logo.css";
 @import "index/index_categorias.css";
-@import "index/warning.css";
 
 /* componentes da página palestras */
 @import "palestras/palestras_title.css";
