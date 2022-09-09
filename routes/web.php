@@ -46,6 +46,12 @@ Route::post('/criar_palestra', [PalestrasController::class, "store"])->name('cri
 
 Route::get('/palestras/{id}', [PalestrasController::class, "palestra"]);
 
+Route::put('/palestras/edit/{id}', [PalestrasController::class, "update"])->name('editarPalestra')->middleware('auth');
+
+/* Rota desabilitada
+Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
+*/
+
 
 
 

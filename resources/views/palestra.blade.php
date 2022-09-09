@@ -12,6 +12,7 @@ $month = $months[$month];
 $hours = date('H', $time);
 $minutes = date('i', $time);
 $inscrito = false;
+$inscritos = 0;
 @endphp
 
 @isset($manypalestras)
@@ -24,11 +25,18 @@ $inscrito = true;
 @endforeach
 @endisset
 
+@isset($manyusers)
+@foreach($manyusers as $user)
+@php
+$inscritos++;
+@endphp
+@endforeach
+@endisset
 <x-palestra.palestra_nome :palestra="$palestra" :day="$day" :month="$month" :hours="$hours" :minutes="$minutes"/>
 
 <x-palestra.palestra_info :palestra="$palestra" />
 
 <x-palestra.palestra_actions :palestra="$palestra" :inscrito="$inscrito" :manyusers="$manyusers" />
 
-<x-palestra.form_editar_palestra />
+<x-palestra.form_editar_palestra :palestra="$palestra" />
 @endsection
