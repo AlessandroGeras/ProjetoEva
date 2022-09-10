@@ -10,7 +10,7 @@
     @endguest
 
     @auth
-    <li><a class="menu_link" href="/dashboard">MINHA CONTA</a></li>
+    <li><a class="menu_link" href="{{route('dashboard')}}">MINHA CONTA</a></li>
     <li><a class="menu_link" href="{{route('logout')}}">LOGOUT</a></li> 
     @endauth
 
