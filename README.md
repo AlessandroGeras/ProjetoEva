@@ -78,10 +78,10 @@ Criada a branch <em>palestra</em> para ser utilizada para visualizar dinamicamen
 Criado rotas para autenticação de usuários.
 
 <h4>27/08 - Alessandro </h4>
-Criado funções de autenticação de usuários no controller <em>UsersController</em>. 
+Criado funções de autenticação de usuários no controller <em>UsersController</em>.
 
 <h4>28/08 - Alessandro </h4>
-Por segurança, foi migrado a configuração de todas as rotas de estavam definidas por caminhos, para rotas por nome. 
+Por segurança, foi migrado a configuração de todas as rotas de estavam definidas por caminhos, para rotas por nome.
 Criada página de <em>login</em>.
 
 <h4>29/08 - Alessandro </h4>
@@ -126,10 +126,10 @@ Instalação virtual do Toastr.
 Criado interfaces sobre regras de usuário para administradores e usuários comuns na página "palestra".<br/>
 Configurado Toastr.
 
-<h4>09/09 - Eliabe </h4>	
-Criado formulário para editar palestras na página "palestra". 
+<h4>09/09 - Eliabe </h4> 
+Criado formulário para editar palestras na página "palestra".
 
-<h4><b>20/08 - </b><strong>Eliabe</strong></h4>
+<!-- <h4><b>20/08 - </b><strong>Eliabe</strong></h4>
  
 Realizada <b>instalação</b> do framework <strong>Jetstream</strong> no site <strong>ProjetoEva</strong>.
 <br/>
@@ -137,7 +137,11 @@ Neste commit foi realizada a instalação do Framework Jetstream no ProjetoEva.<
 A função dele é criar uma <strong>tela de login</strong> para que somente o usuário administrador do sistema seja capaz de realizar <strong>alterações</strong> e <strong>exclusões</strong> de palestras cadastradas.<br/>
 Para isso, o site somente irá exibir os botões alterar e excluir de uma palestra, se o usuário estiver logado e sua sessão não tenha expirado.<br/>
 Vale ressaltar que cada <strong>sessão</strong> de um usuário terá <b>15 minutos de duração</b>,
- sendo que a sessão é armazenada em um <strong>Cookie</strong>.
+ sendo que a sessão é armazenada em um <strong>Cookie</strong>. -->
+
+<h4>10/09 - Eliabe </h4>
+Realizado o merge das branchs <em>master</em> e <em>palestra</em>.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
@@ -162,12 +166,15 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 ## Developers<br /> <a name="developers"></a>
+
 Alessandro Geras<br/>
 [Curriculum Vitae](https://alessandrogeras.github.io/Curriculum) <br/>
 [Linkedin](https://www.linkedin.com/in/alessandrogeras) <br/>
 [Github](https://github.com/AlessandroGeras) <br>
 [Gmail](mailto:alessandrogeras@gmail.com) <br>
+
 #
+
 Eliabe<br/>
 [Curriculum Vitae](https://github.com/Eliabe-Ribeiro-22/Eliabe-Ribeiro-22/blob/main/README.md) <br>
 [Linkedin](https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/) <br>
@@ -176,6 +183,7 @@ Eliabe<br/>
 [Outlook](mailto:eliaberibeiro06@hotmail.com)<br/>
 
 #
+
 Vinícius Jung<br/>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
 [Github](https://github.com/Vinnie-Jung) <br>
