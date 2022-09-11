@@ -33,12 +33,12 @@
 
   @switch($color)
   @case(0)  
-  <div class="timeline timeline_left parent_color0" onclick="window.location = '<?php echo './palestras/'.$palestra['id'] ?>'">
+  <div class="timeline timeline_left parent_color0" onclick="window.location = '/palestras/{{$palestra->id}}'">
     <div class="timeline_data child_color0">
       @break
 
       @case(2)
-      <div class="timeline timeline_left parent_color2"  onclick="window.location = '<?php echo './palestras/'.$palestra['id'] ?>'">
+      <div class="timeline timeline_left parent_color2"  onclick="window.location = '/palestras/{{$palestra->id}}'">
         <div class="timeline_data child_color2">
           @break
 
@@ -63,12 +63,12 @@
 
       @switch($color)
       @case(1)
-      <div class="timeline timeline_right parent_color1"  onclick="window.location = '<?php echo './palestras/'.$palestra['id'] ?>'">
+      <div class="timeline timeline_right parent_color1"  onclick="window.location = '/palestras/{{$palestra->id}}'">
         <div class="timeline_data child_color1">
           @break
 
           @case(3)
-          <div class="timeline timeline_right parent_color3"  onclick="window.location = '<?php echo './palestras/'.$palestra['id'] ?>'">
+          <div class="timeline timeline_right parent_color3"  onclick="window.location = '/palestras/{{$palestra->id}}'">
             <div class="timeline_data child_color3">
               @break
 

@@ -1,0 +1,23 @@
+/* Configurações do componente palestra_nome na página palestra */
+
+#palestra_nome {
+    display: inline-block;
+    width:100%;
+}
+
+#palestra_title{
+    width:450px;
+    margin:25px auto 0 auto;
+    text-align: center;
+}
+
+#palestra_title > h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+#palestra_title > span {
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -1,8 +1,10 @@
+/* CSS Principal */
+
 /* componentes da navbar no layout main */
 @import "navbar/navbar.css";
 @import "navbar/navbar_logo.css";
 @import "navbar/navbar_menu.css";
-@import "navbar/panel.css";
+@import "navbar/navbar_panel.css";
 
 /* componentes da página index */
 @import "index/index_logo.css";
@@ -16,8 +18,18 @@
 
 /* componentes da página palestra */
 @import "palestra/palestra_nome.css";
+@import "palestra/palestra_info.css";
+@import "palestra/palestra_actions.css";
+@import "palestra/form_editar_palestra.css";
+
+/* botões editar, excluir, entrar e sair da página palestras */
+@import "buttons/delete.css";
+@import "buttons/edit.css";
+@import "buttons/join.css";
+@import "buttons/leave.css";
 
 @import "footer.css";
+
 @import "fonts.css";
 
 
@@ -37,20 +49,16 @@ ul {
     list-style-type: none;
 }
 
+input[type=file] {
+    background:white;
+}
+
 .hidden {
     visibility: hidden;
 }
 
 .visible {
     visibility: visible;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 /* Configurações mobile do container abaixo da mobile navbar em todas as páginas */

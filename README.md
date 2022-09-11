@@ -48,14 +48,14 @@ Criado banco de dados PostgreSQL no Heroku<br/>
 Criado layout com cabeçalho, contendo o logo da instituição e um menu responsivo que ganha características de um menu mobile.
 Criada a branch <em>index</em> para ser utilizada como página principal.
 
-<h4>03/08 - Eliabe</h4>
+<h4><b>03/08 - </b><strong>Eliabe</strong></h4>
 Criada a página principal do site, contendo uma seção de boas-vindas com opção de login da plataforma
 e outra seção com flex-box com links atrelados a outras páginas
 
 <h4>05/08 - Vinícius </h4>
 Criada a estrutura do rodapé da página principal do site junto com a sua estilização, contendo dados como contatos e localização, além de possuir link e QR code de acesso ao grupo de Whatsapp da instituição.
 
-<h4>08/08 - Eliabe</h4>
+<h4><b>08/08 - </b><strong>Eliabe</strong></h4>
 Criada a branch <em>courses</em> para a permitir ao usuário a possibilidade de inserção de cursos na agenda exibida na plataforma.
 
 <h4>08/08 - Vinícius </h4>
@@ -112,6 +112,32 @@ Criada função para validar o token recebido pelo email de recuperação de sen
 Realizado o merge das branchs <em>master</em> e <em>auth</em>.<br>
 Atualizado o filtro de dados para remover eventos com data expirada.<br>
 Atualizado a timezone para GMT-3.
+
+<h4>05/09 - Eliabe </h4>
+Criada branch <em>palestra</em>. <br/>
+Criada página palestra para visualizar os eventos por ID. <br/>
+Atualizado os models User e Palestra para relação many to many.
+
+<h4>06/09 - Eliabe </h4>
+Atualizada página de palestra para visualizar as informações de um palestra. <br/>
+Instalação virtual do Toastr.
+
+<h4>07/09 - Eliabe </h4>
+Criado interfaces sobre regras de usuário para administradores e usuários comuns na página "palestra".<br/>
+Configurado Toastr.
+
+<h4>09/09 - Eliabe </h4>	
+Criado formulário para editar palestras na página "palestra". 
+
+<h4><b>20/08 - </b><strong>Eliabe</strong></h4>
+ 
+Realizada <b>instalação</b> do framework <strong>Jetstream</strong> no site <strong>ProjetoEva</strong>.
+<br/>
+Neste commit foi realizada a instalação do Framework Jetstream no ProjetoEva.<br/>
+A função dele é criar uma <strong>tela de login</strong> para que somente o usuário administrador do sistema seja capaz de realizar <strong>alterações</strong> e <strong>exclusões</strong> de palestras cadastradas.<br/>
+Para isso, o site somente irá exibir os botões alterar e excluir de uma palestra, se o usuário estiver logado e sua sessão não tenha expirado.<br/>
+Vale ressaltar que cada <strong>sessão</strong> de um usuário terá <b>15 minutos de duração</b>,
+ sendo que a sessão é armazenada em um <strong>Cookie</strong>.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>

@@ -1,0 +1,25 @@
+/* Configurações do componente form_editar_palestras na página palestras */
+
+/* Configuração do container para o form */
+#form_editar_palestra_container {
+    display:inline-block;
+    width: 100%;
+    display:none;
+}
+
+#form_editar_palestra {
+    text-align: center;
+}
+
+
+#form_editar_palestra > form {
+    width:250px; 
+    margin:0px auto 0 auto;
+    padding:20px 0;
+    text-align: center;
+    background: black;
+}
+
+#form_editar_palestra > form > input {
+    text-align: center;
+}
