@@ -5,18 +5,13 @@
     <li><a class="menu_link" href="#">ACOMPANHAMENTO FAMILIAR</a></li>
 
     @guest
-    <li><a class="menu_link" href="/login">LOGIN</a></li>
-    <li><a class="menu_link" href="/register">CADASTRAR</a></li>
+    <li><a class="menu_link" href="{{route('login')}}">LOGIN</a></li>
+    <li><a class="menu_link" href="{{route('register')}}">CADASTRAR</a></li>
     @endguest
 
     @auth
     <li><a class="menu_link" href="/dashboard">MINHA CONTA</a></li>
-    <li>
-      <form action="/logout" method="POST">
-        @csrf
-        <a class="menu_link" href="/logout" onclick="event.preventDefault();this.closest('form').submit();">LOGOUT</a>
-      </form>
-    </li>
+    <li><a class="menu_link" href="{{route('logout')}}">LOGOUT</a></li> 
     @endauth
 
   </ul>

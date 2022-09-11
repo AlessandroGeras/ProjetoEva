@@ -71,3 +71,29 @@ const palestra_events = (id,nome,info,date) => {
     let form_editar_palestras_date = document.getElementById("form_editar_palestras_date");
     form_editar_palestras_date.value = date;
 };
+
+
+// Mostrar formulário de edição de cursos na página courses
+const editar_palestra = () => {
+
+    let form_editar_palestra_container=document.getElementById("form_editar_palestra_container");
+
+    if (form_editar_palestra_container.style.display=="none" ||form_editar_palestra_container.style.display=="" ) {
+        form_editar_palestra_container.style.display="block";
+    }
+
+    else {
+        form_editar_palestra_container.style.display="none";
+    }    
+};
+
+
+/* Função desabilitada
+const excluir_curso = (id,name) => {
+
+    if (confirm('Deseja realmente apagar "'+name+'"?') == true) {
+        loading("Excluindo curso");
+        window.location.href = "/courses/destroy/"+id;
+      }
+}
+*/
