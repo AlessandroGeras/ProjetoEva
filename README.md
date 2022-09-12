@@ -130,18 +130,11 @@ Configurado Toastr.
 <h4>09/09 - Eliabe </h4> 
 Criado formulário para editar palestras na página "palestra".
 
-<!-- <h4><b>20/08 - </b><strong>Eliabe</strong></h4>
- 
-Realizada <b>instalação</b> do framework <strong>Jetstream</strong> no site <strong>ProjetoEva</strong>.
-<br/>
-Neste commit foi realizada a instalação do Framework Jetstream no ProjetoEva.<br/>
-A função dele é criar uma <strong>tela de login</strong> para que somente o usuário administrador do sistema seja capaz de realizar <strong>alterações</strong> e <strong>exclusões</strong> de palestras cadastradas.<br/>
-Para isso, o site somente irá exibir os botões alterar e excluir de uma palestra, se o usuário estiver logado e sua sessão não tenha expirado.<br/>
-Vale ressaltar que cada <strong>sessão</strong> de um usuário terá <b>15 minutos de duração</b>,
- sendo que a sessão é armazenada em um <strong>Cookie</strong>. -->
-
 <h4>10/09 - Eliabe </h4>
 Realizado o merge das branchs <em>master</em> e <em>palestra</em>.
+
+<h4>11/09 - Eliabe </h4>
+Criado views das páginas de erro: 404 e 403.
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
