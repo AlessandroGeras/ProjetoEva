@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
@@ -17,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UsersController;
 
-//Rotas de Autenticação
+//Autenticação
 Route::get('/auth/login', [UsersController::class, 'login'])->name('login');
 
 Route::post('/autenticar', [UsersController::class, 'autorizar'])->name('autenticar');
@@ -39,7 +38,7 @@ Route::post('reset_password', [UsersController::class, 'submitResetPasswordForm'
 //Home
 Route::get('/', [UsersController::class, 'index']);
 
-//Rotas das Palestras
+//Palestras
 Route::get('/palestras', [PalestrasController::class, 'show'])
     ->name('palestras')
     ->middleware('auth');
@@ -56,26 +55,6 @@ Route::put('/palestras/edit/{id}', [PalestrasController::class, 'update'])
 Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
 */
 
-//Rotas das Palestras
-Route::get('/palestras', [PalestrasController::class, "show"])->name('palestras')->middleware('auth');
-
-Route::post('/criar_palestra', [PalestrasController::class, "store"])->name('criar_palestra');
-
-Route::get('/palestras/{id}', [PalestrasController::class, "palestra"]);
-
-Route::put('/palestras/edit/{id}', [PalestrasController::class, "update"])->name('editarPalestra')->middleware('auth');
-
-/* Rota desabilitada
-Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
-*/
-
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+//Dashboard
+Route::get('/dashboard', [UsersController::class, "dashboard"])->name('dashboard')->middleware('auth');
 ?>

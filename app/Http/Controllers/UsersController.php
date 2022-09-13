@@ -4,11 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Palestra;
+use App\Models\Warning;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Str;
 
 class UsersController extends Controller
 {
@@ -164,5 +163,34 @@ class UsersController extends Controller
      public function index()
     {
         return response()->view('index')->setStatusCode(200);
+    }
+
+    public function dashboard(Request $request)
+    {
+        $user = User::find(Auth::id());
+
+        if($user->can('user')){
+
+            $manypalestras = $user->palestras->where('date' , '>=' , date("Y-m-d H:i"))->sortBy('date');
+
+            return view('dashboard', ["user" => $user, "manypalestras" => $manypalestras]);
+        }
+
+        
+        if($user->can('admin')){
+
+        $search = request("search");
+        $users = null; 
+
+        if ($search) {
+            $users = User::where([["name", "like", "%" . $search . "%"]])->get();
+        }          
+
+        $warning = Warning::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get(); 
+
+        $palestras = Palestra::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'asc')->get(); 
+
+        return view('dashboard', ["user" => $user, "palestras" => $palestras,"warning" => $warning, 'users' => $users]);
+    }
     }
 }
