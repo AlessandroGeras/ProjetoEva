@@ -136,6 +136,10 @@ Realizado o merge das branchs <em>master</em> e <em>palestra</em>.
 <h4>11/09 - Domingo - Eliabe </h4>
 Criado views das páginas de erro: 404 e 403.
 
+<h4>12/09 - Segunda - Vinícius </h4>
+Criada uma nova branch chamada "permission". <br />
+Realizado o download e instalação das dependências da ferramenta Spatie na nova branch. <br />
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
