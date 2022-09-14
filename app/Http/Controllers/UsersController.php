@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Palestra;
+use App\Models\Permission;
 use App\Models\Warning;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -14,7 +15,8 @@ class UsersController extends Controller
     public function register()
     {
         return response()->view('auth/register')->setStatusCode(200);
-    }
+    }   
+
 
     public function store(Request $request)
     {
@@ -39,24 +41,32 @@ class UsersController extends Controller
             ]
         ]);
 
-        $user = new User();
+
+        $user = new User;
 
         $user->name = $request->name;
         $user->email = $request->email;
         $user->phone_number = $request->phone_number;
         $user->address = $request->address;
         $user->password = Hash::make($request->password);
-
+        
         $user->save();
 
+
         Auth::login($user);
+        $user = User::find(Auth::id());
+
+        $user->permission()->create(['permission' => 'user']);
+
         return redirect()->intended('/');
-    }      
-    
+    }
+
+
     public function login()
     {
          return response()->view('auth/login')->setStatusCode(200);
     }
+
 
     public function autorizar(Request $request)
     {
@@ -72,14 +82,16 @@ class UsersController extends Controller
             return back()->with("msg", "Erro de autenticação: Verifique seu email e a senha");
         }
     }
-    
+
+
     public function logout()
     {
         Auth::logout();
         return redirect('/');
     }
-    
-     public function showForgetPasswordForm()
+
+
+    public function showForgetPasswordForm()
     {
         return response()->view('auth.forgetPassword')->setStatusCode(200);
     }
@@ -159,17 +171,125 @@ class UsersController extends Controller
 
         return redirect('auth/login')->with('message', 'Sua senha foi alterada com sucesso');
     }
-    
-     public function index()
-    {
-        return response()->view('index')->setStatusCode(200);
+
+
+    public function index()
+    {   
+        $warning = Warning::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get(); 
+
+        return view('index',['warning' => $warning]);
     }
+
+
+    public function userinfo()
+    {       
+        return view('auth/userinfo');
+    }
+
+
+    public function verifyUserInfo(Request $request)
+    {
+        $credentials = $request->validate([
+            'password' => ['required'],
+        ]);
+
+        $credentials['email'] = auth()->user()->email;
+
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended(route('newUserInfo'));
+        } else {
+            return redirect()->intended(route('dashboard'))->with("msg", "Erro de autenticação: Verifique sua senha");
+        }
+    }
+
+
+    public function newUserInfo()
+    {
+        $user = auth()->user();
+        return view('auth/newUserInfo',['user' => $user]);
+    }
+
+
+    public function setnewUserInfo(Request $request)
+    {      
+        $user = User::find(Auth::user()->id);
+
+        $user->email = $request->email;
+        $user->phone_number = $request->phone_number;
+        $user->address = $request->address;
+
+        $user->save();
+
+        return redirect(route('dashboard'))->with("msg", "Dados alterados com sucesso");
+    }
+
+
+    public function password()
+    {
+        return view('auth/password');
+    }
+
+
+    public function verifyPassword(Request $request)
+    {
+        $credentials = $request->validate([
+            'password' => ['required'],
+        ]);
+
+        $credentials['email'] = auth()->user()->email;
+
+        if (Auth::attempt($credentials)) {
+            return redirect()->intended(route('newPassword'));
+        } else {
+            return redirect()->intended(route('dashboard'))->with("msg", "Erro de autenticação: Verifique sua senha");
+        }
+    }
+
+
+    public function newPassword()
+    {
+        return view('auth/newpassword');
+    }
+
+
+    public function setnewPassword(Request $request)
+    {
+        $request->validate([            
+            'password' => [
+                'required',
+                'min:8',              // must be at least 8 characters in length
+                //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                //    'regex:/[0-9]/',       must contain at least one digit
+                'regex:/[@$!%*#?&]/', // must contain a special character
+            ],
+            'newpassword' => [
+                'required',
+                'min:8',              // must be at least 8 characters in length
+                //    'regex:/[a-z]/',       must contain at least one lowercase letter
+                'regex:/[A-Z]/',      // must contain at least one uppercase letter
+                //    'regex:/[0-9]/',       must contain at least one digit
+                'regex:/[@$!%*#?&]/', // must contain a special character
+                'same:password'
+            ]
+        ]);
+
+        $user = User::find(Auth::user()->id);
+
+        $user->password = Hash::make($request->password);
+
+        $user->save();
+
+
+        return redirect(route('dashboard'))->with("msg", "Senha alterada com sucesso");
+    }    
+
 
     public function dashboard(Request $request)
     {
         $user = User::find(Auth::id());
 
-        if($user->can('user')){
+        if(($user->permission->permission)==('user')){
 
             $manypalestras = $user->palestras->where('date' , '>=' , date("Y-m-d H:i"))->sortBy('date');
 
@@ -177,7 +297,7 @@ class UsersController extends Controller
         }
 
         
-        if($user->can('admin')){
+        if($user->permission->permission==('admin')){
 
         $search = request("search");
         $users = null; 

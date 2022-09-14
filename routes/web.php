@@ -35,6 +35,25 @@ Route::get('reset_password/{token}', [UsersController::class, 'showResetPassword
 
 Route::post('reset_password', [UsersController::class, 'submitResetPasswordForm'])->name('submitPassword');
 
+
+//Atualização de dados do usuário
+Route::get('/userinfo', [UsersController::class, "userInfo"])->name('userInfo');
+
+Route::post('/userinfo', [UsersController::class, "verifyUserInfo"])->name('verifyUserInfo');
+
+Route::get('/newUserInfo', [UsersController::class, "newUserInfo"])->name('newUserInfo');
+
+Route::post('/newUserInfo', [UsersController::class, "setnewUserInfo"])->name('setnewUserInfo');
+
+Route::get('/password', [UsersController::class, "password"])->name('password');
+
+Route::post('/password', [UsersController::class, "verifyPassword"])->name('verifyPassword');
+
+Route::get('/newpassword', [UsersController::class, "newPassword"])->name('newPassword');
+
+Route::post('/newpassword', [UsersController::class, "setnewPassword"])->name('setnewPassword');
+
+
 //Home
 Route::get('/', [UsersController::class, 'index']);
 
@@ -54,6 +73,7 @@ Route::put('/palestras/edit/{id}', [PalestrasController::class, 'update'])
 /* Rota desabilitada
 Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
 */
+
 
 //Dashboard
 Route::get('/dashboard', [UsersController::class, "dashboard"])->name('dashboard')->middleware('auth');
