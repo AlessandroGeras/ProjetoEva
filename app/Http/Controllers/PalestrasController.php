@@ -70,6 +70,8 @@ class PalestrasController extends Controller
         $manypalestras = $user->palestras;
 
         $manyusers = $palestra->users;
+        
+        dd($user->permission->permission);
 
         return view('palestra', ["palestra" => $palestra,"months"=>$months,"manypalestras"=>$manypalestras,"manyusers"=>$manyusers, "user"=>$user]);
     }
