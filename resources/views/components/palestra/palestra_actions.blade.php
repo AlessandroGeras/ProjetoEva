@@ -2,13 +2,13 @@
 $inscritos = 0;
 $users="<br>";
 
-foreach($manyusers as $user){
+foreach($manyusers as $userJoined){
 $inscritos++;
 if($inscritos%2==0){
-$users=$users."<li class='inscritos_par'>".$user['name']."</li>";
+$users=$users."<li class='inscritos_par'>".$userJoined['name']."</li>";
 }
 else{
-$users=$users."<li class='inscritos_impar'>".$user['name']."</li>";
+$users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
 }
 }
 @endphp
