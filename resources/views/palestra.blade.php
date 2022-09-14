@@ -26,7 +26,7 @@ $inscrito = true;
 @endisset
 
 @isset($manyusers)
-@foreach($manyusers as $user)
+@foreach($manyusers as $userJoined)
 @php
 $inscritos++;
 @endphp
