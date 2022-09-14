@@ -69,13 +69,8 @@ Route::put('/palestras/edit/{id}', [PalestrasController::class, "update"])->name
 Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
 */
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+
+
+
+
 ?>
