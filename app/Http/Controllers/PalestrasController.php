@@ -64,13 +64,13 @@ class PalestrasController extends Controller
             'Dezembro'
         );
 
-        $user = auth()->user();
+        $user = User::find(Auth::id());
 
         $manypalestras = $user->palestras;
 
         $manyusers = $palestra->users;
 
-        return view('palestra', ["palestra" => $palestra,"months"=>$months,"manypalestras"=>$manypalestras,"manyusers"=>$manyusers]);
+        return view('palestra', ["palestra" => $palestra,"months"=>$months,"manypalestras"=>$manypalestras,"manyusers"=>$manyusers, "user"=>$user]);
     }
 
 
