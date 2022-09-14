@@ -13,6 +13,8 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
 }
 @endphp
 
+teste permissão: {{$user->permission->permission}};
+
 <div id="palestra_actions">
 @if($user->permission->permission==('admin'))
   <div id="inscritos">Inscritos <br>
