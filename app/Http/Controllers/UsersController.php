@@ -289,7 +289,7 @@ class UsersController extends Controller
     {
         $user = User::find(Auth::id());
 
-        if(($user->permission->permission)==('user')){
+        if(($user->permission->permission)==('Usuário')){
 
             $manypalestras = $user->palestras->where('date' , '>=' , date("Y-m-d H:i"))->sortBy('date');
 
@@ -297,7 +297,7 @@ class UsersController extends Controller
         }
 
         
-        if($user->permission->permission==('admin')){
+        if($user->permission->permission==('Administrador')){
 
         $search = request("search");
         $users = null; 
