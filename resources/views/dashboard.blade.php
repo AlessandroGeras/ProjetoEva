@@ -5,8 +5,10 @@
 @section("corpo")
 <x-dashboard.my_account :user="$user" />
 
-@if($user->permission->permission==('user'))
+@if($user->permission->permission==('Usuário'))
 <x-dashboard.my_events :manypalestras="$manypalestras" />
+
+<x-dashboard.notifications/>
 @endif
 
 @endsection
