@@ -14,6 +14,11 @@
     <li><a href="#developers">Developers</a></li>
   </ol>
 </details>
+
+<h2 name="link">Projeto online</h2>
+<a href="https://projetoeva.herokuapp.com/">Projeto Eva</a> <br/>
+<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
+
 <h2 name="projeto"> Sobre o projeto  </h2>
 Este projeto foi realizado pelos colaboradores Alessandro Geras, <a href="https://github.com/Eliabe-Ribeiro-22">Eliabe Ribeiro</a> e <a href="https://github.com/Vinnie-Jung">Vinícius Jung</a> com o objetivo de ajudar uma instituição não governamental, chamada Espaço Vida e Saúde, localizada na cidade de Garopaba, no qual são realizados vários tipos de atendimentos para atender pacientes com autismo. <br><br>
 
@@ -174,10 +179,6 @@ O site será feito em PHP utilizando ferramentas do framework Laravel e terá um
 <a href="https://kenwheeler.github.io/slick/">Slick</a> <br/>
 <a href="https://jquery.com/">jQuery</a> <br/><br/>
 
-<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
-
-<h2 name="link">Projeto online</h2>
-<a href="https://projetoeva.herokuapp.com/">Projeto Eva</a> <br/>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 ## Developers<br /> <a name="developers"></a>
