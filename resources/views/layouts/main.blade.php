@@ -26,7 +26,7 @@
 
   @yield("corpo")
 
-  <x-footer />
+  <x-navbar.footer />
   
 </body>
 </html>
