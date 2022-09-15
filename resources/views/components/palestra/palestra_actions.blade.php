@@ -14,7 +14,7 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
 @endphp
 
 <div id="palestra_actions">
-@if($user->permission->permission==('admin'))
+@if($user->permission->permission==('Administrador'))
   <div id="inscritos">Inscritos <br>
     &#128101; {{$inscritos}}<br>
     <ul>
@@ -41,7 +41,7 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
     <br><br>
   </div>
 
-  @if($user->permission->permission==('user'))
+  @if($user->permission->permission==('Usuário'))
   <div id="inscrito">
     <span>@if ($inscrito == true)
       Você está inscrito neste evento
@@ -52,7 +52,7 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
   @endif
 
   <div id="palestra_botões">
-  @if($user->permission->permission==('admin'))
+  @if($user->permission->permission==('Administrador'))
     <a class="button_edit" id="editar_palestra_botao" href="#" onclick="editar_palestra(this.id,'{{ $palestra->id }}','{{ $palestra->name }}','{{ $palestra->info }}','{{ $palestra->date }}')">Editar</a>
 
     <!-- Exclusão de palestras desabilitada
@@ -67,7 +67,7 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
         -->
     @endif
 
-    @if($user->permission->permission==('user'))
+    @if($user->permission->permission==('Usuário'))
     @if ($inscrito == false)
     <form action="/palestras/join/{{ $palestra->id }}" method="POST">
       @csrf
