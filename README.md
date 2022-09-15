@@ -145,6 +145,18 @@ Realizado o merge da branch "permission" na master. <br />
 Criada uma nova branch chamada "dashboard". <br />
 Criada a página de dashboard para usuário logado.  <br /> 
 
+<h4>14/09 - Quarta - Vinícius </h4>
+Adicionadas regras de permissão para usuários. <br />
+Criada a validação de preenchimento dos campos de login. <br />
+Adicionada a opção de trocar/atualizar informações do perfil, que ficará na página de dashboard. <br />
+Criado middleware para análise e validação do usuário, verificando se a conta tem permissões de administrador ou não e, também, se a mesma existe. <br />
+Criada a tabela de "permissão" via migration.
+
+<h4>15/09 - Quinta - Vinícius </h4>
+Adicionado o CSS para a página de dashboard (minha conta). <br />
+Adicionado um carrosel na página de dashboard para a visualização de palestras. <br />
+Adicionado o CSS das notificações. (Recurso para o cargo de "profissionais" na hierarquia definida).
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
