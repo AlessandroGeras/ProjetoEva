@@ -20,7 +20,7 @@ class Admin
     {
         $user = User::find(Auth::id());
 
-        if(($user->permission->permission)!=('Administrador')){
+        if(($user->permission->permission)!=('Administrador'||'Profissional')){
             abort(403);
         }
  
