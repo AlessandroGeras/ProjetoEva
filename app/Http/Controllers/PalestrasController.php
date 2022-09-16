@@ -86,7 +86,7 @@ class PalestrasController extends Controller
 
         $palestra->save();
 
-        return redirect('/palestras')->with("msg", "Palestra adicionada com sucesso");
+        return redirect('/dashboard')->with("msg", "Palestra adicionada com sucesso");
     }
 
 
