@@ -162,6 +162,9 @@ Adicionado o CSS para a página de dashboard (minha conta). <br />
 Adicionado um carrosel na página de dashboard para a visualização de palestras. <br />
 Adicionado o CSS das notificações. (Recurso para o cargo de "profissionais" na hierarquia definida).
 
+<h4>16/09 - Sexta - Vinícius</h4>
+Adicionado carrosel de palestras visível para proffisionais e administradores (branch dashboard).
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
