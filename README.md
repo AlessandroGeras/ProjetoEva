@@ -163,7 +163,7 @@ Adicionado um carrosel na página de dashboard para a visualização de palestra
 Adicionado o CSS das notificações. (Recurso para o cargo de "profissionais" na hierarquia definida).
 
 <h4>16/09 - Sexta - Vinícius</h4>
-Adicionado carrosel de palestras visível para proffisionais e administradores (branch dashboard).
+Adicionado carrosel de palestras visível para profissionais e administradores (branch dashboard).
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
