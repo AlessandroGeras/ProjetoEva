@@ -71,7 +71,7 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
     @if ($inscrito == false)
     <form action="/palestras/join/{{ $palestra->id }}" method="POST">
       @csrf
-      <a class="button_join" href="#" onclick="this.closest('form').submit();loading('Confirmando presença')">Entrar</a>
+      <a class="button_join" href="#" onclick="this.closest('form').submit();loading('Confirmando presença')">Confirmar Presença</a>
     </form>
 
     @else
@@ -79,7 +79,7 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
       @csrf
       @method("DELETE")
       <a class="button_leave" href="#" onclick="
-            this.closest('form').submit();loading('Confirmando saída');return false; ">Sair</a>
+            this.closest('form').submit();loading('Confirmando saída');return false; ">Abandonar Evento</a>
     </form>
     @endif
     @endif
