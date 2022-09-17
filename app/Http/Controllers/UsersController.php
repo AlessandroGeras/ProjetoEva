@@ -41,20 +41,19 @@ class UsersController extends Controller
             ]
         ]);
 
+        $permission=Permission::where('role', '=', 'Usuário')->firstOrFail();
         $user = new User;
+
         $user->name = $request->name;
         $user->email = $request->email;
         $user->phone_number = $request->phone_number;
         $user->address = $request->address;
-        $user->password = Hash::make($request->password);        
-        $user->save();
+        $user->password = Hash::make($request->password);
+        $user->permission_id=$permission->id;
+        $user->save(); 
         
         Auth::login($user);
         $user = User::find(Auth::id());
-        
-        $permission = new Permission();
-        $permission->role = 'Usuário';
-        $user->permission()->save($permission);
 
         return redirect()->intended('/');
     }
