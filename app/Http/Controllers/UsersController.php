@@ -49,6 +49,9 @@ class UsersController extends Controller
         $user->password = Hash::make($request->password);        
         $user->save();
         
+        Auth::login($user);
+        $user = User::find(Auth::id());
+        
         $permission = new Permission;        
         $permission->role = 'Usuário';
         $user->permission()->save($permission);
