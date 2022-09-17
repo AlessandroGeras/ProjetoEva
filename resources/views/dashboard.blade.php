@@ -1,3 +1,5 @@
+Permissão: {{$user->permission->role}}
+
 @extends("layouts.main")
 
 @section("title","Minha Conta")
