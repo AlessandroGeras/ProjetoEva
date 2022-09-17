@@ -51,7 +51,10 @@ class UsersController extends Controller
         
         Auth::login($user);
         $user = User::find(Auth::id());
-        $user->permission()->create(['role' => 'Usuário']);
+        
+        $permission = new Permission();
+        $permission->role = 'Usuário';
+        $user->permission()->save($permission);
 
         return redirect()->intended('/');
     }
