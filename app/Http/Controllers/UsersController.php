@@ -41,22 +41,17 @@ class UsersController extends Controller
             ]
         ]);
 
-
         $user = new User;
-
         $user->name = $request->name;
         $user->email = $request->email;
         $user->phone_number = $request->phone_number;
         $user->address = $request->address;
-        $user->password = Hash::make($request->password);
-        
+        $user->password = Hash::make($request->password);        
         $user->save();
-
-
-        Auth::login($user);
-        $user = User::find(Auth::id());
-
-        $user->permission()->create(['permission' => 'Usuário']);
+        
+        $permission = new Permission;        
+        $permission->role = 'Usuário';
+        $user->permission()->save($permission);
 
         return redirect()->intended('/');
     }
@@ -289,7 +284,7 @@ class UsersController extends Controller
     {
         $user = User::find(Auth::id());
 
-        if(($user->permission->permission)==('Usuário')){
+        if(($user->permission->role)==('Usuário')){
 
             $manypalestras = $user->palestras->where('date' , '>=' , date("Y-m-d H:i"))->sortBy('date');
 
@@ -297,7 +292,7 @@ class UsersController extends Controller
         }
 
         
-        if($user->permission->permission==('Administrador')){
+        if($user->permission->role==('Administrador')){
 
         $search = request("search");
         $users = null; 
