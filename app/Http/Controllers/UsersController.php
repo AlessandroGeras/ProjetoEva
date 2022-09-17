@@ -295,7 +295,7 @@ class UsersController extends Controller
         }
 
         
-        if($user->permission->role==('Administrador')){
+        if($user->permission->role==('Administrador')||('Profissional')){
 
         $search = request("search");
         $users = null; 
