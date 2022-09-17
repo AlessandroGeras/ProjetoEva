@@ -14,9 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('permissions', function (Blueprint $table) {
-            $table->id();            
-            $table->foreignId('user_id')->constrained();
-            $table->string('permission');
+            $table->id();
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->string('role');
             $table->timestamps();
         });
     }
