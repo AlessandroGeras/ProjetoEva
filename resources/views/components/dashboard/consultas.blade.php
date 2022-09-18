@@ -11,19 +11,19 @@
   </head>
 
 
-  <h2 class="my_events">Notificações</h2>
-  <div class="carousel_notifications">
+  <h2 class="my_events">Consultas</h2>
+  <div class="carousel_consultas">
       
 
       
       <div class="carousel_item">
-          <h2>Não há notificações disponíveis</h2>
+          <h2>Não há consultas disponíveis</h2>
       </div>
   </div>
 
   <script type="text/javascript">
       $(document).ready(function() {
-          $('.carousel_notifications').slick({
+          $('.carousel_consultas').slick({
               infinite: false,
               slidesToShow: 3,
               slidesToScroll: 3
