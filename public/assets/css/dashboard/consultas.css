@@ -1,6 +1,6 @@
-/* Configurações do componente notifications na página dashboard */
+/* Configurações do componente consultas na página dashboard */
 
-.carousel_notifications {
+.carousel_consultas {
     width: 450px;
     height: 100px;
     margin: 0 auto;
@@ -20,7 +20,7 @@
     margin: 7.5px auto;
 }
 
-#notifications {
+#consultas {
     text-align: center;
 }
 
