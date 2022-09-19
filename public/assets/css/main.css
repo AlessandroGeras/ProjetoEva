@@ -14,8 +14,6 @@
 
 /* componentes da página palestras */
 @import "palestras/palestras_title.css";
-@import "palestras/form_criar_palestras.css";
-@import "palestras/form_pesquisar_palestras.css";
 @import "palestras/timeline.css";
 
 /* componentes da página palestra */
@@ -34,14 +32,16 @@
 @import "buttons/admin_button.css";
 @import "buttons/styled_input.css";
 
-
 /* componentes da página dashboard */
 @import "dashboard/my_account.css";
 @import "dashboard/carousel.css";
 @import "dashboard/consultas.css";
+@import "dashboard/admin_panel.css";
+
+/* componentes da página user */
+@import "user/table.css";
 
 @import "fonts.css";
-
 
 /* Configurações default e classes genéricas */
 
@@ -51,7 +51,7 @@
     box-sizing: border-box;
 }
 
-body{    
+body {
     background: #f7f7f7;
 }
 
@@ -59,8 +59,15 @@ ul {
     list-style-type: none;
 }
 
-input[type=file] {
-    background:white;
+input[type="file"] {
+    background: white;
+}
+
+textarea {
+    resize: none;
+    text-align: justify;
+    font-size: 14px;
+    color: #505739;
 }
 
 .hidden {
@@ -76,7 +83,6 @@ input[type=file] {
 .margin {
     margin-top: 0px;
 }
-
 
 @media screen and (max-width: 1200px) {
     .no_margin {
