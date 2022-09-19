@@ -143,6 +143,9 @@ Realizado o download e instalação das dependências da ferramenta Spatie na no
 <h4>18/09 - Domingo - Eliabe </h4>
 Refatoração e reestilização da página Palestras.
 
+<h4> 19/09 - Segunda - Eliabe </h4>
+Refatoração para disponibilizar aos administradores e profissionais, informações de um usuário escolhido por ele.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
