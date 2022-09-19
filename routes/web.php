@@ -67,9 +67,11 @@ Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"]
 
 //Dashboard
 Route::get('/dashboard', [UsersController::class, "dashboard"])->name('dashboard')->middleware('auth');
-?>
 
 //Warning
 Route::post('/warning', [WarningsController::class, "store"])->name('warning')->middleware('auth')->middleware('admin');
 
 Route::delete('/warning/destroy/{id}', [WarningsController::class, "destroy"])->name('warningDestroy')->middleware('auth')->middleware('admin');
+
+
+?>
