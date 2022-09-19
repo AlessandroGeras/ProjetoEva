@@ -1,20 +1,10 @@
 <?php
 
-use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\ConsultasController;
 use App\Http\Controllers\PalestrasController;
-use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\WarningsController;
+use Illuminate\Support\Facades\Route;
 
 //Autenticação
 Route::get('/auth/login', [UsersController::class, 'login'])->name('login');
@@ -78,3 +68,8 @@ Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"]
 //Dashboard
 Route::get('/dashboard', [UsersController::class, "dashboard"])->name('dashboard')->middleware('auth');
 ?>
+
+//Warning
+Route::post('/warning', [WarningsController::class, "store"])->name('warning')->middleware('auth')->middleware('admin');
+
+Route::delete('/warning/destroy/{id}', [WarningsController::class, "destroy"])->name('warningDestroy')->middleware('auth')->middleware('admin');

@@ -14,6 +14,8 @@
 
 /* componentes da página palestras */
 @import "palestras/palestras_title.css";
+@import "palestras/form_criar_palestras.css";
+@import "palestras/form_pesquisar_palestras.css";
 @import "palestras/timeline.css";
 
 /* componentes da página palestra */
@@ -27,8 +29,6 @@
 @import "buttons/edit.css";
 @import "buttons/join.css";
 @import "buttons/leave.css";
-@import "buttons/profissional.css";
-@import "buttons/user.css";
 @import "buttons/admin_button.css";
 @import "buttons/styled_input.css";
 
@@ -37,9 +37,6 @@
 @import "dashboard/carousel.css";
 @import "dashboard/consultas.css";
 @import "dashboard/admin_panel.css";
-
-/* componentes da página user */
-@import "user/table.css";
 
 @import "fonts.css";
 

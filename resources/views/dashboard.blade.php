@@ -8,7 +8,7 @@
 @switch($user->permission->role)
 @case('Usuário')
 <x-dashboard.my_events :manypalestras="$manypalestras" />
-<x-dashboard.consultas />
+<x-dashboard.consultas :manyconsultas="$manyconsultas"/>
 @break
 
 @case('Profissional')
@@ -17,6 +17,7 @@
 
 @case('Administrador')
 <x-dashboard.admin_palestras :palestras="$palestras" />
+<x-dashboard.admin_panel :warning="$warning" />
 @break
 @endswitch
 

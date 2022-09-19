@@ -282,32 +282,34 @@ class UsersController extends Controller
     }    
 
 
-    public function dashboard(Request $request)
+   public function dashboard(Request $request)
     {
         $user = User::find(Auth::id());
 
-        if(($user->permission->role)==('Usuário')){
+        if (($user->permission->role) == ('Usuário')) {
 
-            $manypalestras = $user->palestras->where('date' , '>=' , date("Y-m-d H:i"))->sortBy('date');
+            $manypalestras = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
 
-            return view('dashboard', ["user" => $user, "manypalestras" => $manypalestras]);
+            $manyconsultas = $user->consultas->sortBy('date');
+
+            return view('dashboard', ["user" => $user, "manypalestras" => $manypalestras, "manyconsultas" => $manyconsultas ]);
         }
 
-        
-        if($user->permission->role==('Administrador')||('Profissional')){
 
-        $search = request("search");
-        $users = null; 
+        if ($user->permission->role == ('Administrador') || ('Profissional')) {
 
-        if ($search) {
-            $users = User::where([["name", "like", "%" . $search . "%"]])->get();
-        }          
+            $search = request("search");
+            $users = null;
 
-        $warning = Warning::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get(); 
+            if ($search) {
+                $users = User::where([["name", "like", "%" . $search . "%"]])->get();
+            }
 
-        $palestras = Palestra::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'asc')->get(); 
+            $warning = Warning::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'desc')->get();
 
-        return view('dashboard', ["user" => $user, "palestras" => $palestras,"warning" => $warning, 'users' => $users]);
-    }
+            $palestras = Palestra::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'asc')->get();
+
+            return view('dashboard', ["user" => $user, "palestras" => $palestras, "warning" => $warning, 'users' => $users]);
+        }
     }
 }
