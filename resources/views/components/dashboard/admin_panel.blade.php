@@ -1,3 +1,5 @@
+<?php date_default_timezone_set('America/Sao_Paulo'); ?>
+
 <h2 id="admin_panel">Painel Administrativo</h2>
 <div class="admin_container">
   <div class="admin_button" onclick="warning();">Aviso Geral - Página Inicial</div>
