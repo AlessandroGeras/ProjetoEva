@@ -10,6 +10,8 @@ use App\Models\Warning;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
+date_default_timezone_set('America/Sao_Paulo');
+
 class UsersController extends Controller
 {
     public function register()
