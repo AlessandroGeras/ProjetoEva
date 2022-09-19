@@ -165,6 +165,16 @@ Adicionado o CSS das notificações. (Recurso para o cargo de "profissionais" na
 <h4>16/09 - Sexta - Vinícius</h4>
 Adicionado carrosel de palestras visível para profissionais e administradores (branch dashboard).
 
+<h4>19/09 - Segunda - Vinícius</h4>
+Branch dashboard: <br />
+Adicionados os CSSs dos botões. <br />
+Substituido o botão de pesquisa pelo input dinâmico (barra de pesquisa) e seu CSS.  <br />
+Criado banco de dados para os avisos do administrador.  <br />
+Modificadas as rotas de avisos com autenticação.  <br />  <br />
+
+**Sobre os avisos:** Os avisos gerais criados pelo administrador aparecerão na página principal ("Home Page") em formato de pop-up para o visitante. Tal mecanismo foi criado justamente para que os administradores consigam comunicar algo para os usuários de forma geral, sem precisar entrar em contato de forma direta por e-mail ou por redes sociais. Além disso, será possível definir o tempo em que um aviso ficará ativo a partir da data e horário definidos em sua criação. Caso se queira que determinado aviso geral seja excluído antecipadamente, será possível efetuar a exclusão de forma manual por meio da dashboard.
+
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
