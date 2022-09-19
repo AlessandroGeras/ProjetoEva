@@ -3,18 +3,19 @@ $inscritos = 0;
 $users="<br>";
 
 foreach($manyusers as $userJoined){
+$route=route('user', $userJoined['id']);
 $inscritos++;
 if($inscritos%2==0){
-$users=$users."<li class='inscritos_par'>".$userJoined['name']."</li>";
+$users=$users."<a class='palestra_users' href='$route'><li class='inscritos_par'>".$userJoined['name']."</li></a>";
 }
 else{
-$users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
+$users=$users."<a class='palestra_users' href='$route'><li class='inscritos_impar'>".$userJoined['name']."</li></a>";
 }
 }
 @endphp
 
 <div id="palestra_actions">
-@if($user->permission->role==('Administrador'))
+@if($user->permission->role!=('Usuário'))
   <div id="inscritos">Inscritos <br>
     &#128101; {{$inscritos}}<br>
     <ul>
@@ -52,7 +53,7 @@ $users=$users."<li class='inscritos_impar'>".$userJoined['name']."</li>";
   @endif
 
   <div id="palestra_botões">
-  @if($user->permission->role==('Administrador'))
+  @if($user->permission->role!=('Usuário'))
     <a class="button_edit" id="editar_palestra_botao" href="#" onclick="editar_palestra(this.id,'{{ $palestra->id }}','{{ $palestra->name }}','{{ $palestra->info }}','{{ $palestra->date }}')">Editar</a>
 
     <!-- Exclusão de palestras desabilitada

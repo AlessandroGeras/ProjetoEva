@@ -29,3 +29,8 @@
 .inscritos_par{
     background:hsla(0, 0%, 0%, 0.15);
 }
+
+.palestra_users{
+    text-decoration: none;
+    color:black;
+}
