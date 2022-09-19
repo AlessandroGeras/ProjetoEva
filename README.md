@@ -140,6 +140,9 @@ Criado views das páginas de erro: 404 e 403.
 Criada uma nova branch chamada "permission". <br />
 Realizado o download e instalação das dependências da ferramenta Spatie na nova branch. <br />
 
+<h4>18/09 - Domingo - Eliabe </h4>
+Refatoração e reestilização da página Palestras.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
