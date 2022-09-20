@@ -119,6 +119,22 @@ button,
 progress {
     vertical-align: baseline;
 }
+#form_logos{
+    display:flex;
+}
+#adra {
+    position:relative;
+    top:-78px;
+    width:100px;
+    height:100px;
+}
+
+#eva{
+    position:relative;
+    top:-100px;
+    width:125px;
+    height:125px;
+}
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
     height: auto;
@@ -1125,7 +1141,7 @@ select {
     margin-top: 1.25rem;
 }
 .mt-6 {
-    margin-top: 1.5rem;
+    margin-top: -100px;
 }
 .-mr-1 {
     margin-right: -0.25rem;
@@ -1242,7 +1258,7 @@ select {
     width: 4rem;
 }
 .w-full {
-    width: 100%;
+    width: 90%;
 }
 .w-0 {
     width: 0px;
