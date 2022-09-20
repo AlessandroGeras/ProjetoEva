@@ -121,17 +121,16 @@ progress {
 }
 #form_logos{
     display:flex;
+    height:125px;
 }
 #adra {
     position:relative;
-    top:-78px;
+    top:21px;
     width:100px;
     height:100px;
 }
 
 #eva{
-    position:relative;
-    top:-100px;
     width:125px;
     height:125px;
 }
@@ -1141,7 +1140,7 @@ select {
     margin-top: 1.25rem;
 }
 .mt-6 {
-    margin-top: -100px;
+    margin-top:0;
 }
 .-mr-1 {
     margin-right: -0.25rem;
