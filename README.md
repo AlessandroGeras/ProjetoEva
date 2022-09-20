@@ -26,15 +26,30 @@ No projeto, estão presentes recursos que permitem o contato e a divulgação do
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="estrutura"> Estrutura do projeto  </h2>
-Site com 3 páginas até o momento. O projeto está totalmente responsivo e seguindo os padrões REST.<br />
+O projeto está totalmente responsivo e seguindo os padrões REST.<br />
+Adicionado sistema de mensageria<br />
 Implantado sistema de recuperação de senhas por email<br /><br />
 
+<ins>Painel Administrativo do Administrador: </ins><br>
+Criada ferramenta de avisos gerais para o Administrador do site poder fazer notificações que serão exibidas na página inicial. As notificações serão expiradas a partir de uma data específica escolhida pelo Administrador. Caso o Administrador deseje antecipar a exclusão de alguma notificação, haverá um botão para antecipar o fim da mensagem.<br />
+
+Botão para criação e edição de palestras.<br />
+
+Função para procurar usuários do site com opção para promover ao nível de Profissional ou rebaixar um Profissional para usuário.<br> <br>
+
+<ins>Painel Administrativo do Profissional: </ins><br>
+Implantado recurso para procurar usuários do site com opção para inserir informações de consulta para que a família do paciente possa acompanhar o seu desenvolvimento, diminuindo assim o número de visitas que a família faz com o profissional para obter um feedback das sessões de atendimento.
+
+Botão para criação e edição de palestras.<br /><br />
+
+<ins>Páginas e componentes: </ins>
 <ul>
     <li>Cabeçalho adicionado como layout, contendo logo e menu, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
     <li>Rodapé adicionado como layout, contendo informações do projeto, link e QR Code para o usuário se cadastrar no grupo de Whatsapp da instituição, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
     <li>Página Home, contendo uma seção de boas-vindas com opção de login da plataforma e outra seção com flex-box com links atrelados a outras páginas.</li>
-    <li>Página Palestras, contendo um formulário para criação de palestras e outro para pesquisar palestras na qual são mostradas em uma timeline em ordem de data descrescente.</li>
-    <li>Página Palestra, contendo um sistema dinâmico de permissões onde os usuários comuns pode ver mais informações sobre uma determinada palestra e tendo as opções de ingressar ou sair dela. E para os administradores, um formulário para edição desta palestra, além de poder ver os usuários que estão inscritos. Ambos podem ver um link que poderá estar disponível como material extra.</li>
+    <li>Página Palestras, contendo um formulário para pesquisar palestras na qual são mostradas em uma timeline em ordem de data descrescente.</li>
+    <li>Página Palestra, contendo um sistema dinâmico de permissões onde os usuários comuns podem ver mais informações sobre uma determinada palestra e tendo as opções de ingressar ou sair dela. E para os administradores e profissionais, um formulário para edição desta palestra, além de poder ver os usuários que estão inscritos. Ambos podem ver um link que poderá estar disponível como material extra.</li>
+    <li>Página Minha Conta, contendo um sistema dinâmico de permissões onde os usuários comuns podem os eventos aos quais estão inscritos e também acessar o quadro de consultas em que aparecerão todos os seus atendimentos realizados para acompanhamento familiar. E para os administradores e profissionais, acesso aos seus respectivos painéis administrativos.</li>
 </ul>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
@@ -174,7 +189,10 @@ Modificadas as rotas de avisos com autenticação.  <br />  <br />
 
 **Sobre os avisos:** Os avisos gerais criados pelo administrador aparecerão na página principal ("Home Page") em formato de pop-up para o visitante. Tal mecanismo foi criado justamente para que os administradores consigam comunicar algo para os usuários de forma geral, sem precisar entrar em contato de forma direta por e-mail ou por redes sociais. Além disso, será possível definir o tempo em que um aviso ficará ativo a partir da data e horário definidos em sua criação. Caso se queira que determinado aviso geral seja excluído antecipadamente, será possível efetuar a exclusão de forma manual por meio da dashboard.
 
-
+<h4>20/09 - Terça - Alessandro</h4>
+Inserido novos logos e imagens a pedido do cliente. <br>
+Agora serão dois logos ao invés de um. Atualização na página principal e em todos os formulários de autenticação.<br>
+Imagens atualizadas na flexbox da página inicial.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
