@@ -9,6 +9,7 @@ use App\Models\Permission;
 use App\Models\Warning;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 date_default_timezone_set('America/Sao_Paulo');
 
