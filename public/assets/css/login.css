@@ -1257,7 +1257,7 @@ select {
     width: 4rem;
 }
 .w-full {
-    width: 90%;
+    width: 100%;
 }
 .w-0 {
     width: 0px;
