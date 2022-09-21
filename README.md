@@ -198,6 +198,9 @@ Imagens atualizadas na flexbox da página inicial.
 Reposicionado o botão de criação de palestras, localizado agora na página de dashboard de profissionais e administradores. <br>
 Refatorado código das palestras e permissões para criação.
 
+<h4>21/09 - Quarta - Vinícius</h4>
+Implementada a pesquisa de usuários por meio de um botão na dashboard do profissional e do administrador.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
