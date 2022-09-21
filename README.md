@@ -207,6 +207,9 @@ Refatorado código das palestras e permissões para criação.
 <h4>21/09 - Quarta - Vinícius</h4>
 Implementada a pesquisa de usuários por meio de um botão na dashboard do profissional e do administrador.
 
+<h4>21/09 - Quarta - Eliabe</h4>
+Realizado o merge das branchs <em>master</em> e <em>dashboard</em>.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
