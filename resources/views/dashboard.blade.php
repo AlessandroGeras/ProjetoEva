@@ -14,12 +14,14 @@
 @case('Profissional')
 <x-dashboard.admin_palestras :palestras="$palestras" />
 <x-dashboard.criar_palestra />
+<x-dashboard.users :user="$user" :users="$users" />
 @break
 
 @case('Administrador')
 <x-dashboard.admin_palestras :palestras="$palestras" />
 <x-dashboard.admin_panel :warning="$warning" />
 <x-dashboard.criar_palestra />
+<x-dashboard.users :user="$user" :users="$users" />
 @break
 @endswitch
 
