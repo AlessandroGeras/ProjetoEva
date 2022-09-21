@@ -13,11 +13,13 @@
 
 @case('Profissional')
 <x-dashboard.admin_palestras :palestras="$palestras" />
+<x-dashboard.criar_palestra />
 @break
 
 @case('Administrador')
 <x-dashboard.admin_palestras :palestras="$palestras" />
 <x-dashboard.admin_panel :warning="$warning" />
+<x-dashboard.criar_palestra />
 @break
 @endswitch
 
