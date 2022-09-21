@@ -52,7 +52,7 @@ Route::get('/palestras', [PalestrasController::class, 'show'])
     ->name('palestras')
     ->middleware('auth');
 
-Route::post('/criar_palestra', [PalestrasController::class, 'store'])->name('criar_palestra');
+Route::post('/criarPalestra', [PalestrasController::class, 'store'])->name('criarPalestra');
 
 Route::get('/palestras/{id}', [PalestrasController::class, 'palestra']);
 
