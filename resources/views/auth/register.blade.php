@@ -18,7 +18,7 @@
                     @csrf
                     <div>
                         <label class="block font-medium text-sm text-gray-700" for="name">
-                            Nome
+                            Nome Completo
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="name" type="text" name="name" required="required" autofocus="autofocus" autocomplete="name">
                     </div>
