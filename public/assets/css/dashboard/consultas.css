@@ -1,0 +1,60 @@
+/* Configurações do componente consultas na página dashboard */
+
+.carousel_consultas {
+    width: 450px;
+    height: 100px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+
+    background: linear-gradient(90deg, #972626 , #000);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationNotifications 6s ease infinite;
+    -moz-animation: AnimationNotifications 6s ease infinite;
+    animation: AnimationNotifications 6s ease infinite;
+}
+
+.carousel_item {
+    text-align: center;
+    margin: 7.5px auto;
+}
+
+#consultas {
+    text-align: center;
+}
+
+@-webkit-keyframes AnimationNotifications {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-moz-keyframes AnimationNotifications {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes AnimationNotifications {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+

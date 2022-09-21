@@ -26,7 +26,7 @@ $inscrito = true;
 @endisset
 
 @isset($manyusers)
-@foreach($manyusers as $user)
+@foreach($manyusers as $userJoined)
 @php
 $inscritos++;
 @endphp
@@ -36,7 +36,7 @@ $inscritos++;
 
 <x-palestra.palestra_info :palestra="$palestra" />
 
-<x-palestra.palestra_actions :palestra="$palestra" :inscrito="$inscrito" :manyusers="$manyusers" />
+<x-palestra.palestra_actions :palestra="$palestra" :inscrito="$inscrito" :manyusers="$manyusers" :user="$user"/>
 
 <x-palestra.form_editar_palestra :palestra="$palestra" />
 @endsection

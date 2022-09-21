@@ -15,12 +15,14 @@ class palestra_actions extends Component
     public $palestra;
     public $inscrito;
     public $manyusers;
+    public $user;
 
-    public function __construct($palestra,$inscrito,$manyusers)
+    public function __construct($palestra,$inscrito,$manyusers,$user)
     {
         $this->palestra = $palestra;
         $this->inscrito = $inscrito;
         $this->manyusers = $manyusers;
+        $this->user = $user;
     }
 
     /**

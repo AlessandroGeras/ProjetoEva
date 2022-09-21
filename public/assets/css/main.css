@@ -5,10 +5,12 @@
 @import "navbar/navbar_logo.css";
 @import "navbar/navbar_menu.css";
 @import "navbar/navbar_panel.css";
+@import "navbar/footer.css";
 
 /* componentes da página index */
 @import "index/index_logo.css";
 @import "index/index_categorias.css";
+@import "index/warning.css";
 
 /* componentes da página palestras */
 @import "palestras/palestras_title.css";
@@ -22,16 +24,21 @@
 @import "palestra/palestra_actions.css";
 @import "palestra/form_editar_palestra.css";
 
-/* botões editar, excluir, entrar e sair da página palestras */
+/* botões & forms */
 @import "buttons/delete.css";
 @import "buttons/edit.css";
 @import "buttons/join.css";
 @import "buttons/leave.css";
+@import "buttons/admin_button.css";
+@import "buttons/styled_input.css";
 
-@import "footer.css";
+/* componentes da página dashboard */
+@import "dashboard/my_account.css";
+@import "dashboard/carousel.css";
+@import "dashboard/consultas.css";
+@import "dashboard/admin_panel.css";
 
 @import "fonts.css";
-
 
 /* Configurações default e classes genéricas */
 
@@ -41,7 +48,7 @@
     box-sizing: border-box;
 }
 
-body{    
+body {
     background: #f7f7f7;
 }
 
@@ -49,8 +56,15 @@ ul {
     list-style-type: none;
 }
 
-input[type=file] {
-    background:white;
+input[type="file"] {
+    background: white;
+}
+
+textarea {
+    resize: none;
+    text-align: justify;
+    font-size: 14px;
+    color: #505739;
 }
 
 .hidden {
@@ -66,7 +80,6 @@ input[type=file] {
 .margin {
     margin-top: 0px;
 }
-
 
 @media screen and (max-width: 1200px) {
     .no_margin {

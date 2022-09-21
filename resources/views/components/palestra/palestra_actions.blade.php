@@ -2,19 +2,20 @@
 $inscritos = 0;
 $users="<br>";
 
-foreach($manyusers as $user){
+foreach($manyusers as $userJoined){
+$route=route('user', $userJoined['id']);
 $inscritos++;
 if($inscritos%2==0){
-$users=$users."<li class='inscritos_par'>".$user['name']."</li>";
+$users=$users."<a class='palestra_users' href='$route'><li class='inscritos_par'>".$userJoined['name']."</li></a>";
 }
 else{
-$users=$users."<li class='inscritos_impar'>".$user['name']."</li>";
+$users=$users."<a class='palestra_users' href='$route'><li class='inscritos_impar'>".$userJoined['name']."</li></a>";
 }
 }
 @endphp
 
 <div id="palestra_actions">
-  @can("admin")
+@if($user->permission->role!=('Usuário'))
   <div id="inscritos">Inscritos <br>
     &#128101; {{$inscritos}}<br>
     <ul>
@@ -28,7 +29,7 @@ $users=$users."<li class='inscritos_impar'>".$user['name']."</li>";
     @endphp
     <br>
   </div>
-  @endcan
+  @endif
   <div id="anexos">
     @if ($palestra->link)
     Material de apoio <br>
@@ -41,7 +42,7 @@ $users=$users."<li class='inscritos_impar'>".$user['name']."</li>";
     <br><br>
   </div>
 
-  @can("user")
+  @if($user->permission->role==('Usuário'))
   <div id="inscrito">
     <span>@if ($inscrito == true)
       Você está inscrito neste evento
@@ -49,10 +50,10 @@ $users=$users."<li class='inscritos_impar'>".$user['name']."</li>";
       Você não está inscrito neste evento
       @endif</span> <br><br>
   </div>
-  @endcan
+  @endif
 
   <div id="palestra_botões">
-    @can("admin")
+  @if($user->permission->role!=('Usuário'))
     <a class="button_edit" id="editar_palestra_botao" href="#" onclick="editar_palestra(this.id,'{{ $palestra->id }}','{{ $palestra->name }}','{{ $palestra->info }}','{{ $palestra->date }}')">Editar</a>
 
     <!-- Exclusão de palestras desabilitada
@@ -65,13 +66,13 @@ $users=$users."<li class='inscritos_impar'>".$user['name']."</li>";
           };">Excluir</a>
     </form>
         -->
-    @endcan
+    @endif
 
-    @can('user')
+    @if($user->permission->role==('Usuário'))
     @if ($inscrito == false)
     <form action="/palestras/join/{{ $palestra->id }}" method="POST">
       @csrf
-      <a class="button_join" href="#" onclick="this.closest('form').submit();loading('Confirmando presença')">Entrar</a>
+      <a class="button_join" href="#" onclick="this.closest('form').submit();loading('Confirmando presença')">Confirmar Presença</a>
     </form>
 
     @else
@@ -79,9 +80,9 @@ $users=$users."<li class='inscritos_impar'>".$user['name']."</li>";
       @csrf
       @method("DELETE")
       <a class="button_leave" href="#" onclick="
-            this.closest('form').submit();loading('Confirmando saída');return false; ">Sair</a>
+            this.closest('form').submit();loading('Confirmando saída');return false; ">Abandonar Evento</a>
     </form>
     @endif
-    @endcan
+    @endif
   </div>
 </div>

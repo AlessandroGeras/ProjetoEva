@@ -1,15 +1,28 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends("layouts.main")
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+@section("title","Minha Conta")
+
+@section("corpo")
+<x-dashboard.my_account :user="$user" />
+
+@switch($user->permission->role)
+@case('Usuário')
+<x-dashboard.my_events :manypalestras="$manypalestras" />
+<x-dashboard.consultas :manyconsultas="$manyconsultas"/>
+@break
+
+@case('Profissional')
+<x-dashboard.admin_palestras :palestras="$palestras" />
+<x-dashboard.criar_palestra />
+<x-dashboard.users :user="$user" :users="$users" />
+@break
+
+@case('Administrador')
+<x-dashboard.admin_palestras :palestras="$palestras" />
+<x-dashboard.admin_panel :warning="$warning" />
+<x-dashboard.criar_palestra />
+<x-dashboard.users :user="$user" :users="$users" />
+@break
+@endswitch
+
+@endsection

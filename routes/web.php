@@ -1,23 +1,12 @@
 <?php
 
-use App\Http\Controllers\CoursesController;
+use App\Http\Controllers\ConsultasController;
 use App\Http\Controllers\PalestrasController;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\WarningsController;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-use App\Http\Controllers\UsersController;
-
-//Rotas de Autenticação
+//Autenticação
 Route::get('/auth/login', [UsersController::class, 'login'])->name('login');
 
 Route::post('/autenticar', [UsersController::class, 'autorizar'])->name('autenticar');
@@ -36,15 +25,34 @@ Route::get('reset_password/{token}', [UsersController::class, 'showResetPassword
 
 Route::post('reset_password', [UsersController::class, 'submitResetPasswordForm'])->name('submitPassword');
 
+
+//Atualização de dados do usuário
+Route::get('/userinfo', [UsersController::class, "userInfo"])->name('userInfo');
+
+Route::post('/userinfo', [UsersController::class, "verifyUserInfo"])->name('verifyUserInfo');
+
+Route::get('/newUserInfo', [UsersController::class, "newUserInfo"])->name('newUserInfo');
+
+Route::post('/newUserInfo', [UsersController::class, "setnewUserInfo"])->name('setnewUserInfo');
+
+Route::get('/password', [UsersController::class, "password"])->name('password');
+
+Route::post('/password', [UsersController::class, "verifyPassword"])->name('verifyPassword');
+
+Route::get('/newpassword', [UsersController::class, "newPassword"])->name('newPassword');
+
+Route::post('/newpassword', [UsersController::class, "setnewPassword"])->name('setnewPassword');
+
+
 //Home
 Route::get('/', [UsersController::class, 'index']);
 
-//Rotas das Palestras
+//Palestras
 Route::get('/palestras', [PalestrasController::class, 'show'])
     ->name('palestras')
     ->middleware('auth');
 
-Route::post('/criar_palestra', [PalestrasController::class, 'store'])->name('criar_palestra');
+Route::post('/criarPalestra', [PalestrasController::class, 'store'])->name('criarPalestra');
 
 Route::get('/palestras/{id}', [PalestrasController::class, 'palestra']);
 
@@ -56,21 +64,12 @@ Route::put('/palestras/edit/{id}', [PalestrasController::class, 'update'])
 Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
 */
 
-//Rotas das Palestras
-Route::get('/palestras', [PalestrasController::class, "show"])->name('palestras')->middleware('auth');
 
-Route::post('/criar_palestra', [PalestrasController::class, "store"])->name('criar_palestra');
+//Dashboard
+Route::get('/dashboard', [UsersController::class, "dashboard"])->name('dashboard')->middleware('auth');
 
-Route::get('/palestras/{id}', [PalestrasController::class, "palestra"]);
+//Warning
+Route::post('/warning', [WarningsController::class, "store"])->name('warning')->middleware('auth')->middleware('admin');
 
-Route::put('/palestras/edit/{id}', [PalestrasController::class, "update"])->name('editarPalestra')->middleware('auth');
-
-/* Rota desabilitada
-Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
-*/
-
-
-
-
-
+Route::delete('/warning/destroy/{id}', [WarningsController::class, "destroy"])->name('warningDestroy')->middleware('auth')->middleware('admin');
 ?>

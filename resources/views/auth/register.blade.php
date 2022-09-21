@@ -7,11 +7,10 @@
 
 <body>
     <div class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/">
-                    <img src="https://videos.adventistas.org/pt/wp-content/themes/pa-theme-sedes/assets/sedes/pt/default.svg">
-                </a>
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"> 
+        <div id="form_logos">
+                <img id="eva" src="/assets/img/site/eva.png">
+                <img id="adra" src="/assets/img/site/adra.png">
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
@@ -19,7 +18,7 @@
                     @csrf
                     <div>
                         <label class="block font-medium text-sm text-gray-700" for="name">
-                            Nome
+                            Nome Completo
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="name" type="text" name="name" required="required" autofocus="autofocus" autocomplete="name">
                     </div>

@@ -7,6 +7,7 @@ use App\Models\User;
 use GuzzleHttp\Client;
 use Illuminate\Console\Scheduling\Event;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 
 date_default_timezone_set('America/Sao_Paulo');
@@ -64,13 +65,13 @@ class PalestrasController extends Controller
             'Dezembro'
         );
 
-        $user = auth()->user();
+        $user = User::find(Auth::id());
 
         $manypalestras = $user->palestras;
 
         $manyusers = $palestra->users;
 
-        return view('palestra', ["palestra" => $palestra,"months"=>$months,"manypalestras"=>$manypalestras,"manyusers"=>$manyusers]);
+        return view('palestra', ["palestra" => $palestra,"months"=>$months,"manypalestras"=>$manypalestras,"manyusers"=>$manyusers, "user"=>$user]);
     }
 
 
@@ -85,7 +86,7 @@ class PalestrasController extends Controller
 
         $palestra->save();
 
-        return redirect('/palestras')->with("msg", "Palestra adicionada com sucesso");
+        return redirect('/dashboard')->with("msg", "Palestra adicionada com sucesso");
     }
 
 

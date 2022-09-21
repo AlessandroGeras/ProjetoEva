@@ -1,5 +1,6 @@
 /* Configurações do componente index_categorias na página index */
 
+/* Configurações do flexbox */
 #index_categorias {
     margin: 150px auto;
     width: 1020px;
@@ -10,6 +11,7 @@
     grid-row-gap: 20px;
 }
 
+/* Configurações dos elementos filhos da flexbox */
 .box {
     color: rgb(255, 255, 255);
     display: flex;
@@ -28,14 +30,16 @@
 }
 
 .box_eventos {
-    background-image: url("/assets/img/site/eventos.png");
+    background-image: url("/assets/img/site/eventos.jpeg");
+    background-size: cover;
 }
 
 .box_palestras {
-    background-image: url("/assets/img/site/cursos.jpg");
+    background-image: url("/assets/img/site/palestras.jpeg");
+    background-size: cover;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     #index_categorias {
         width: 480px;
         grid-template-columns: 480px;

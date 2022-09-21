@@ -1,0 +1,23 @@
+/* Configurações do componente admin_panel na página dashboard */
+
+#admin_panel {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#warning_date_container{
+	text-align:center;
+}
+
+#warning_date_container > input{
+	width:155px;
+	background:transparent; 
+	border:none;
+}
+
+#warning_active > span{
+	color: #505739;
+    font-family: Arial;
+    font-size: 14px;
+	font-weight: bold;
+}
