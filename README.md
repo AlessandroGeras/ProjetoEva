@@ -193,6 +193,11 @@ Modificadas as rotas de avisos com autenticação.  <br />  <br />
 Inserido novos logos e imagens a pedido do cliente. <br>
 Agora serão dois logos ao invés de um. Atualização na página principal e em todos os formulários de autenticação.<br>
 Imagens atualizadas na flexbox da página inicial.
+
+<h4>20/09 - Terça - Vinícius</h4>
+Reposicionado o botão de criação de palestras, localizado agora na página de dashboard de profissionais e administradores. <br>
+Refatorado código das palestras e permissões para criação.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
