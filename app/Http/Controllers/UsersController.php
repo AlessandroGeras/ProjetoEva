@@ -317,4 +317,30 @@ class UsersController extends Controller
             return view('dashboard', ["user" => $user, "palestras" => $palestras, "warning" => $warning, 'users' => $users]);
         }
     }
+
+
+     public function show($id)
+    {
+        $user = User::findOrFail($id);
+        $currentUser = User::find(Auth::id());
+
+        $manypalestras = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
+
+        $manyconsultas = $user->consultas->sortBy('date');
+
+        return view('user', ["currentUser" => $currentUser, "user" => $user, "manypalestras" => $manypalestras,"manyconsultas" => $manyconsultas]);
+    }
+
+
+    public function permission(Request $request)
+    {
+        $permission = Permission::where('role', '=', $request->role)->firstOrFail();
+
+        $user = User::findOrFail($request->id);
+
+        $user->permission_id = $permission->id;
+        $user->save();
+
+        return redirect()->back()->with("msg", "Permissão alterada com sucesso");
+    }	
 }

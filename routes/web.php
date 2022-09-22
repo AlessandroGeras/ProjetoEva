@@ -47,6 +47,7 @@ Route::post('/newpassword', [UsersController::class, "setnewPassword"])->name('s
 //Home
 Route::get('/', [UsersController::class, 'index']);
 
+
 //Palestras
 Route::get('/palestras', [PalestrasController::class, 'show'])
     ->name('palestras')
@@ -68,8 +69,22 @@ Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"]
 //Dashboard
 Route::get('/dashboard', [UsersController::class, "dashboard"])->name('dashboard')->middleware('auth');
 
+Route::get('/dashboard/{id}', [UsersController::class, "show"])->name('user')->middleware('auth')->middleware('admin');
+
+Route::post('/dashboard/permission/{id}', [UsersController::class, 'permission'])->name('permission');
+
+Route::post('/dashboard/consulta/{id}', [ConsultasController::class, 'store'])->name('consultaStore')->middleware('auth')->middleware('profissional');
+
+Route::get('/dashboard/consulta/{id}', [ConsultasController::class, 'show'])->name('consulta')->middleware('auth');
+
+
+
 //Warning
 Route::post('/warning', [WarningsController::class, "store"])->name('warning')->middleware('auth')->middleware('admin');
 
 Route::delete('/warning/destroy/{id}', [WarningsController::class, "destroy"])->name('warningDestroy')->middleware('auth')->middleware('admin');
+
+
+
+
 ?>

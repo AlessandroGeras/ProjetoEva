@@ -29,6 +29,8 @@
 @import "buttons/edit.css";
 @import "buttons/join.css";
 @import "buttons/leave.css";
+@import "buttons/profissional.css";
+@import "buttons/user.css";
 @import "buttons/admin_button.css";
 @import "buttons/styled_input.css";
 
@@ -37,6 +39,12 @@
 @import "dashboard/carousel.css";
 @import "dashboard/consultas.css";
 @import "dashboard/admin_panel.css";
+
+/* componentes da página user */
+@import "user/table.css";
+
+/* componentes da página consultas */
+@import "consulta/consultas_painel.css";
 
 @import "fonts.css";
 

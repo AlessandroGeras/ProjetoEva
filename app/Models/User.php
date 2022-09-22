@@ -56,15 +56,22 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    /*Image Upload Disabled 
     protected $appends = [
         'profile_photo_url',
-    ];
-
-    public function permission(){
-        return $this->belongsTo(Permission::class);
+    ];  
+    */
+    
+    public function consultas(){
+        return $this->hasMany(Consulta::class);
     }
 
     public function palestras(){
         return $this->belongsToMany(Palestra::class);
+    }
+
+    public function permission(){
+        return $this->belongsTo(Permission::class);
     }
 }

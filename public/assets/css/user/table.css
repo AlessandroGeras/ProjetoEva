@@ -1,0 +1,36 @@
+/* Configurações da table na página minha conta */
+
+#table_container{
+    height:400px;
+}
+
+#table_group{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    font-size: 24px;
+}
+
+table {
+    margin:0 auto;
+}
+
+td {
+    padding: 0 5px 0 2.5px;
+}
+
+#table_title {
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+#border_palestra {
+    background: #d6d6d6;
+}
