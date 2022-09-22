@@ -210,6 +210,18 @@ Implementada a pesquisa de usuários por meio de um botão na dashboard do profi
 <h4>21/09 - Quarta - Eliabe</h4>
 Realizado o merge das branchs <em>master</em> e <em>dashboard</em>.
 
+<h4>22/09 - Quinta - Eliabe</h4>
+Criação de migration da tabela consultas.
+Criada tabela para amostra de informações do usuário.
+Configurada permissão para que o Administrador promova um usuário para Profissional.
+Configurada permissão para que o Administrador rebaixe um Profissional para usuário.
+
+<h4>22/09 - Quinta - Eliabe</h4>
+Configurada permissão para que o Profissional cadastre informações de consulta na conta do usuário.
+Configurada permissão para que o Profissional visualize todas as consultas do usuário, filtrando as consultas do Profissional para que apareçam somente consultas que ele fez, ocultando consultas feitas por outros Profissionais por questão de sigilo.
+Criação da página Usuário.
+Criação da página Consulta.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
