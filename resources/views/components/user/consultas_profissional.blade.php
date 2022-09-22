@@ -39,17 +39,18 @@
     </form>
     @endif
     @endforeach
-    @else
-    <div class="carousel_item">
-        <h2>Não há eventos disponíveis</h2>
-    </div>
-    @endif
 
     @if($count==0)
     <div class="carousel_item">
         <h2>Não há eventos disponíveis</h2>
     </div>
     @endif
+    
+    @else
+    <div class="carousel_item">
+        <h2>Não há eventos disponíveis</h2>
+    </div>
+    @endif    
 </div>
 
 <script type="text/javascript">
