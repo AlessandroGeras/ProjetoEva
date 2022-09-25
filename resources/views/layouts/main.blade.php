@@ -2,14 +2,17 @@
 
 <html>
 
-<head>
-  <meta charset="UTF-8">
+<head>  
   <title>@yield("title")</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script src="/assets/js/navbar.js"></script>
   <script src="/assets/js/palestras.js"></script>
   <script src="/assets/js/toaster.js"></script>
-  <script src="/assets/js/account.js"></script>
+  <script src="/assets/js/account.js"></script>  
+
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
@@ -27,7 +30,7 @@
   @endif
 
   <navbar>
-    <div id="navbar">
+    <div class="h-24">
       <x-navbar.navbar_logo />
 
       <x-navbar.navbar_panel />
@@ -37,8 +40,9 @@
   </navbar>
 
   @yield("corpo")
-
+<!--
   <x-navbar.footer />
+-->
 
 </body>
 

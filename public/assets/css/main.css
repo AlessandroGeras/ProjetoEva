@@ -1,10 +1,8 @@
 /* CSS Principal */
+@import "tailwind.css";
 
 /* componentes da navbar no layout main */
-@import "navbar/navbar.css";
-@import "navbar/navbar_logo.css";
 @import "navbar/navbar_menu.css";
-@import "navbar/navbar_panel.css";
 @import "navbar/footer.css";
 
 /* componentes da página index */
