@@ -85,6 +85,14 @@ Route::post('/warning', [WarningsController::class, "store"])->name('warning')->
 Route::delete('/warning/destroy/{id}', [WarningsController::class, "destroy"])->name('warningDestroy')->middleware('auth')->middleware('admin');
 
 
+//Profissional
+Route::post('/profissionais', [WarningsController::class, "profissionais"])->name('profissionais');
+
+
+//Eva
+Route::post('/eva', [WarningsController::class, "eva"])->name('eva');
+
+
 
 
 ?>
