@@ -4,7 +4,7 @@
 
         @guest
         <div id="login_link">
-            <a href="/login">
+            <a href="{{ route('login') }}">
                 <h3>LOGIN</h3>
             </a>
         </div>
