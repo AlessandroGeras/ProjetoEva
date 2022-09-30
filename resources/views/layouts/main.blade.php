@@ -16,7 +16,7 @@
   @endif
 
   <navbar>
-    <div class="h-24 dark:bg-black">
+    <div class="h-24 dark:bg-gray-900">
       <x-navbar.navbar_logo />
 
       <x-navbar.navbar_panel />
