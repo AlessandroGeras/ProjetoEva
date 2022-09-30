@@ -1,10 +1,6 @@
 /* CSS Principal */
 @import "tailwind.css";
 
-/* componentes da navbar no layout main */
-@import "navbar/navbar_menu.css";
-@import "navbar/footer.css";
-
 /* componentes da página index */
 @import "index/index_logo.css";
 @import "index/index_categorias.css";
@@ -49,28 +45,7 @@
 /* Configurações default e classes genéricas */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    background: #f7f7f7;
-}
-
-ul {
-    list-style-type: none;
-}
-
-input[type="file"] {
-    background: white;
-}
-
-textarea {
-    resize: none;
-    text-align: justify;
-    font-size: 14px;
-    color: #505739;
 }
 
 .hidden {
