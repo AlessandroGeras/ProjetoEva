@@ -577,14 +577,7 @@ select {
 }
 
 html {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   font-family: Times New Roman, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.dark html {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 input[type="file"] {
@@ -1596,8 +1589,8 @@ input:checked + label svg.moon {
   margin-top: 3rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mb-12 {
@@ -2169,6 +2162,14 @@ input:checked + label svg.moon {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .px-4 {
@@ -3334,8 +3335,8 @@ input:checked + label svg.moon {
     height: 12rem;
   }
 
-  .lg\:w-2\/3 {
-    width: 66.666667%;
+  .lg\:w-\[650px\] {
+    width: 650px;
   }
 
   .lg\:w-96 {
@@ -3358,11 +3359,5 @@ input:checked + label svg.moon {
   .dark .lg\:dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:w-3\/5 {
-    width: 60%;
   }
 }
