@@ -4,7 +4,7 @@ const menu_click = (clicked_id) => {
     if (clicked_id == "menu_open") {
         let navbar_menu = document.getElementById("navbar_menu");
         navbar_menu.className =
-            "mobile_open w-full h-full block bg-blue-500 float-left lg:float-right lg:w-2/3 lg:bg-transparent xl:w-3/5";
+            "mobile_open w-full h-full block bg-blue-500 float-left lg:float-right lg:w-[650px] lg:bg-transparent";
 
         let menu_open = document.getElementById("menu_open");
         menu_open.className = "menu_close hidden dark:text-gray-300";
@@ -25,7 +25,7 @@ const menu_click = (clicked_id) => {
     } else {
         let navbar_menu = document.getElementById("navbar_menu");
         navbar_menu.className =
-            "mobile_close w-full h-full block bg-blue-500 float-left lg:float-right lg:w-2/3 lg:bg-transparent xl:w-3/5";
+            "mobile_close w-full h-full block bg-blue-500 float-left lg:float-right lg:w-[650px] lg:bg-transparent";
 
         let menu_open = document.getElementById("menu_open");
         menu_open.className = "menu_open dark:text-gray-300";
