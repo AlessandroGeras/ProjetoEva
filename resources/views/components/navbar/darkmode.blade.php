@@ -1,5 +1,5 @@
  <div class="inline-block w-full bg-gray-200 pb-2 dark:bg-black">
-     <hr class="h-5 w-full relative hr top-[9px] center after:h-px after:absolute after:left-0 after:right-0 after:hrAfter" />
+     <hr class="h-5 w-full hr after:h-px after:absolute after:left-0 after:right-0 after:hrAfter" />
      <input type="checkbox" id="darkmode-toggle" onclick="darkmode();" />
      <label for="darkmode-toggle" class="w-20 h-9 relative block mx-auto bg-gray-300 cursor-pointer rounded-[35px] shadow after:content-[''] after:w-8 after:h-8 after:absolute after:top-[2px] after:left-1 after:gradient after:rounded-[30px] after:shadow-[0_5px_10px_-15px_rgba(0,0,0,0.2)] active:after:w-20">
          <svg class="sun absolute w-5 z-20 top-[7.5px] fill-white left-[9.5px] duration-[300ms]" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;">
