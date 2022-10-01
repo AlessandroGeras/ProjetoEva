@@ -221,6 +221,16 @@ Configurada permissão para que o profissional cadastre informações de consult
 Configurada permissão para que o profissional visualize todas as consultas do usuário, filtrando as consultas do profissional para que apareçam somente consultas que ele fez, ocultando consultas feitas por outros Profissionais por questão de sigilo. <br>
 Criação da página Usuário. <br>
 Criação da página Consulta.
+Refatoração final da Navbar - Início da Sprint de testes.
+
+<h4> 30/09 - Sexta - Eliabe </h4>
+Iniciada implantação do DarkMode na página inicial do site
+Refatoração final da Navbar - Início da Sprint de testes.
+
+<h4> 01/10 - Sábado - Eliabe </h4>
+Inserido imagens e vídeos acerca do Projeto EVA, que foram requisitos pelo cliente.
+Implementado DarkMode na página Inicial do site
+Implementada randomização de frases acerca do autismo, em que cada vez que o visitante acessa a página inicial, essa frase é alterada.
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
