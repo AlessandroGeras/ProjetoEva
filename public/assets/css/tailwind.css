@@ -42,7 +42,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
@@ -577,7 +577,7 @@ select {
 }
 
 html {
-  font-family: Times New Roman, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 input[type="file"] {
@@ -1427,6 +1427,14 @@ input:checked + label svg.moon {
   left: 50px;
 }
 
+.top-\[5px\] {
+  top: 5px;
+}
+
+.right-\[5px\] {
+  right: 5px;
+}
+
 .bottom-0\.5 {
   bottom: 0.125rem;
 }
@@ -1449,6 +1457,10 @@ input:checked + label svg.moon {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .col-span-6 {
@@ -2007,6 +2019,10 @@ input:checked + label svg.moon {
   border-right-width: 1px;
 }
 
+.border-solid {
+  border-style: solid;
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2034,6 +2050,11 @@ input:checked + label svg.moon {
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -2303,7 +2324,7 @@ input:checked + label svg.moon {
 }
 
 .font-sans {
-  font-family: Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana, sans-serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-mono {
@@ -2538,6 +2559,12 @@ input:checked + label svg.moon {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0_0px_2px_rgba\(0\2c 0\2c 0\2c 0\.3\)\] {
+  --tw-shadow: 0 0px 2px rgba(0,0,0,0.3);
+  --tw-shadow-colored: 0 0px 2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .ring-1 {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -2634,6 +2661,16 @@ input:checked + label svg.moon {
 }
 
 /*darkmode component*/
+
+/*warning component*/
+
+.warning {
+  background: linear-gradient(to bottom, #ffffff 5%, #d6d6d6 100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 2px 3px gray;
+}
 
 .h1 {
   font-size: 56px;
@@ -3104,6 +3141,10 @@ input:checked + label svg.moon {
     width: 100%;
   }
 
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:w-56 {
     width: 14rem;
   }
@@ -3232,6 +3273,16 @@ input:checked + label svg.moon {
     padding-right: 5rem;
   }
 
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
   .sm\:pt-0 {
     padding-top: 0px;
   }
@@ -3335,8 +3386,8 @@ input:checked + label svg.moon {
     height: 12rem;
   }
 
-  .lg\:w-\[700px\] {
-    width: 700px;
+  .lg\:w-\[750px\] {
+    width: 750px;
   }
 
   .lg\:w-96 {
