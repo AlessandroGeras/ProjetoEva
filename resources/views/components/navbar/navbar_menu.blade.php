@@ -1,4 +1,4 @@
-<div id="navbar_menu" class="mobile_close w-full h-full block bg-blue-500 float-left lg:float-right lg:w-2/3 lg:bg-transparent xl:w-3/5">
+<div id="navbar_menu" class="mobile_close w-full h-full block bg-blue-500 float-left lg:float-right lg:w-[650px] lg:bg-transparent">
   <ul class="font-bold center text-center justify-center leading-none lg:flex lg:dark:text-white">
     <li><a class="link" href="{{ route('profissionais')}}">PROFISSIONAIS</a></li>
     <li><a class="link" href="{{ route('eva')}}">PROJETO EVA</a></li>
