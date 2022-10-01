@@ -1,6 +1,6 @@
 <div id="navbar_menu" class="mobile_close w-full h-full block bg-blue-500 float-left lg:float-right lg:w-[750px] lg:bg-transparent">
   <ul class="font-bold center text-center justify-center leading-none lg:flex lg:dark:text-white">
-    <li><a class="link" href="{{ route('index')}}">INÍCIO</a></li>
+    <li><a class="link" href="{{ route('index')}}">INICIO</a></li>
     <li><a class="link" href="{{ route('profissionais')}}">PROFISSIONAIS</a></li>
     <li><a class="link" href="{{ route('eva')}}">PROJETO EVA</a></li>
     <li><a class="link" href="{{ route('palestras')}}">PALESTRAS</a></li>
