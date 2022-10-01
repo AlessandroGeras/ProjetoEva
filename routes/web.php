@@ -45,7 +45,7 @@ Route::post('/newpassword', [UsersController::class, "setnewPassword"])->name('s
 
 
 //Home
-Route::get('/', [UsersController::class, 'index']);
+Route::get('/', [UsersController::class, 'index'])->name('index');
 
 
 //Palestras
