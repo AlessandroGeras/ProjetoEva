@@ -1415,10 +1415,6 @@ input:checked + label svg.moon {
   top: 0px;
 }
 
-.top-\[9px\] {
-  top: 9px;
-}
-
 .top-\[7\.5px\] {
   top: 7.5px;
 }
@@ -3323,6 +3319,10 @@ input:checked + label svg.moon {
     margin-top: 0px;
   }
 
+  .lg\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -3335,8 +3335,8 @@ input:checked + label svg.moon {
     height: 12rem;
   }
 
-  .lg\:w-\[650px\] {
-    width: 650px;
+  .lg\:w-\[700px\] {
+    width: 700px;
   }
 
   .lg\:w-96 {
