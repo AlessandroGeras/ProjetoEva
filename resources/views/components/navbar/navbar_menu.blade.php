@@ -14,7 +14,7 @@
     <li>
       <form action="{{ route('logout')}}" method="POST">
         @csrf
-        <a class="link lg:mt-12" onclick="event.preventDefault();this.closest('form').submit();">LOGOUT</a>
+        <a class="link cursor-pointer lg:mt-12" onclick="event.preventDefault();this.closest('form').submit();">LOGOUT</a>
       </form>
     </li>
     @endauth
