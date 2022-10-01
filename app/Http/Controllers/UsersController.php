@@ -175,11 +175,20 @@ class UsersController extends Controller
     }
 
 
-    public function index()
+     public function index()
     {   
+        $messages = array(
+            0 => 'As crianças especiais, assim como as aves, são diferentes em seus voos. Todas, no entanto, são iguais em seu direito de voar.',
+            'Autismo: Apenas uma palavra. Não uma sentença.',
+            'Pessoas com autismo não mentem, não julgam, não fazem jogos mentais. Talvez possamos aprender alguma coisa com elas.',
+            'Os médicos determinaram um tratamento efetivo para pessoas com autismo. Chama-se respeito!',
+            'O autismo não é o inimigo. O inimigo é o preconceito.',
+            'O autismo não é um erro de processamento. É um sistema operativo diferente.'
+        );
+
         $warning = Warning::where('date' , '>=' , date("Y-m-d H:i"))->orderBy('date', 'desc')->get(); 
 
-        return view('index',['warning' => $warning]);
+        return view('index',['warning' => $warning, 'messages' => $messages]);
     }
 
 

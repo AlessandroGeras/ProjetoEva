@@ -1,7 +1,14 @@
-<html>
-<div id="index_logo" class="inline-block -mt-24 w-full h-36 bg-black lg:mt-0 sm:h-48 dark:bg-gray-700">
-    <div id="index_login" class="block m-auto center">
-        <div class="h4 text-center text-white sm:text-[56px]">Bem vindo ao projeto Eva</div> 
+{{--Função rand para mensagem aleatória do dia--}}
+@php
+$count = count($messages);
+$rand = rand(0,$count-1);
+@endphp
+
+<html>    
+<div id="index_logo" class="inline-block w-full -mt-24 h-40 bg-zinc-900 sm:h-52 lg:mt-0 dark:bg-sky-900">
+    {{$slot}}
+    <div id="index_login" class="block m-auto center -mt-9">
+        <div class="h4 text-center text-white sm:text-6xl">Bem vindo ao Eva</div> 
 
         @guest
         <div class="flex m-auto w-20 text-black p-2 sm:p-4">
@@ -12,5 +19,8 @@
         @endguest
 
     </div>
+</div>
+<div class="h6 text-center bg-blue-500 text-gray-200 sm:text-base dark:bg-sky-800">
+    "{{$messages[$rand]}}"
 </div>
 </html>

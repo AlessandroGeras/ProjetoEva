@@ -11,9 +11,12 @@ class index_logo extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $messages;
+
+    public function __construct($messages)
     {
-        //
+        $this->messages = $messages;
     }
 
     /**
