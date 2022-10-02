@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="/assets/css/main.css">
 <script src="/assets/js/navbar.js"></script>
 <script src="/assets/js/palestras.js"></script>
+<script src="/assets/js/darkmode.js"></script>
 <script src="/assets/js/toaster.js"></script>
 <script src="/assets/js/account.js"></script>
 
