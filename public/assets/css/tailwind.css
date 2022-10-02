@@ -638,6 +638,18 @@ input:checked + label svg.moon {
   fill: #fff;
 }
 
+/*all text inputs*/
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
 /*navbar component*/
 
 @media screen and (max-width: 1024px) {
@@ -1484,6 +1496,11 @@ input:checked + label svg.moon {
   margin-right: auto;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1759,6 +1776,10 @@ input:checked + label svg.moon {
 
 .w-20 {
   width: 5rem;
+}
+
+.w-\[450px\] {
+  width: 450px;
 }
 
 .w-5\/6 {
@@ -2672,6 +2693,96 @@ input:checked + label svg.moon {
   text-shadow: 0px 2px 3px gray;
 }
 
+/*lecture_title component*/
+
+.lecture {
+  background-image: linear-gradient(
+            to bottom,
+            #ffffff,
+            #f9f9fa,
+            #f2f3f5,
+            #ecedf0,
+            #e5e7eb
+        );
+}
+
+/*all text inputs*/
+
+.styled_input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 5px;
+  background: linear-gradient(
+            to bottom,
+            hsl(0, 0%, 100%) 5%,
+            hsl(0, 0%, 84%) 100%
+        );
+}
+
+.styled_input:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  background: linear-gradient(
+            to right,
+            #b294ff,
+            #57e6e6,
+            #feffb8,
+            #57e6e6,
+            #b294ff,
+            #57e6e6
+        );
+  background-size: 500% auto;
+  animation: gradient 3s linear infinite;
+}
+
+.styled_input input {
+  color: #505739;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 350px;
+  margin-left: 5px;
+  border-bottom: #d6d6d6 solid;
+}
+
+.styled_input input::-webkit-input-placeholder {
+  color: #505739;
+}
+
+.styled_input button {
+  color: #505739;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  transition: color 0.25s;
+  font-size: 25px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.styled_input button:hover {
+  color: #505739;
+}
+
+.styled_warning {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
 .h1 {
   font-size: 56px;
 }
@@ -3386,8 +3497,8 @@ input:checked + label svg.moon {
     height: 12rem;
   }
 
-  .lg\:w-\[750px\] {
-    width: 750px;
+  .lg\:w-\[800px\] {
+    width: 800px;
   }
 
   .lg\:w-96 {
