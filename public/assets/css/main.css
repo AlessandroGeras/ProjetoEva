@@ -1,5 +1,6 @@
 /* CSS Principal */
 @import "tailwind.css";
+@import "navbar/footer.css";
 
 /* componentes da página index */
 @import "index/warning.css";
