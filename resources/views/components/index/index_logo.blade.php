@@ -8,7 +8,7 @@ $rand = rand(0,$count-1);
 <div id="index_logo" class="inline-block w-full -mt-24 h-40 bg-zinc-900 sm:h-52 lg:mt-0 dark:bg-sky-900">
     {{$slot}}
     <div id="index_login" class="block m-auto center -mt-9">
-        <div class="h4 text-center text-white sm:text-6xl">Bem vindo ao Eva</div> 
+        <div class="h4 text-center text-white sm:text-6xl dark:text-gray-200">Bem vindo ao Eva</div> 
 
         @guest
         <div class="flex m-auto w-20 text-black p-2 sm:p-4">
