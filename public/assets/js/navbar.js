@@ -4,7 +4,7 @@ const menu_click = (clicked_id) => {
     if (clicked_id == "menu_open") {
         let navbar_menu = document.getElementById("navbar_menu");
         navbar_menu.className =
-            "mobile_open w-full h-full block bg-blue-500 float-left lg:float-right lg:w-[800px] lg:bg-transparent";
+            "mobile_open w-full h-full block text-black bg-sky-900 float-left lg:float-right lg:w-[800px] lg:bg-transparent dark:text-gray-200";
 
         let menu_open = document.getElementById("menu_open");
         menu_open.className = "menu_close hidden dark:text-gray-300";
@@ -20,12 +20,12 @@ const menu_click = (clicked_id) => {
 
         let cursos_title = document.getElementById("palestras_title");
         if (cursos_title) {
-            cursos_title.className = "margin";
+            cursos_title.className = "margin inline-block w-full";
         }
     } else {
         let navbar_menu = document.getElementById("navbar_menu");
         navbar_menu.className =
-            "mobile_close w-full h-full block bg-blue-500 float-left lg:float-right lg:w-[800px] lg:bg-transparent";
+            "mobile_close w-full h-full block text-black bg-sky-900 float-left lg:float-right lg:w-[800px] lg:bg-transparent dark:text-gray-200";
 
         let menu_open = document.getElementById("menu_open");
         menu_open.className = "menu_open dark:text-gray-300";
@@ -41,7 +41,7 @@ const menu_click = (clicked_id) => {
 
         let cursos_title = document.getElementById("palestras_title");
         if (cursos_title) {
-            cursos_title.className = "no_margin";
+            cursos_title.className = "no_margin inline-block w-full";
         }
     }
 };
