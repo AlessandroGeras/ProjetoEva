@@ -86,7 +86,7 @@ Route::delete('/warning/destroy/{id}', [WarningsController::class, "destroy"])->
 
 
 //Profissional
-Route::post('/profissionais', [WarningsController::class, "profissionais"])->name('profissionais');
+Route::post('/professionals', [WarningsController::class, "professionals"])->name('professionals');
 
 
 //Eva
