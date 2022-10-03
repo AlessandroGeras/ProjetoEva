@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ConsultasController;
-use App\Http\Controllers\PalestrasController;
+use App\Http\Controllers\LecturesController;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\WarningsController;
 use Illuminate\Support\Facades\Route;
@@ -49,20 +49,20 @@ Route::get('/', [UsersController::class, 'index'])->name('index');
 
 
 //Palestras
-Route::get('/palestras', [PalestrasController::class, 'show'])
-    ->name('palestras')
+Route::get('/lectures', [LecturesController::class, 'show'])
+    ->name('lectures')
     ->middleware('auth');
 
-Route::post('/criarPalestra', [PalestrasController::class, 'store'])->name('criarPalestra');
+Route::post('/createLecture', [LecturesController::class, 'store'])->name('createLecture');
 
-Route::get('/palestras/{id}', [PalestrasController::class, 'palestra']);
+Route::get('/lectures/{id}', [LecturesController::class, 'lecture']);
 
-Route::put('/palestras/edit/{id}', [PalestrasController::class, 'update'])
-    ->name('editarPalestra')
+Route::put('/lectures/edit/{id}', [LecturesController::class, 'update'])
+    ->name('editLecture')
     ->middleware('auth');
 
 /* Rota desabilitada
-Route::delete('/palestras/destroy/{id}', [PalestrasController::class, "destroy"])->middleware('auth');
+Route::delete('/lectures/destroy/{id}', [LecturesController::class, "destroy"])->middleware('auth');
 */
 
 
