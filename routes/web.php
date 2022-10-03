@@ -53,12 +53,12 @@ Route::get('/lectures', [LecturesController::class, 'show'])
     ->name('lectures')
     ->middleware('auth');
 
-Route::post('/createLecture', [LecturesController::class, 'store'])->name('createLecture');
+Route::post('/create-lecture', [LecturesController::class, 'store'])->name('create-lecture');
 
 Route::get('/lectures/{id}', [LecturesController::class, 'lecture']);
 
 Route::put('/lectures/edit/{id}', [LecturesController::class, 'update'])
-    ->name('editLecture')
+    ->name('edit-lecture')
     ->middleware('auth');
 
 /* Rota desabilitada
