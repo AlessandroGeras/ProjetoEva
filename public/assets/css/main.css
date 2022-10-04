@@ -1,15 +1,5 @@
 /* CSS Principal */
 @import "tailwind.css";
-@import "navbar/footer.css";
-
-/* componentes da página index */
-@import "index/warning.css";
-
-/* componentes da página palestras */
-@import "palestras/palestras_title.css";
-@import "palestras/form_criar_palestras.css";
-@import "palestras/form_pesquisar_palestras.css";
-@import "palestras/timeline.css";
 
 /* componentes da página palestra */
 @import "palestra/palestra_nome.css";
@@ -25,7 +15,6 @@
 @import "buttons/profissional.css";
 @import "buttons/user.css";
 @import "buttons/admin_button.css";
-@import "buttons/styled_input.css";
 
 /* componentes da página dashboard */
 @import "dashboard/my_account.css";

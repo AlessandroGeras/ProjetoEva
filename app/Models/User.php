@@ -67,8 +67,8 @@ class User extends Authenticatable
         return $this->hasMany(Consulta::class);
     }
 
-    public function palestras(){
-        return $this->belongsToMany(Palestra::class);
+    public function lectures(){
+        return $this->belongsToMany(Lecture::class);
     }
 
     public function permission(){
