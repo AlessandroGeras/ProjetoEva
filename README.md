@@ -238,7 +238,7 @@ Refatoração final da página inicial - Início da Sprint de testes.
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
-O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um vínculo com o sistema de cadastros do JetStream para criar, editar e excluir usuários de acordo com as regras do Spatie sobre hierarquia de usuários. O projeto terá seu deploy feito no Heroku.<br><br>
+O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um sistema de hierarquia de usuários(permissões). O projeto terá seu deploy feito no Heroku.<br><br>
 
 <a href="heroku.com">Heroku</a> <br/>
 <a href="https://laravel.com/">Laravel</a> <br/>
