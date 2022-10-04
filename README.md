@@ -232,6 +232,9 @@ Inserido imagens e vídeos acerca do Projeto EVA, que foram requisitos pelo clie
 Implementado DarkMode na página Inicial do site
 Implementada randomização de frases acerca do autismo, em que cada vez que o visitante acessa a página inicial, essa frase é alterada.
 
+<h4> 04/10 - Terça - Eliabe </h4>
+Refatoração final da página inicial - Início da Sprint de testes.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
