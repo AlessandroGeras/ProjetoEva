@@ -3,8 +3,6 @@
 <html>
 
 <head>
-  <title>@yield("title")</title>
-<link rel="icon" type="image/x-icon" href="/eva.ico">
   <x-layouts.head />
 </head>
 
