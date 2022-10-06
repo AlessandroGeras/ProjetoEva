@@ -1,6 +1,11 @@
 /* CSS Principal */
 @import "tailwind.css";
 
+/* componentes da página index */
+@import "index/warning.css";
+
+/* componentes da página palestras */
+
 /* componentes da página palestra */
 @import "palestra/palestra_nome.css";
 @import "palestra/palestra_info.css";

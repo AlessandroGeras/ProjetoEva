@@ -1,4 +1,5 @@
 <html>
+<!--Conteiner geral da timeline-->  
 <div id="main_container_timeline" class="overflow-auto h-[500px] mt-2">
 
   @if (count($lectures) == 0)
@@ -11,7 +12,8 @@
   </div>
   @endif
 
-  <div class="relative max-w-[1200px] mx-auto after:content-[''] after:absolute after:w-[0.1px] after:bg-gray-400 after:top-0 after:bottom-0 after:left-[50%] after:ml-0 after:dark:bg-gray-600">
+  <!--Conteiner da timeline-->
+  <div class="relative max-w-[1200px] mx-auto after:content-[''] after:absolute after:w-[0.1px] after:bg-gray-400 after:top-0 after:bottom-0 after:ml-0 after:-left-[10px] after:dark:bg-gray-600 sm:after:left-[50%]">
 
     @if (count($lectures) > 0)
     @php
@@ -28,6 +30,11 @@
     $month_pt_BR = $months[$month];
     @endphp
 
+    <!--
+    ***Lógica da Timeline***
+
+    A timeline é formada por um looping de 4 iterações que se repete se for necessário para alocar os container de informação ao lado esquerdo da timeline ou ao lado direito. O objetivo é simplesmente estético para gerar 4 cores diferentes, duas para cada lado. Existem um contador, funções de par e impar e switchs para realizar a lógica de posicionamento. Números pares são alocados do lado esquerdo e o resto do lado direito
+    -->
     @if($count%2==0)
 
     @switch($color)
@@ -43,11 +50,11 @@
             @endswitch
 
             <div class="flex text-white dark:text-gray-200">
-              <div class="day h4 relative -top-[6px] left-[13.5px] pt-1 px-1">{{ $day}}</div>
-              <div class="text-xl relative -top-[3px] left-[5px] font-mono py-2 pl-4">{{ $month_pt_BR }}</div>
-              <div class="text-[22px] relative font-poiret py-2 pl-4 -top-[4px] left-[5px]">{{ $lecture['name'] }}</div>
+              <div class="day relative h6 -top-[6px] pt-1 px-1 sm:text-lg lg:text-xl lg:left-[13.5px]">{{ $day}}</div>
+              <div class="h6 relative -top-[3px] -left-[10px] font-mono py-2 pl-4 sm:text-base lg:left-[5px] lg:text-xl">{{ $month_pt_BR }}</div>
+              <div class="relative font-poiret text-sm top-[3.5px] left-[5px] sm:text-base sm:top-[5px] lg:text-xl lg:py-2 lg:pl-4 lg:-top-[4px] lg:left-[5px]">{{ $lecture['name'] }}</div>
             </div>
-            <div class="bg-white text-justify text-black py-2.5 px-3.5 dark:bg-gray-800 dark:text-gray-500">
+            <div class="h6 bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
               {{ $lecture['info'] }}
             </div>
           </div>
@@ -71,15 +78,15 @@
                 @break
                 @endswitch
 
-                <div class="flex text-white dark:text-gray-200">
-                  <div class="day h4 relative -top-[6px] left-[13.5px] pt-1 px-1">{{ $day}}</div>
-                  <div class="text-xl relative -top-[3px] left-[5px] font-mono py-2 pl-4">{{ $month_pt_BR }}</div>
-                  <div class="text-[22px] relative font-poiret py-2 pl-4 -top-[4px] left-[5px]">{{ $lecture['name'] }}</div>
-                </div>
-                <div class="bg-white text-justify text-black py-2.5 px-3.5 dark:bg-gray-800 dark:text-gray-500">
-                  {{ $lecture['info'] }}
-                </div>
-              </div>
+            <div class="flex text-white dark:text-gray-200">
+              <div class="day relative h6 -top-[6px] pt-1 px-1 sm:text-lg lg:text-xl lg:left-[13.5px]">{{ $day}}</div>
+              <div class="h6 relative -top-[3px] -left-[10px] font-mono py-2 pl-4 sm:text-base lg:left-[5px] lg:text-xl">{{ $month_pt_BR }}</div>
+              <div class="relative font-poiret text-sm top-[3.5px] left-[5px] sm:text-base sm:top-[5px] lg:text-xl lg:py-2 lg:pl-4 lg:-top-[4px] lg:left-[5px]">{{ $lecture['name'] }}</div>
+            </div>
+            <div class="h6 bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
+              {{ $lecture['info'] }}
+            </div>
+          </div>
               @php
               $count++;
               $color++;

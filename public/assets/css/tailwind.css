@@ -1433,16 +1433,24 @@ input:checked + label svg.moon {
   top: -6px;
 }
 
-.left-\[13\.5px\]{
-  left: 13.5px;
-}
-
 .-top-\[3px\]{
   top: -3px;
 }
 
+.-left-\[10px\]{
+  left: -10px;
+}
+
+.top-\[3\.5px\]{
+  top: 3.5px;
+}
+
 .left-\[5px\]{
   left: 5px;
+}
+
+.left-\[13\.5px\]{
+  left: 13.5px;
 }
 
 .-top-\[4px\]{
@@ -2836,7 +2844,7 @@ input:checked + label svg.moon {
   line-height: 2.4rem;
   vertical-align: middle;
   font-size: 14px;
-  width: 350px;
+  width: 80%;
   margin-left: 5px;
   border-bottom: #d6d6d6 solid;
 }
@@ -2845,6 +2853,7 @@ input:checked + label svg.moon {
 
 .styled_input input::-webkit-input-placeholder {
   color: #505739;
+  font-size: 12px;
 }
 
 /*all text inputs*/
@@ -3044,8 +3053,7 @@ input:checked + label svg.moon {
 /*lecture timeline container 1 darkmode*/
 
 .parent_color1_darkmode > div > div > .day {
-  background: 
-        #1f2937;
+  background: #1f2937;
 }
 
 /*lecture timeline container 2 darkmode*/
@@ -3092,6 +3100,84 @@ input:checked + label svg.moon {
   font-size: 12px;
 }
 
+@media screen and (max-width: 640px) {
+  /*lecture timeline*/
+
+  .timeline {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /*lecture timeline*/
+
+  .timeline::before {
+    left: 0px;
+    border-width: 10px 10px 10px 0;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color0:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color1:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color2:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color3:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color0_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color1_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color2_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .parent_color3_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .timeline_left::after,
+        .timeline_right::after {
+    left: -30px;
+  }
+
+  /*lecture timeline*/
+
+  .timeline_right {
+    left: 0%;
+  }
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -3107,9 +3193,9 @@ input:checked + label svg.moon {
   bottom: 0px;
 }
 
-.after\:left-\[50\%\]::after{
+.after\:-left-\[10px\]::after{
   content: var(--tw-content);
-  left: 50%;
+  left: -10px;
 }
 
 .after\:left-0::after{
@@ -3520,8 +3606,7 @@ input:checked + label svg.moon {
 }
 
 .dark .dark\:parent_color1_darkmode > div > div > .day {
-  background: 
-        #1f2937;
+  background: #1f2937;
 }
 
 .dark .dark\:parent_color2_darkmode:before {
@@ -3546,6 +3631,308 @@ input:checked + label svg.moon {
 
 .dark .dark\:parent_color3_darkmode > div > div > .day {
   background: #262626;
+}
+
+@media screen and (max-width: 640px) {
+  /*lecture timeline*/
+
+   {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0px;
+    border-width: 10px 10px 10px 0;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .dark .dark\:parent_color0_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: -30px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0%;
+  }
+
+  /*lecture timeline*/
+
+   {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0px;
+    border-width: 10px 10px 10px 0;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .dark .dark\:parent_color1_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: -30px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0%;
+  }
+
+  /*lecture timeline*/
+
+   {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0px;
+    border-width: 10px 10px 10px 0;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .dark .dark\:parent_color2_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: -30px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0%;
+  }
+
+  /*lecture timeline*/
+
+   {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0px;
+    border-width: 10px 10px 10px 0;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+  .dark .dark\:parent_color3_darkmode:before {
+    border-color: transparent transparent transparent transparent;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: -30px;
+  }
+
+  /*lecture timeline*/
+
+   {
+    left: 0%;
+  }
 }
 
 .dark .after\:dark\:bg-gray-600::after{
@@ -3612,6 +3999,10 @@ input:checked + label svg.moon {
     margin-right: 1rem;
   }
 
+  .sm\:ml-\[7\.5\%\]{
+    margin-left: 7.5%;
+  }
+
   .sm\:ml-0{
     margin-left: 0px;
   }
@@ -3674,6 +4065,10 @@ input:checked + label svg.moon {
 
   .sm\:w-16{
     width: 4rem;
+  }
+
+  .sm\:w-\[450px\]{
+    width: 450px;
   }
 
   .sm\:max-w-md{
@@ -3840,6 +4235,11 @@ input:checked + label svg.moon {
   .sm\:h4 {
     font-size: 24px;
   }
+
+  .sm\:after\:left-\[50\%\]::after{
+    content: var(--tw-content);
+    left: 50%;
+  }
 }
 
 @media (min-width: 768px){
@@ -3881,6 +4281,18 @@ input:checked + label svg.moon {
 }
 
 @media (min-width: 1024px){
+  .lg\:left-\[13\.5px\]{
+    left: 13.5px;
+  }
+
+  .lg\:left-\[5px\]{
+    left: 5px;
+  }
+
+  .lg\:-top-\[4px\]{
+    top: -4px;
+  }
+
   .lg\:col-span-4{
     grid-column: span 4 / span 4;
   }
@@ -3930,8 +4342,36 @@ input:checked + label svg.moon {
     padding-right: 2rem;
   }
 
+  .lg\:py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .lg\:pl-4{
+    padding-left: 1rem;
+  }
+
+  .lg\:text-\[24px\]{
+    font-size: 24px;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-\[22px\]{
+    font-size: 22px;
+  }
+
   .dark .lg\:dark\:text-gray-200{
     --tw-text-opacity: 1;
     color: rgb(229 231 235 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 400px){
+  .tl\:w-\[450px\]{
+    width: 450px;
   }
 }

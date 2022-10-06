@@ -20,7 +20,7 @@ const menu_click = (clicked_id) => {
 
         let cursos_title = document.getElementById("palestras_title");
         if (cursos_title) {
-            cursos_title.className = "margin inline-block w-full";
+            cursos_title.className = "mt-0 inline-block w-full lg:mt-0";
         }
     } else {
         let navbar_menu = document.getElementById("navbar_menu");
@@ -41,7 +41,7 @@ const menu_click = (clicked_id) => {
 
         let cursos_title = document.getElementById("palestras_title");
         if (cursos_title) {
-            cursos_title.className = "no_margin inline-block w-full";
+            cursos_title.className = "-mt-24 inline-block w-full lg:mt-0";
         }
     }
 };
