@@ -39,13 +39,19 @@
 
     @switch($color)
     @case(0)
-    <div class="timeline timeline_left parent_color0 dark:parent_color0_darkmode" onclick="window.location = '/lectures/{{$lecture->id}}'">
+    <form action="{{ route('lecture', [$lecture->id])}}" method="GET">
+    @csrf
+    <div class="timeline timeline_left parent_color0 dark:parent_color0_darkmode" onclick="event.preventDefault();this.closest('form').submit();">
       <div class="relative rounded-none pt-0.5">
-        @break
+      </form>
+        @break        
 
         @case(2)
-        <div class="timeline timeline_left parent_color2 dark:parent_color2_darkmode" onclick="window.location = '/lectures/{{$lecture->id}}'">
+        <form action="{{ route('lecture', [$lecture->id])}}" method="GET">
+        @csrf
+        <div class="timeline timeline_left parent_color2 dark:parent_color2_darkmode" onclick="event.preventDefault();this.closest('form').submit();">
           <div class="relative rounded-none pt-0.5">
+          </form>
             @break
             @endswitch
 
@@ -68,13 +74,19 @@
 
         @switch($color)
         @case(1)
-        <div class="timeline timeline_right parent_color1 dark:parent_color1_darkmode" onclick="window.location = '/lectures/{{$lecture->id}}'">
+        <form action="{{ route('lecture', [$lecture->id])}}" method="GET">
+        @csrf
+        <div class="timeline timeline_right parent_color1 dark:parent_color1_darkmode" onclick="event.preventDefault();this.closest('form').submit();">
           <div class="relative rounded-none pt-0.5">
+          </form>
             @break
 
             @case(3)
-            <div class="timeline timeline_right parent_color3 dark:parent_color3_darkmode" onclick="window.location = '/lectures/{{$lecture->id}}'">
+            <form action="{{ route('lecture', [$lecture->id])}}" method="GET">
+            @csrf
+            <div class="timeline timeline_right parent_color3 dark:parent_color3_darkmode" onclick="event.preventDefault();this.closest('form').submit();">
               <div class="relative rounded-none pt-0.5">
+              </form>
                 @break
                 @endswitch
 
