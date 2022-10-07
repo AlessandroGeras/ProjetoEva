@@ -50,12 +50,11 @@ Route::get('/', [UsersController::class, 'index'])->name('index');
 
 //Palestras
 Route::get('/lectures', [LecturesController::class, 'show'])
-    ->name('lectures')
-    ->middleware('auth');
+    ->name('lectures');
 
 Route::post('/create-lecture', [LecturesController::class, 'store'])->name('create-lecture');
 
-Route::get('/lectures/{id}', [LecturesController::class, 'lecture']);
+Route::get('/lectures/{id}', [LecturesController::class, 'lecture'])->name('lecture')->middleware('auth');
 
 Route::put('/lectures/edit/{id}', [LecturesController::class, 'update'])
     ->name('edit-lecture')
