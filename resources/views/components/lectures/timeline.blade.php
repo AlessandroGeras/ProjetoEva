@@ -57,10 +57,10 @@
 
             <div class="flex text-white dark:text-gray-200">
               <div class="day relative h6 -top-[6px] pt-1 px-1 sm:text-lg lg:text-xl lg:left-[13.5px]">{{ $day}}</div>
-              <div class="h6 relative -top-[3px] -left-[10px] font-mono py-2 pl-4 sm:text-base lg:left-[5px] lg:text-xl">{{ $month_pt_BR }}</div>
-              <div class="relative font-poiret text-sm top-[3.5px] left-[5px] sm:text-base sm:top-[5px] lg:text-xl lg:py-2 lg:pl-4 lg:-top-[4px] lg:left-[5px]">{{ $lecture['name'] }}</div>
+              <div class="text-sm relative -top-[5px] -left-[10px] font-mono py-2 pl-4 sm:text-base lg:left-[5px] lg:text-xl">{{ $month_pt_BR }}</div>
+              <div class="relative font-poiret text-xs top-[5px] left-[2.5px] sm:text-sm sm:top-[5px] lg:text-xl lg:py-2 lg:pl-4 lg:-top-[4px] lg:left-[5px]">{{ $lecture['name'] }}</div>
             </div>
-            <div class="h6 bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
+            <div class="text-sm bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
               {{ $lecture['info'] }}
             </div>
           </div>
@@ -92,10 +92,10 @@
 
             <div class="flex text-white dark:text-gray-200">
               <div class="day relative h6 -top-[6px] pt-1 px-1 sm:text-lg lg:text-xl lg:left-[13.5px]">{{ $day}}</div>
-              <div class="h6 relative -top-[3px] -left-[10px] font-mono py-2 pl-4 sm:text-base lg:left-[5px] lg:text-xl">{{ $month_pt_BR }}</div>
-              <div class="relative font-poiret text-sm top-[3.5px] left-[5px] sm:text-base sm:top-[5px] lg:text-xl lg:py-2 lg:pl-4 lg:-top-[4px] lg:left-[5px]">{{ $lecture['name'] }}</div>
+              <div class="text-sm relative -top-[5px] -left-[10px] font-mono py-2 pl-4 sm:text-base lg:left-[5px] lg:text-xl">{{ $month_pt_BR }}</div>
+              <div class="relative font-poiret text-xs top-[5px] left-[2.5px] sm:text-sm sm:top-[5px] lg:text-xl lg:py-2 lg:pl-4 lg:-top-[4px] lg:left-[5px]">{{ $lecture['name'] }}</div>
             </div>
-            <div class="h6 bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
+            <div class="text-sm bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
               {{ $lecture['info'] }}
             </div>
           </div>
