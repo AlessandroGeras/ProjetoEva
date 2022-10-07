@@ -760,6 +760,46 @@ input:checked + label svg.moon {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 400px){
+  .container{
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .prose{
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -1447,14 +1487,6 @@ input:checked + label svg.moon {
 
 .left-\[5px\]{
   left: 5px;
-}
-
-.left-\[13\.5px\]{
-  left: 13.5px;
-}
-
-.-top-\[4px\]{
-  top: -4px;
 }
 
 .top-\[7\.5px\]{
@@ -2463,10 +2495,6 @@ input:checked + label svg.moon {
   line-height: 1.75rem;
 }
 
-.text-\[22px\]{
-  font-size: 22px;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -3074,30 +3102,6 @@ input:checked + label svg.moon {
 
 .parent_color3_darkmode > div > div > .day {
   background: #262626;
-}
-
-.h1 {
-  font-size: 56px;
-}
-
-.h2 {
-  font-size: 40px;
-}
-
-.h3 {
-  font-size: 28px;
-}
-
-.h4 {
-  font-size: 24px;
-}
-
-.h5 {
-  font-size: 18px;
-}
-
-.h6 {
-  font-size: 12px;
 }
 
 @media screen and (max-width: 640px) {
@@ -3947,6 +3951,10 @@ input:checked + label svg.moon {
 }
 
 @media (min-width: 640px){
+  .sm\:top-\[5px\]{
+    top: 5px;
+  }
+
   .sm\:col-span-4{
     grid-column: span 4 / span 4;
   }
@@ -4217,9 +4225,9 @@ input:checked + label svg.moon {
     text-align: right;
   }
 
-  .sm\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
+  .sm\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .sm\:text-base{
@@ -4227,13 +4235,19 @@ input:checked + label svg.moon {
     line-height: 1.5rem;
   }
 
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .sm\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .sm\:h4 {
-    font-size: 24px;
   }
 
   .sm\:after\:left-\[50\%\]::after{
@@ -4351,27 +4365,28 @@ input:checked + label svg.moon {
     padding-left: 1rem;
   }
 
-  .lg\:text-\[24px\]{
-    font-size: 24px;
-  }
-
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-  .lg\:text-\[22px\]{
-    font-size: 22px;
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .dark .lg\:dark\:text-gray-200{
     --tw-text-opacity: 1;
     color: rgb(229 231 235 / var(--tw-text-opacity));
-  }
-}
-
-@media (min-width: 400px){
-  .tl\:w-\[450px\]{
-    width: 450px;
   }
 }
