@@ -1,5 +1,5 @@
 <html>
-<div id="palestras_title" class="-mt-24 inline-block w-full lg:mt-0">
+<div id="lectures_title" class="-mt-24 inline-block w-full lg:mt-0">
     {{$slot}}
     <div class="w-full sm:w-[450px] h-24 mx-auto my-6 lecture dark:lectureDarkmode">
         <div class="text-xl text-center dark:text-[#505739]">Palestras</div>
