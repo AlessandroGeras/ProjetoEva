@@ -3,10 +3,14 @@
 <html>
 
 <head>
+  <title>@yield("title")</title>
+
   <x-layouts.head />
 </head>
 
 <body class="bg-gray-200 dark:bg-gray-900">
+
+  <!--Ativação do Toastr vindo de qualquer controller-->
   @if(session('msg'))
   <script>
     message("<?php echo session('msg') ?>")
