@@ -37,7 +37,7 @@ $users=$users."<a class='no-underline text-black dark:text-gray-200' href='$rout
   {{$slot}}
 
   {{--Mostrar botão Editar Palestra--}}
-  <div class="flex w-48 justify-around mt-2.5 mb-5 mx-auto">
+  <div class="flex w-48 justify-around mt-2.5 mb-5 mx-auto brightness-100 dark:brightness-75">
     <a class="button_edit" href="#" onclick="edit_lecture('{{ $lecture->name }}','{{ $lecture->info }}','{{ $lecture->date }}')">Editar</a>
 
     <!-- Exclusão de palestras desabilitada
