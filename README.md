@@ -235,6 +235,9 @@ Implementada randomização de frases acerca do autismo, em que cada vez que o v
 <h4> 04/10 - Terça - Eliabe </h4>
 Refatoração final da página inicial - Início da Sprint de testes.
 
+<h4> 09/10 - Domingo - Eliabe </h4>
+Refatoração final da página palestra - Início da Sprint de testes.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
