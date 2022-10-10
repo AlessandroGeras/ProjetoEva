@@ -3,7 +3,7 @@
 <div id="main_container_timeline" class="overflow-auto h-[500px] mt-2">
 
   @if (count($lectures) == 0)
-  <div class="relative w-full text-center text-black">
+  <div class="relative w-full text-center text-black dark:text-gray-200">
     @if($search)
     Não foi encontrada nenhuma palestra com a palavra "{{$search}}"
     @else
