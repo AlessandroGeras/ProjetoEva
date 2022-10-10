@@ -71,7 +71,7 @@ class LecturesController extends Controller
 
         $manyusers = $lecture->users;
 
-        return view('lecture', ["lecture" => $lecture,"months"=>$months,"$manylectures"=>$manylectures,"manyusers"=>$manyusers, "user"=>$user]);
+        return view('lecture', ["lecture" => $lecture,"months"=>$months,"manylectures"=>$manylectures,"manyusers"=>$manyusers, "user"=>$user]);
     }
 
 
