@@ -1662,12 +1662,16 @@ input:checked + label svg.moon {
   margin-bottom: 1.25rem;
 }
 
-.-mt-px{
-  margin-top: -1px;
-}
-
 .-mt-24{
   margin-top: -6rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
+.-mt-px{
+  margin-top: -1px;
 }
 
 .-mt-9{
@@ -1848,6 +1852,10 @@ input:checked + label svg.moon {
 
 .w-20{
   width: 5rem;
+}
+
+.w-1\/5{
+  width: 20%;
 }
 
 .w-\[450px\]{
@@ -2737,6 +2745,11 @@ input:checked + label svg.moon {
   --tw-ring-opacity: 0.05;
 }
 
+.brightness-100{
+  --tw-brightness: brightness(1);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2826,7 +2839,7 @@ input:checked + label svg.moon {
 
 /*lectures_title component*/
 
-.lecture {
+.gradient_panel {
   background-image: linear-gradient(
             to bottom,
             #ffffff,
@@ -3735,7 +3748,12 @@ input:checked + label svg.moon {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.dark .dark\:lectureDarkmode {
+.dark .dark\:brightness-75{
+  --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark .dark\:gradient_panel_darkmode {
   background-image: linear-gradient(
             to bottom,
             #1f2937,
@@ -4247,6 +4265,10 @@ input:checked + label svg.moon {
     width: 300px;
   }
 
+  .sm\:w-\[450px\]{
+    width: 450px;
+  }
+
   .sm\:w-1\/2{
     width: 50%;
   }
@@ -4257,10 +4279,6 @@ input:checked + label svg.moon {
 
   .sm\:w-16{
     width: 4rem;
-  }
-
-  .sm\:w-\[450px\]{
-    width: 450px;
   }
 
   .sm\:max-w-md{
