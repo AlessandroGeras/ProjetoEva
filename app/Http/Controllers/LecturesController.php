@@ -67,11 +67,11 @@ class LecturesController extends Controller
 
         $user = User::find(Auth::id());
 
-        $manypalestras = $user->lectures;
+        $manylectures = $user->lectures;
 
         $manyusers = $lecture->users;
 
-        return view('lecture', ["lecture" => $lecture,"months"=>$months,"manypalestras"=>$manypalestras,"manyusers"=>$manyusers, "user"=>$user]);
+        return view('lecture', ["lecture" => $lecture,"months"=>$months,"$manylectures"=>$manylectures,"manyusers"=>$manyusers, "user"=>$user]);
     }
 
 
