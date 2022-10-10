@@ -302,11 +302,11 @@ class UsersController extends Controller
 
         if (($user->permission->role) == ('Usuário')) {
 
-            $manypalestras = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
+            $manylectures = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
 
             $manyconsultas = $user->consultas->sortBy('date');
 
-            return view('dashboard', ["user" => $user, "manypalestras" => $manypalestras, "manyconsultas" => $manyconsultas ]);
+            return view('dashboard', ["user" => $user, "manylectures" => $manylectures, "manyconsultas" => $manyconsultas ]);
         }
 
 
@@ -333,11 +333,11 @@ class UsersController extends Controller
         $user = User::findOrFail($id);
         $currentUser = User::find(Auth::id());
 
-        $manypalestras = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
+        $manylectures = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
 
         $manyconsultas = $user->consultas->sortBy('date');
 
-        return view('user', ["currentUser" => $currentUser, "user" => $user, "manypalestras" => $manypalestras,"manyconsultas" => $manyconsultas]);
+        return view('user', ["currentUser" => $currentUser, "user" => $user, "manylectures" => $manylectures,"manyconsultas" => $manyconsultas]);
     }
 
 
