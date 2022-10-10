@@ -73,17 +73,27 @@ const palestra_events = (id,nome,info,date) => {
 };
 
 
-// Mostrar formulário de edição de cursos na página courses
-const editar_palestra = () => {
+// Mostrar formulário de edição de palestras
+const edit_lecture = (name,info,date) => {
 
-    let form_editar_palestra_container=document.getElementById("form_editar_palestra_container");
+    let edit_lecture=document.getElementById("edit_lecture");
 
-    if (form_editar_palestra_container.style.display=="none" ||form_editar_palestra_container.style.display=="" ) {
-        form_editar_palestra_container.style.display="block";
+    if (edit_lecture.className=="hidden mb-2") {
+
+        edit_lecture.className="block mb-2";
+
+        let edit_lecture_name = document.getElementById("edit_lecture_name");
+        edit_lecture_name.value = name;
+
+        let edit_lecture_info = document.getElementById("edit_lecture_info");
+        edit_lecture_info.value = info;
+
+        let edit_lecture_date = document.getElementById("edit_lecture_date");
+        edit_lecture_date.value = date;
     }
 
     else {
-        form_editar_palestra_container.style.display="none";
+        edit_lecture.className="hidden mb-2";
     }    
 };
 

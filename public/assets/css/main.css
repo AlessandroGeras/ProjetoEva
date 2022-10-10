@@ -1,23 +1,9 @@
 /* CSS Principal */
 @import "tailwind.css";
 
-/* componentes da página index */
-@import "index/warning.css";
-
-/* componentes da página palestras */
-
-/* componentes da página palestra */
-@import "palestra/palestra_nome.css";
-@import "palestra/palestra_info.css";
-@import "palestra/palestra_actions.css";
-@import "palestra/form_editar_palestra.css";
-
 /* botões & forms */
 @import "buttons/delete.css";
-@import "buttons/edit.css";
-@import "buttons/join.css";
-@import "buttons/leave.css";
-@import "buttons/profissional.css";
+@import "buttons/professional.css";
 @import "buttons/user.css";
 @import "buttons/admin_button.css";
 
@@ -32,35 +18,3 @@
 
 /* componentes da página consultas */
 @import "consulta/consultas_painel.css";
-
-@import "fonts.css";
-
-/* Configurações default e classes genéricas */
-
-* {
-    box-sizing: border-box;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-.visible {
-    visibility: visible;
-}
-
-/* Configurações mobile do container abaixo da mobile navbar em todas as páginas */
-.no_margin,
-.margin {
-    margin-top: 0px;
-}
-
-@media screen and (max-width: 1200px) {
-    .no_margin {
-        margin-top: -100px;
-    }
-
-    .margin {
-        margin-top: 0px;
-    }
-}

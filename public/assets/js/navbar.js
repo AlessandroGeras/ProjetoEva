@@ -1,4 +1,4 @@
-//Animações para abertura e fechamento do menu mobile
+//Animações para abertura e fechamento do menu mobile em todas as páginas
 
 const menu_click = (clicked_id) => {
     if (clicked_id == "menu_open") {
@@ -18,11 +18,18 @@ const menu_click = (clicked_id) => {
                 "inline-block w-full h-40 mt-0 bg-zinc-900 sm:h-52 lg:mt-0 dark:bg-sky-900";
         }
 
-        let cursos_title = document.getElementById("palestras_title");
-        if (cursos_title) {
-            cursos_title.className = "mt-0 inline-block w-full lg:mt-0";
+        let lectures_title = document.getElementById("lectures_title");
+        if (lectures_title) {
+            lectures_title.className = "mt-0 inline-block w-full lg:mt-0";
         }
-    } else {
+
+        let lecture_title = document.getElementById("lecture_title");
+        if (lecture_title) {
+            lecture_title.className = "mt-0 inline-block w-full lg:mt-0";
+        }        
+    }
+    
+    else {
         let navbar_menu = document.getElementById("navbar_menu");
         navbar_menu.className =
             "mobile_close w-full h-full block text-black bg-sky-900 float-left lg:float-right lg:w-[800px] lg:bg-transparent dark:text-gray-200";
@@ -39,9 +46,14 @@ const menu_click = (clicked_id) => {
                 "inline-block w-full -mt-24 h-40 bg-zinc-900 sm:h-52 lg:mt-0 dark:bg-sky-900";
         }
 
-        let cursos_title = document.getElementById("palestras_title");
-        if (cursos_title) {
-            cursos_title.className = "-mt-24 inline-block w-full lg:mt-0";
+        let lectures_title = document.getElementById("lectures_title");
+        if (lectures_title) {
+            lectures_title.className = "-mt-24 inline-block w-full lg:mt-0";
+        }
+
+        let lecture_title = document.getElementById("lecture_title");
+        if (lecture_title) {
+            lecture_title.className = "-mt-24 inline-block w-full lg:mt-0";
         }
     }
 };

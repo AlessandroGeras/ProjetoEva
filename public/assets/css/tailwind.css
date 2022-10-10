@@ -1403,8 +1403,6 @@ input:checked + label svg.moon {
   margin-bottom: 0;
 }
 
-/* A button base shape. */
-
 .link{
   list-style-type: none;
   text-align: center;
@@ -1656,6 +1654,14 @@ input:checked + label svg.moon {
   margin-bottom: 1rem;
 }
 
+.mt-2\.5{
+  margin-top: 0.625rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
 .-mt-px{
   margin-top: -1px;
 }
@@ -1678,6 +1684,10 @@ input:checked + label svg.moon {
 
 .mb-12{
   margin-bottom: 3rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -1974,6 +1984,10 @@ input:checked + label svg.moon {
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
 .justify-items-center{
   justify-items: center;
 }
@@ -2210,6 +2224,14 @@ input:checked + label svg.moon {
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#00000026\]{
+  background-color: #00000026;
+}
+
+.bg-\[\#0000000d\]{
+  background-color: #0000000d;
 }
 
 .bg-gray-300{
@@ -2615,6 +2637,11 @@ input:checked + label svg.moon {
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-gray-200{
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -2623,11 +2650,6 @@ input:checked + label svg.moon {
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-black{
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -2802,7 +2824,7 @@ input:checked + label svg.moon {
   text-shadow: 0px 2px 3px gray;
 }
 
-/*lecture_title component*/
+/*lectures_title component*/
 
 .lecture {
   background-image: linear-gradient(
@@ -2815,7 +2837,7 @@ input:checked + label svg.moon {
         );
 }
 
-/*lecture_title component*/
+/*lectures_title component*/
 
 /*all text inputs*/
 
@@ -2911,13 +2933,13 @@ input:checked + label svg.moon {
 
 /*all text inputs*/
 
-/*lecture timeline*/
+/*lectures timeline*/
 
 #main_container_timeline::-webkit-scrollbar {
   display: none;
 }
 
-/*lecture timeline*/
+/*lectures timeline*/
 
 .timeline {
   padding: 10px 40px;
@@ -2926,7 +2948,7 @@ input:checked + label svg.moon {
   cursor: pointer;
 }
 
-/*lecture timeline*/
+/*lectures timeline*/
 
 .timeline::after {
   content: "";
@@ -2941,19 +2963,19 @@ input:checked + label svg.moon {
   z-index: 1;
 }
 
-/*lecture timeline left container*/
+/*lectures timeline left container*/
 
 .timeline_left {
   left: 0;
 }
 
-/*lecture timeline right container*/
+/*lectures timeline right container*/
 
 .timeline_right {
   left: 50%;
 }
 
-/*lecture timeline left container*/
+/*lectures timeline left container*/
 
 .timeline_left::before {
   content: " ";
@@ -2967,7 +2989,7 @@ input:checked + label svg.moon {
   border-width: 10px 0 10px 10px;
 }
 
-/*lecture timeline right container*/
+/*lectures timeline right container*/
 
 .timeline_right::before {
   content: " ";
@@ -2982,126 +3004,275 @@ input:checked + label svg.moon {
   border-color: transparent #46b8e9 transparent transparent;
 }
 
-/*lecture timeline right container*/
+/*lectures timeline right container*/
 
 .timeline_right::after {
   left: -8px;
 }
 
-/*lecture timeline container 0*/
+/*lectures timeline container 0*/
 
 .parent_color0:before {
   border-color: transparent transparent transparent #0369a1;
 }
 
-/*lecture timeline container 0*/
+/*lectures timeline container 0*/
 
 .parent_color0 > div {
   background: #0369a1;
 }
 
-/*lecture timeline container 0*/
+/*lectures timeline container 0*/
 
 .parent_color0 > div > div > .day {
   background: #0c4a6e;
 }
 
-/*lecture timeline container 1*/
+/*lectures timeline container 1*/
 
 .parent_color1:before {
   border-color: transparent #15803d transparent transparent;
 }
 
-/*lecture timeline container 1*/
+/*lectures timeline container 1*/
 
 .parent_color1 > div {
   background: #15803d;
 }
 
-/*lecture timeline container 1*/
+/*lectures timeline container 1*/
 
 .parent_color1 > div > div > .day {
   background: #14532d;
 }
 
-/*lecture timeline container 2*/
+/*lectures timeline container 2*/
 
 .parent_color2:before {
   border-color: transparent transparent transparent #a21caf;
 }
 
-/*lecture timeline container 2*/
+/*lectures timeline container 2*/
 
 .parent_color2 > div {
   background: #a21caf;
 }
 
-/*lecture timeline container 2*/
+/*lectures timeline container 2*/
 
 .parent_color2 > div > div > .day {
   background: #701a75;
 }
 
-/*lecture timeline container 3*/
+/*lectures timeline container 3*/
 
 .parent_color3:before {
   border-color: transparent #b45309 transparent transparent;
 }
 
-/*lecture timeline container 3*/
+/*lectures timeline container 3*/
 
 .parent_color3 > div {
   background: #b45309;
 }
 
-/*lecture timeline container 3*/
+/*lectures timeline container 3*/
 
 .parent_color3 > div > div > .day {
   background: #78350f;
 }
 
-/*lecture timeline container 0 darkmode*/
+/*lectures timeline container 0 darkmode*/
 
-/*lecture timeline container 0 darkmode*/
+/*lectures timeline container 0 darkmode*/
 
-/*lecture timeline container 0 darkmode*/
+/*lectures timeline container 0 darkmode*/
 
 .parent_color0_darkmode > div > div > .day {
   background: #1e293b;
 }
 
-/*lecture timeline container 1 darkmode*/
+/*lectures timeline container 1 darkmode*/
 
-/*lecture timeline container 1 darkmode*/
+/*lectures timeline container 1 darkmode*/
 
-/*lecture timeline container 1 darkmode*/
+/*lectures timeline container 1 darkmode*/
 
 .parent_color1_darkmode > div > div > .day {
   background: #1f2937;
 }
 
-/*lecture timeline container 2 darkmode*/
+/*lectures timeline container 2 darkmode*/
 
-/*lecture timeline container 2 darkmode*/
+/*lectures timeline container 2 darkmode*/
 
-/*lecture timeline container 2 darkmode*/
+/*lectures timeline container 2 darkmode*/
 
 .parent_color2_darkmode > div > div > .day {
   background: #27272a;
 }
 
-/*lecture timeline container 3 darkmode*/
+/*lectures timeline container 3 darkmode*/
 
-/*lecture timeline container 3 darkmode*/
+/*lectures timeline container 3 darkmode*/
 
-/*lecture timeline container 3 darkmode*/
+/*lectures timeline container 3 darkmode*/
 
 .parent_color3_darkmode > div > div > .day {
   background: #262626;
 }
 
+/*lecture info*/
+
+.lecture_info {
+  margin: 30px auto 50px auto;
+  position: relative;
+  left: -10px;
+  width: 80%;
+  text-align: justify;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  box-shadow: 5px 5px 0px 0px hsl(0, 0%, 100%),
+            10px 10px 0px 0px hsl(0, 0%, 80%), 15px 15px 0px 0px hsl(0, 0%, 60%),
+            20px 20px 0px 0px hsl(0, 0%, 40%), 25px 25px 0px 0px hsl(0, 0%, 20%),
+            5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+/*lecture info darkmode*/
+
+.button_edit {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 10px;
+  border: 1px solid rgb(0, 102, 204);
+  border-radius: 8px;
+  background: rgb(0, 166, 255);
+  background: linear-gradient(to bottom, #00a6ff, #0066cc);
+  font: normal normal bold 14px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button_edit:hover,
+    .button_edit:focus {
+  border: 1px solid #0080ff;
+  background: #00c7ff;
+  background: linear-gradient(to bottom, rgb(0, 240, 255), rgb(0, 122, 245));
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button_edit:active {
+  background: #0066cc;
+  background: linear-gradient(to bottom, #0066cc, #0066cc);
+}
+
+.button_edit:after{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 -4px -6px 4px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAA/klEQVRIie2VMQrCQBBFH2ohqS3SeQHxAHoAWw/gSUSEHMzKk1hIIhYWoo1ILJzVRSbjJNoIfhjCZGb/Wza7G/h1tb/otQTGwNpqmgI5UBpxAWaKeagvLEAwP1XEUTFPlUnNQ7GjNJ+Bvjw1xe97QAFMgJXkmu9DYfZJVUOkTGY+kHwoeWYN8gBaYhKWYxtBUql/BIjNQ+Q8l8fUO4BmXnLfRS5ZAM38qpiPmgC8Mx8Bh7qA+BBZ5l1gJzU3IJFcW5bX3RL3fgSo+qCNAXueV4W1W1RA5ZEWhWsjzmvpHaCRqQfguYtcY14BBff7ZNMAECCF1eD54ViRi8dfft0AW9uFr93hKucAAAAASUVORK5CYII=") no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(0%) hue-rotate(240deg) brightness(111%) contrast(100%);
+  background-size: 100% 100%;
+}
+
+.button_join {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 10px;
+  border: 1px solid #274a27;
+  border-radius: 8px;
+  background: #4aa14a;
+  background: linear-gradient(to bottom, #4aa14a, #274a27);
+  text-shadow: #27a127 1px 1px 1px;
+  font: normal normal bold 14px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button_join:hover,
+    .button_join:focus {
+  background: rgb(89, 255, 89);
+  background: linear-gradient(to bottom, rgb(200, 255, 200), rgb(47, 100, 47));
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button_join:active {
+  background: #274a27;
+  background: linear-gradient(to bottom, #274a27, #274a27);
+}
+
+.button_join:after{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 -4px -6px 4px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==") no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(0%) hue-rotate(240deg) brightness(111%) contrast(100%);
+  background-size: 100% 100%;
+}
+
+.button_leave {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 10px;
+  border: 1px solid rgb(161, 39, 39);
+  border-radius: 8px;
+  background: rgb(255, 74, 74);
+  background: linear-gradient(to bottom, #ff4a4a, #992727);
+  text-shadow: #591717 1px 1px 1px;
+  font: normal normal bold 14px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button_leave:hover,
+    .button_leave:focus {
+  background: #ff5959;
+  background: linear-gradient(to bottom, rgb(255, 200, 200), rgb(182, 47, 47));
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button_leave:active {
+  background: #982727;
+  background: linear-gradient(to bottom, #982727, #982727);
+}
+
+.button_leave:after{
+  content:  "\0000a0";
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  line-height: 24px;
+  margin: 0 -4px -6px 4px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==") no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(0%) hue-rotate(240deg) brightness(111%) contrast(100%);
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
+
 @media screen and (max-width: 640px) {
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .timeline {
     width: 100%;
@@ -3109,69 +3280,69 @@ input:checked + label svg.moon {
     padding-right: 0px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .timeline::before {
     left: 0px;
     border-width: 10px 10px 10px 0;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color0:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color1:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color2:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color3:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color0_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color1_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color2_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .parent_color3_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .timeline_left::after,
         .timeline_right::after {
     left: -30px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .timeline_right {
     left: 0%;
@@ -3504,14 +3675,19 @@ input:checked + label svg.moon {
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
-.dark .dark\:bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-black{
@@ -3633,8 +3809,16 @@ input:checked + label svg.moon {
   background: #262626;
 }
 
+.dark .dark\:lecture_info_darkmode {
+  color: #e5e7eb;
+  background: #1f2937;
+  box-shadow: 5px 5px 0px 0px #374151, 10px 10px 0px 0px #263344,
+            15px 15px 0px 0px #1f2937, 20px 20px 0px 0px #172136,
+            25px 25px 0px 0px #111827, 5px 5px 15px 5px #000000;
+}
+
 @media screen and (max-width: 640px) {
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     width: 100%;
@@ -3642,74 +3826,74 @@ input:checked + label svg.moon {
     padding-right: 0px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0px;
     border-width: 10px 10px 10px 0;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .dark .dark\:parent_color0_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: -30px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0%;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     width: 100%;
@@ -3717,74 +3901,74 @@ input:checked + label svg.moon {
     padding-right: 0px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0px;
     border-width: 10px 10px 10px 0;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .dark .dark\:parent_color1_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: -30px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0%;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     width: 100%;
@@ -3792,74 +3976,74 @@ input:checked + label svg.moon {
     padding-right: 0px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0px;
     border-width: 10px 10px 10px 0;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .dark .dark\:parent_color2_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: -30px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0%;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     width: 100%;
@@ -3867,68 +4051,68 @@ input:checked + label svg.moon {
     padding-right: 0px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0px;
     border-width: 10px 10px 10px 0;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
   .dark .dark\:parent_color3_darkmode:before {
     border-color: transparent transparent transparent transparent;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: -30px;
   }
 
-  /*lecture timeline*/
+  /*lectures timeline*/
 
    {
     left: 0%;
@@ -4057,6 +4241,10 @@ input:checked + label svg.moon {
 
   .sm\:w-full{
     width: 100%;
+  }
+
+  .sm\:w-\[300px\]{
+    width: 300px;
   }
 
   .sm\:w-1\/2{
@@ -4361,6 +4549,11 @@ input:checked + label svg.moon {
     padding-left: 1rem;
   }
 
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -4371,14 +4564,14 @@ input:checked + label svg.moon {
     line-height: 1.5rem;
   }
 
-  .lg\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .dark .lg\:dark\:text-gray-200{
