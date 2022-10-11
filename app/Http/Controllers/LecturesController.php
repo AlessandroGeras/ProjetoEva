@@ -34,7 +34,7 @@ class LecturesController extends Controller
         );
 
         if ($search) {
-            $lectures = Lecture::where([["name", "like", "%" . $search . "%"]])->get();
+            $lectures = Lecture::where([["name", "ilike", "%" . $search . "%"]])->get();
         }
         
         else {
