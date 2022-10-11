@@ -57,9 +57,9 @@
             @endswitch
 
             <div class="block sm:flex text-white dark:text-gray-200">
-              <div class="day float-left relative h6 -top-[6px] pt-1 px-1 pb-6 sm:text-lg sm:pb-1 lg:text-xl lg:left-[13.5px]">{{ $day}}</div>
-              <div class="text-sm relative -top-[4.5px] left-[7.5px] font-mono pt-2 sm:-top-[5px] lg:ml-5 lg:text-xl">{{ $month_pt_BR }}</div>
-              <div class="relative font-poiret text-base text-center -top-[8.5px] left-[2.5px] sm:text-sm sm:top-[3px] sm:left-[15px] md:ml-2 lg:text-xl lg:py-2 lg:pl-4 lg:-top-[5px] lg:ml-1">{{ $lecture['name'] }}</div>
+              <div class="day float-left relative h6 -top-[6px] pt-1 px-1 pb-6 sm:text-lg sm:pb-1 sm:ml-2 lg:text-xl">{{ $day}}</div>
+              <div class="text-xs relative -top-[4.5px] left-[5px] font-mono pt-2 sm:pt-2.5 lg:pt-1.5 lg:ml-2 lg:text-lg">{{ $month_pt_BR }}</div>
+              <div class="relative font-poiret text-base text-center font-bold -top-[8.5px] left-[2.5px] sm:text-sm sm:top-[3px] sm:left-[15px] md:ml-2 lg:text-xl lg:pt-1.5 lg:pl-4 lg:-top-[5px] lg:ml-1">{{ $lecture['name'] }}</div>
             </div>
             <div class="text-sm bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
               {{ $lecture['info'] }}
@@ -93,8 +93,8 @@
 
             <div class="block sm:flex text-white dark:text-gray-200">
               <div class="day float-left relative h6 -top-[6px] pt-1 px-1 pb-6 sm:text-lg sm:pb-1 sm:ml-2 lg:text-xl">{{ $day}}</div>
-              <div class="text-sm relative -top-[4.5px] left-[7.5px] font-mono pt-2 lg:ml-5 lg:text-xl">{{ $month_pt_BR }}</div>
-              <div class="relative font-poiret text-base text-center -top-[8.5px] left-[2.5px] sm:text-sm sm:top-[3px] sm:left-[15px] md:ml-2 lg:text-xl lg:py-2 lg:pl-4 lg:-top-[5px] lg:ml-1">{{ $lecture['name'] }}</div>
+              <div class="text-xs relative -top-[4.5px] left-[5px] font-mono pt-2 sm:pt-2.5 lg:pt-1.5 lg:ml-2 lg:text-lg">{{ $month_pt_BR }}</div>
+              <div class="relative font-poiret text-base text-center font-bold -top-[8.5px] left-[2.5px] sm:text-sm sm:top-[3px] sm:left-[15px] md:ml-2 lg:text-xl lg:pt-1.5 lg:pl-4 lg:-top-[5px] lg:ml-1">{{ $lecture['name'] }}</div>
             </div>
             <div class="text-sm bg-white text-justify text-black py-2.5 px-3.5 sm:text-sm lg:text-base dark:bg-gray-800 dark:text-gray-500">
               {{ $lecture['info'] }}
