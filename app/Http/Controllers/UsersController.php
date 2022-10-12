@@ -50,6 +50,7 @@ class UsersController extends Controller
         $user = new User;
 
         $user->name = $request->name;
+        $user->age = $request->age;
         $user->email = $request->email;
         $user->phone_number = $request->phone_number;
         $user->address = $request->address;
