@@ -70,7 +70,7 @@ class UsersController extends Controller
     }
 
 
-    public function autorizar(Request $request)
+    public function auth(Request $request)
     {
         $credentials = $request->validate([
             'email' => ['required', 'email'],
@@ -93,12 +93,12 @@ class UsersController extends Controller
     }
 
 
-    public function showForgetPasswordForm()
+    public function showForgetPassword()
     {
         return response()->view('auth.forgetPassword')->setStatusCode(200);
     }
     
-     public function submitForgetPasswordForm(Request $request)
+     public function submitForgetPassword(Request $request)
     {
         $credentials = $request->validate([
             'email' => ['required', 'email']
@@ -127,12 +127,12 @@ class UsersController extends Controller
         }
     }
     
-    public function showResetPasswordForm($token)
+    public function showResetPassword($token)
     {
         return response()->view('auth.forgetPasswordLink', ['token' => $token])->setStatusCode(200);
     }
     
-     public function submitResetPasswordForm(Request $request)
+     public function submitResetPassword(Request $request)
     {
         $request->validate([
             'email' => ['required', 'email'],
