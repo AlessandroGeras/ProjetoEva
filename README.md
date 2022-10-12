@@ -234,8 +234,8 @@ Implementada randomização de frases acerca do autismo, em que cada vez que o v
 Responsividade da página inicial.
 
 <h4> 04/10 - Terça - Eliabe </h4>
-Refatoração final da página inicial - Início da Sprint de testes.
-Responsividade da página inicial.
+Refatoração final da página palestras - Início da Sprint de testes.
+Responsividade da página palestras.
 
 <h4> 09/10 - Domingo - Eliabe </h4>
 Refatoração final da página palestra - Início da Sprint de testes.
