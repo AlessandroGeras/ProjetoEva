@@ -6,24 +6,27 @@ use App\Http\Controllers\UsersController;
 use App\Http\Controllers\WarningsController;
 use Illuminate\Support\Facades\Route;
 
-//Autenticação
+//Auth
+Route::get('/auth/register', [UsersController::class, 'register'])->name('register');
+
+Route::post('/auth/register', [UsersController::class, 'store'])->name('new-user');
+
 Route::get('/auth/login', [UsersController::class, 'login'])->name('login');
 
-Route::post('/autenticar', [UsersController::class, 'autorizar'])->name('autenticar');
+Route::post('/auth/auth', [UsersController::class, 'auth'])->name('auth');
 
-Route::post('/logout', [UsersController::class, 'logout'])->name('logout');
+Route::post('/auth/logout', [UsersController::class, 'logout'])->name('logout');
 
-Route::get('/register', [UsersController::class, 'register'])->name('register');
+//Reset Password
+Route::get('/auth/forget-password', [UsersController::class, 'showForgetPassword'])->name('show-forget-password');
 
-Route::post('/newuser', [UsersController::class, 'store'])->name('newuser');
+Route::post('/auth/forget-password', [UsersController::class, 'submitForgetPassword'])->name('submit-forget-password');
 
-Route::get('forget_password', [UsersController::class, 'showForgetPasswordForm'])->name('showForgetPasswordForm');
+Route::get('auth/reset-password/{token}', [UsersController::class, 'showResetPassword'])->name('reset-password');
 
-Route::post('forget_password', [UsersController::class, 'submitForgetPasswordForm'])->name('submitForgetPasswordForm');
+Route::post('/auth/reset-password', [UsersController::class, 'submitResetPassword'])->name('submit-password');
 
-Route::get('reset_password/{token}', [UsersController::class, 'showResetPasswordForm'])->name('resetPassword');
 
-Route::post('reset_password', [UsersController::class, 'submitResetPasswordForm'])->name('submitPassword');
 
 
 //Atualização de dados do usuário
