@@ -46,7 +46,7 @@ class UsersController extends Controller
             ]
         ]);
 
-        $permission=Permission::where('role', '=', 'Usuário')->firstOrFail();
+        $permission=Permission::where('role', '=', 'User')->firstOrFail();
         $user = new User;
 
         $user->name = $request->name;
