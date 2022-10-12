@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="icon" type="image/x-icon" href="/eva.ico">
     <title>Login</title>
 </head>
 
