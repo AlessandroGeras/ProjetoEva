@@ -1,4 +1,10 @@
-<div id="edit_lecture" class="hidden mb-2">
+<?php date_default_timezone_set('America/Sao_Paulo'); ?>
+
+<div class="admin_container mb-5">
+  <div class="admin_button" onclick="edit_lecture('{{ $lecture->name }}','{{ $lecture->info }}','{{ $lecture->date }}')">Editar palestra</div>
+</div>
+
+<div id="edit_lecture" class="hidden">
   <div class="styled_input">
     <form action="{{ route('edit-lecture', [$lecture->id])}}" method="POST" onsubmit="if((document.getElementById('edit_lecture_date').value)>=('<?php echo date('Y-m-d\TH:i') ?>')){loading('Editando palestra');}">
       @csrf
