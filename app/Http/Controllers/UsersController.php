@@ -316,7 +316,7 @@ class UsersController extends Controller
             $users = null;
 
             if ($search) {
-                $users = User::where([["name", "like", "%" . $search . "%"]])->get();
+                $users = User::where([["name", "ilike", "%" . $search . "%"]])->get();
             }
 
             $warning = Warning::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'desc')->get();
