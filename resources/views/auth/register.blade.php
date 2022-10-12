@@ -23,6 +23,13 @@
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" id="name" type="text" name="name" required="required" autofocus="autofocus" autocomplete="name">
                     </div>
 
+                    <div>
+                        <label class="block font-medium text-sm text-gray-700">
+                            Idade
+                        </label>
+                        <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" type="number" name="age" required="required" autofocus="autofocus">
+                    </div>
+
                     <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700" for="email">
                             Email
@@ -42,7 +49,7 @@
                             Endereço Completo
                         </label>
                         <input class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block mt-1 w-full" type="text" name="address" required="required" autofocus="autofocus">
-                    </div>
+                    </div>                    
 
                     <div class="mt-4">
                         <label class="block font-medium text-sm text-gray-700" for="password">
