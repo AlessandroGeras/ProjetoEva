@@ -35,7 +35,7 @@
                             Cadastrar novo usuário
                         </a>
 
-                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{route('showForgetPasswordForm')}}">
+                        <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{route('show-forget-password')}}">
                             Esqueceu a senha?
                         </a>
 
