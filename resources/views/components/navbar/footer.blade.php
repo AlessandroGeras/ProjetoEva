@@ -23,8 +23,8 @@
         clicando no link abaixo <br>
         ou usando o QR Code
       </div>
-      <a href="https://chat.whatsapp.com/CbXwuWvcpur9c4bPs563Lq">Cadastrar</a> <br>
-      <img class="w-20 h-20 mx-auto" src="/assets/img/site/qrcode.png">
+      <a href="https://chat.whatsapp.com/CbXwuWvcpur9c4bPs563Lq" class="underline">Cadastrar</a> <br>
+      <img class="w-20 h-20 mx-auto mt-1" src="/assets/img/site/qrcode.png">
     </div>
   </div>
 </div>
