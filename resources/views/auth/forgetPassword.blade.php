@@ -14,7 +14,7 @@
             </div>
 
             <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-                <form method="POST" action="{{route('submitForgetPasswordForm')}}">
+                <form method="POST" action="{{ route('submit-forget-password')}}">
                     @csrf
                     <div>
                         <label class="block font-medium text-sm text-gray-700" for="email">
