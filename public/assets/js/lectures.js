@@ -17,11 +17,11 @@ const create_lecture = () => {
 };
 
 // Mostrar formulário de edição de palestras
-const edit_lecture = (name, info, date) => {
+const edit_lecture = (name, info, date, link) => {
     let edit_lecture = document.getElementById("edit_lecture");
 
     if (edit_lecture.className == "hidden") {
-        edit_lecture.className = "block mb-2";
+        edit_lecture.className = "block mb-2 -mt-2.5";
 
         let edit_lecture_name = document.getElementById("edit_lecture_name");
         edit_lecture_name.value = name;
@@ -31,7 +31,12 @@ const edit_lecture = (name, info, date) => {
 
         let edit_lecture_date = document.getElementById("edit_lecture_date");
         edit_lecture_date.value = date;
-    } else {
+
+        let edit_lecture_link = document.getElementById("edit_lecture_link");
+        edit_lecture_link.value = link;
+    }
+    
+    else {
         edit_lecture.className = "hidden";
     }
 };
