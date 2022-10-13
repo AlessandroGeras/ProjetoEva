@@ -1547,6 +1547,10 @@ input:checked + label svg.moon {
   float: left;
 }
 
+.m-0{
+  margin: 0px;
+}
+
 .m-auto{
   margin: auto;
 }
@@ -1692,10 +1696,6 @@ input:checked + label svg.moon {
 
 .mb-12{
   margin-bottom: 3rem;
-}
-
-.mb-2{
-  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -1870,6 +1870,10 @@ input:checked + label svg.moon {
   width: 70%;
 }
 
+.w-28{
+  width: 7rem;
+}
+
 .w-\[450px\]{
   width: 450px;
 }
@@ -1880,6 +1884,10 @@ input:checked + label svg.moon {
 
 .w-44{
   width: 11rem;
+}
+
+.w-32{
+  width: 8rem;
 }
 
 .min-w-0{
@@ -2411,6 +2419,11 @@ input:checked + label svg.moon {
   padding-right: 0.875rem;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -2469,6 +2482,10 @@ input:checked + label svg.moon {
 
 .pb-2{
   padding-bottom: 0.5rem;
+}
+
+.pt-2\.5{
+  padding-top: 0.625rem;
 }
 
 .pb-2\.5{
@@ -2757,11 +2774,6 @@ input:checked + label svg.moon {
   --tw-ring-opacity: 0.05;
 }
 
-.brightness-100{
-  --tw-brightness: brightness(1);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .filter{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -2925,6 +2937,12 @@ input:checked + label svg.moon {
 .styled_input input::-webkit-input-placeholder {
   color: #505739;
   font-size: 12px;
+}
+
+.styled_input input[type="datetime-local"] {
+  width: 160px;
+  background:transparent;
+  border:none;
 }
 
 /*all text inputs*/
@@ -3334,11 +3352,53 @@ input:checked + label svg.moon {
 /*carousel lectures*/
 
 .carousel_my_events {
-  background: linear-gradient(90deg, #265097, #000);
+  background: linear-gradient(90deg, #0c4a6e, #000);
   background-size: 400% 400%;
 }
 
-/*carousel notifications*/
+/*carousel appointments*/
+
+.carousel_appointments {
+  background: linear-gradient(90deg, #7f1d1d , #000);
+  background-size: 400% 400%;
+}
+
+/*admin button*/
+
+.admin_button {
+  width:150px;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background:linear-gradient(to bottom, hsl(0, 0%, 100%) 5%, hsl(0, 0%, 84%) 100%);
+  background-color:rgb(255, 255, 255);
+  border-radius:15px;
+  border:2px solid #333029;
+  display:inline-block;
+  cursor:pointer;
+  color:#505739;
+  font-family:Arial;
+  font-size:14px;
+  padding:12px 16px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+
+/*admin button*/
+
+.admin_button:hover {
+  background:linear-gradient(to bottom, #d6d6d6 5%, hsl(0, 0%, 100%) 100%);
+  background-color:rgb(255, 255, 255);
+}
+
+/*admin button*/
+
+.admin_button:active {
+  position:relative;
+  top:1px;
+}
+
+/*admin button*/
+
+/*admin button*/
 
 @keyframes AnimationEvents {
   0% {
@@ -3753,6 +3813,10 @@ input:checked + label svg.moon {
   opacity: 0.25;
 }
 
+.dark .dark\:calendar_darkmode::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 .dark .dark\:border-gray-700{
   --tw-border-opacity: 1;
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
@@ -3834,7 +3898,7 @@ input:checked + label svg.moon {
         );
 }
 
-.dark .dark\:styled_inputDarkmode {
+.dark .dark\:styled_input_darkmode {
   background-image: linear-gradient(
             to bottom,
             #1f2937,
@@ -3845,7 +3909,7 @@ input:checked + label svg.moon {
         );
 }
 
-.dark .dark\:styled_warningDarkmode {
+.dark .dark\:styled_warning_darkmode {
   border-bottom: #505739 solid;
 }
 
@@ -3903,6 +3967,16 @@ input:checked + label svg.moon {
   box-shadow: 5px 5px 0px 0px #374151, 10px 10px 0px 0px #263344,
             15px 15px 0px 0px #1f2937, 20px 20px 0px 0px #172136,
             25px 25px 0px 0px #111827, 5px 5px 15px 5px #000000;
+}
+
+.dark .dark\:admin_button_darkmode {
+  background:linear-gradient(to bottom, #1f2937 5%, #374151 100%);
+  background-color:#374151;
+}
+
+.dark .dark\:admin_button_darkmode:hover {
+  background:linear-gradient(to bottom, #374151 5%, #1f2937 100%);
+  background-color:#1f2937;
 }
 
 @media screen and (max-width: 640px) {
@@ -4481,6 +4555,11 @@ input:checked + label svg.moon {
   .sm\:px-20{
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .sm\:px-1{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .sm\:px-10{
