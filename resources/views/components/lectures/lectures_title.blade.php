@@ -6,7 +6,7 @@
         <div class="styled_input dark:styled_input_darkmode">
             <form class="w-full sm:ml-[7.5%]" action="{{route('lectures')}}" method="GET" onsubmit="loading('Pesquisando palestras')">
                 @csrf
-                <input class="styled_warning dark:styled_warning_darkmode" type="text" name="search" placeholder="Digite o nome da palestra"></input>
+                <input class="styled_warning dark:styled_warning_darkmode dark:text-gray-200" type="text" name="search" placeholder="Digite o nome da palestra"></input>
                 <button type="submit" class="styled_warning"> &#10132;</button>
             </form>
         </div>
