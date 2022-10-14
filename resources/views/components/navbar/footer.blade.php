@@ -8,6 +8,7 @@
       </div>
     </div>
     <div class="text-xs lg:text-sm m-auto text-center">
+      <span class="text-sm lg:text-base font-bold">Horários de Funcionamento</span> <br>
       segundas 14:00–21:00 <br>
       terças 14:00–21:00 <br>
       quartas 14:00–21:00 <br>
@@ -23,8 +24,8 @@
         clicando no link abaixo <br>
         ou usando o QR Code
       </div>
-      <a href="https://chat.whatsapp.com/CbXwuWvcpur9c4bPs563Lq" class="underline font-bold">Cadastrar</a> <br>
-      <img class="w-20 h-20 mx-auto mt-1" src="/assets/img/site/qrcode.png">
+      <a href="https://chat.whatsapp.com/CbXwuWvcpur9c4bPs563Lq">Cadastrar</a> <br>
+      <img class="w-20 h-20 mx-auto" src="/assets/img/site/qrcode.png">
     </div>
   </div>
 </div>
