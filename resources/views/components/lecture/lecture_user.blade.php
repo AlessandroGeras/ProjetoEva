@@ -27,7 +27,7 @@
   </div>
 
   {{--Mostrar botões Ingressar e Abandonar a palestra para usuários--}}
-  <div class="flex w-48 justify-around mt-2.5 mb-5 mx-auto">
+  <div class="flex justify-around mt-2.5 mb-5 mx-auto">
     @if ($registered == false)
     <form action="{{ route('join', [$lecture->id])}}" method="POST">
       @csrf
