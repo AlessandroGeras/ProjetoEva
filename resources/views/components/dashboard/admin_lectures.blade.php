@@ -26,7 +26,7 @@
 
     <form action="{{ route('lecture', [$lecture->id])}}" method="GET">
         @csrf
-        <div class="carousel_item text-center m-0 center px-3" onclick="event.preventDefault();this.closest('form').submit();">
+        <div class="carousel_item text-center m-0 center px-3 cursor-pointer" onclick="event.preventDefault();this.closest('form').submit();">
             <h2>{{$lecture->name}}<br>{{$day}}/{{$month}}</h2>
         </div>
     </form>

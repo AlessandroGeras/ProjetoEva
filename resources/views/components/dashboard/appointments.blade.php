@@ -28,7 +28,7 @@
 
     <form action="{{ route('appointment', [$appointment->id])}}" method="GET">
         @csrf
-        <div class="carousel_item text-center m-0 center" onclick="event.preventDefault();this.closest('form').submit();">
+        <div class="carousel_item text-center m-0 center cursor-pointer" onclick="event.preventDefault();this.closest('form').submit();">
             <div>{{$professional_name[0]}}<br>{{$professional_name[1]}}<br>{{$day}}/{{$month}}</div>
         </div>
     </form>
