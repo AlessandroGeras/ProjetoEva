@@ -62,6 +62,10 @@ Route::put('/lectures/edit/{id}', [LecturesController::class, 'update'])
     ->name('edit-lecture')
     ->middleware('auth');
 
+Route::post('/lectures/join/{id}', [LecturesController::class, "join"])->name('join')->middleware('auth');
+
+Route::delete('/lectures/leave/{id}', [LecturesController::class, "leave"])->name('leave')->middleware('auth');
+
 /* Rota desabilitada
 Route::delete('/lectures/destroy/{id}', [LecturesController::class, "destroy"])->middleware('auth');
 */
