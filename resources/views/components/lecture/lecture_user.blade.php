@@ -1,6 +1,7 @@
+{{--Seção para verificar se o Usuário está inscrito na palestra na página Palestra--}}
+  
   {{$slot}}
-
-  {{--Verificar se o usuário está inscrito na palestra--}}
+  
   @php
   $registered = false;
   @endphp
@@ -8,9 +9,11 @@
   @isset($manylectures)
   @foreach($manylectures as $speech)
   @if(($speech->id)==($lecture->id))
+
   @php
   $registered = true;
   @endphp
+  
   @endif
   @endforeach
   @endisset

@@ -1,3 +1,5 @@
+{{--Seção do nome da Palestra na página Palestra--}}
+
 {{--Quebra da variável da data para reformatar as informações no título--}}
 @php
 $time = strtotime("$lecture->date");

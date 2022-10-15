@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class my_events extends Component
+class appointments extends Component
 {
     /**
      * Create a new component instance.
@@ -12,11 +12,11 @@ class my_events extends Component
      * @return void
      */
 
-    public $manylectures;
+    public $manyappointment;
 
-    public function __construct($manylectures)
+    public function __construct($manyappointment)
     {
-        $this->manylectures = $manylectures;
+        $this->manyappointment = $manyappointment;
     }
 
     /**
@@ -26,6 +26,7 @@ class my_events extends Component
      */
     public function render()
     {
-        return view('components.my_events');
+        return view('components.appointments
+        ');
     }
 }

@@ -1,3 +1,5 @@
+{{--Rodapé do Layout principal--}}
+
 <div class="sticky top-[100vh] w-full h-[525px] bg-zinc-900 text-white sm:h-72 dark:text-gray-200 dark:bg-black">
   <div class="grid center grid-cols-1 gap-y-6 sm:grid-cols-3">
     <div class="m-auto text-center">

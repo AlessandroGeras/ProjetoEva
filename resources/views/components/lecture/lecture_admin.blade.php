@@ -1,4 +1,5 @@
-{{--Mostrar total de usuários inscritos na palestra e quem são--}}
+{{--Mostrar total de usuários inscritos na palestra e quem são para Profissionais e Administradores na página Palestra--}}
+
 @php
 $subscripts = 0;
 $users="<br>";

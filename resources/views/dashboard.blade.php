@@ -3,24 +3,26 @@
 @section("title","Minha Conta")
 
 @section("corpo")
-<x-dashboard.my_account :user="$user" />
+<x-dashboard.my_account :user="$user">
+    <x-navbar.darkmode />
+</x-dashboard.my_account>
 
 @switch($user->permission->role)
-@case('Usuário')
-<x-dashboard.my_events :manypalestras="$manypalestras" />
-<x-dashboard.consultas :manyconsultas="$manyconsultas"/>
+@case('User')
+<x-dashboard.my_events :manylectures="$manylectures" />
+<x-dashboard.appointments :manyappointments="$manyappointments" />
 @break
 
-@case('Profissional')
-<x-dashboard.admin_palestras :palestras="$palestras" />
-<x-dashboard.criar_palestra />
+@case('Professional')
+<x-dashboard.admin_lectures :lectures="$lectures" />
+<x-dashboard.create_lecture />
 <x-dashboard.users :user="$user" :users="$users" />
 @break
 
-@case('Administrador')
-<x-dashboard.admin_palestras :palestras="$palestras" />
+@case('Administrator')
+<x-dashboard.admin_lectures :lectures="$lectures" />
 <x-dashboard.admin_panel :warning="$warning" />
-<x-dashboard.criar_palestra />
+<x-dashboard.create_lecture />
 <x-dashboard.users :user="$user" :users="$users" />
 @break
 @endswitch

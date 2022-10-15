@@ -1,3 +1,5 @@
+//Botão de DarkMode
+
 const darkmode = () => {
     var elementArray = document.getElementsByTagName("html");
     for (var i = 0; i < elementArray.length; i++) {

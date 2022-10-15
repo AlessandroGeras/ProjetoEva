@@ -63,8 +63,8 @@ class User extends Authenticatable
     ];  
     */
     
-    public function consultas(){
-        return $this->hasMany(Consulta::class);
+    public function appointments(){
+        return $this->hasMany(Appointment::class);
     }
 
     public function lectures(){

@@ -1,3 +1,5 @@
+{{--Layout principal--}}
+
 <?php date_default_timezone_set('America/Sao_Paulo'); ?>
 
 <html>
@@ -24,11 +26,13 @@
       <x-navbar.navbar_panel />
 
       <x-navbar.navbar_menu />
-    </div>   
+    </div>
   </navbar>
 
-  @yield("corpo")
-  
+  <main>
+    @yield("corpo")
+  </main>
+
   <x-navbar.footer />
 
 </body>

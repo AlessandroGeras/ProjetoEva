@@ -1,3 +1,5 @@
+{{--Navbar no Layout principal--}}
+
 <div id="navbar_menu" class="mobile_close w-full h-full block text-black bg-sky-900 float-left lg:float-right lg:w-[800px] lg:bg-transparent dark:text-gray-200">
   <ul class="font-bold center text-center justify-center leading-none lg:flex lg:dark:text-gray-200">
     <li><a class="link dark:hover:text-black" href="{{ route('index')}}">INICIO</a></li>

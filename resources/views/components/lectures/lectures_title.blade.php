@@ -1,3 +1,5 @@
+{{--Título da página Palestras--}}
+
 <html>
 <div id="lectures_title" class="-mt-24 inline-block w-full lg:mt-0">
     {{$slot}}

@@ -26,7 +26,12 @@ const menu_click = (clicked_id) => {
         let lecture_title = document.getElementById("lecture_title");
         if (lecture_title) {
             lecture_title.className = "mt-0 inline-block w-full lg:mt-0";
-        }        
+        }  
+        
+        let my_account = document.getElementById("my_account");
+        if (my_account) {
+            my_account.className = "mt-0 inline-block w-full text-black text-center lg:mt-0";
+        }  
     }
     
     else {
@@ -54,6 +59,11 @@ const menu_click = (clicked_id) => {
         let lecture_title = document.getElementById("lecture_title");
         if (lecture_title) {
             lecture_title.className = "-mt-24 inline-block w-full lg:mt-0";
+        }
+
+        let my_account = document.getElementById("my_account");
+        if (my_account) {
+            my_account.className = "-mt-24 inline-block w-full text-black text-center lg:mt-0";
         }
     }
 };

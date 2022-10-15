@@ -2,16 +2,8 @@
 @import "tailwind.css";
 
 /* botões & forms */
-@import "buttons/delete.css";
 @import "buttons/professional.css";
 @import "buttons/user.css";
-@import "buttons/admin_button.css";
-
-/* componentes da página dashboard */
-@import "dashboard/my_account.css";
-@import "dashboard/carousel.css";
-@import "dashboard/consultas.css";
-@import "dashboard/admin_panel.css";
 
 /* componentes da página user */
 @import "user/table.css";

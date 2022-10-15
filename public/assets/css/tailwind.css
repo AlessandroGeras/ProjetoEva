@@ -1858,6 +1858,10 @@ input:checked + label svg.moon {
   width: 5rem;
 }
 
+.w-28{
+  width: 7rem;
+}
+
 .w-2\/5{
   width: 40%;
 }
@@ -1868,10 +1872,6 @@ input:checked + label svg.moon {
 
 .w-\[70\%\]{
   width: 70%;
-}
-
-.w-28{
-  width: 7rem;
 }
 
 .w-\[450px\]{
@@ -2327,6 +2327,10 @@ input:checked + label svg.moon {
   padding: 1.5rem;
 }
 
+.p-2\.5{
+  padding: 0.625rem;
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -2409,6 +2413,11 @@ input:checked + label svg.moon {
   padding-bottom: 2.5rem;
 }
 
+.px-0{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -2417,11 +2426,6 @@ input:checked + label svg.moon {
 .px-3\.5{
   padding-left: 0.875rem;
   padding-right: 0.875rem;
-}
-
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 .pt-6{
@@ -2860,6 +2864,8 @@ input:checked + label svg.moon {
   transform: translate(-50%, -50%);
   text-shadow: 0px 2px 3px gray;
 }
+
+/*warning component*/
 
 /*lectures_title component*/
 
@@ -3887,6 +3893,10 @@ input:checked + label svg.moon {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.dark .dark\:warning_darkmode {
+  background: linear-gradient(to bottom, #0c4a6e 5%, #000 100%);
+}
+
 .dark .dark\:gradient_panel_darkmode {
   background-image: linear-gradient(
             to bottom,
@@ -4349,16 +4359,16 @@ input:checked + label svg.moon {
     margin-left: 1.5rem;
   }
 
+  .sm\:ml-\[7\.5\%\]{
+    margin-left: 7.5%;
+  }
+
   .sm\:ml-2{
     margin-left: 0.5rem;
   }
 
   .sm\:mr-4{
     margin-right: 1rem;
-  }
-
-  .sm\:ml-\[7\.5\%\]{
-    margin-left: 7.5%;
   }
 
   .sm\:ml-0{
@@ -4600,6 +4610,11 @@ input:checked + label svg.moon {
     text-align: right;
   }
 
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .sm\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -4608,11 +4623,6 @@ input:checked + label svg.moon {
   .sm\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .sm\:text-6xl{

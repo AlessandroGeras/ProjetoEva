@@ -1,3 +1,5 @@
+{{--Timeline da página Palestras--}}
+
 <html>
 {{--Conteiner geral da timeline--}}  
 <div id="main_container_timeline" class="overflow-auto h-[500px] mt-2">

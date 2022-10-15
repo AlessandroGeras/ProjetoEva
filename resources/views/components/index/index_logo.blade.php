@@ -1,3 +1,5 @@
+{{--Seção de Boas Vindas da página Principal--}}
+
 {{--Função rand para mensagem aleatória do dia--}}
 @php
 $count = count($messages);

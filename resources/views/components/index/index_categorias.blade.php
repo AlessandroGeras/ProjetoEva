@@ -1,3 +1,5 @@
+{{--Imagens e vídeos da página Principal--}}
+
 <div id="index_categorias" class="w-5/6 h-48 mx-auto mt-12 mb-10 grid gap-5 grid-cols-1 lg:grid-cols-2">
     <div class="w-full h-full bg-[url('/assets/img/site/instituicao.png')] bg-center bg-cover">
         <div class="text-white font-sans font-bold text-xl flex center justify-center sm:text-4xl dark:text-gray-200">CONHEÇA O EVA</div>

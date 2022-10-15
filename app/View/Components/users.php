@@ -14,14 +14,14 @@ class users extends Component
 
     public $user;
     public $users;
-    public $manypalestras;
+    public $manylectures;
     public $permission;
 
-    public function __construct($user,$users,$manypalestras,$permission)
+    public function __construct($user,$users,$manylectures,$permission)
     {
         $this->users = $users;
         $this->user = $user;
-        $this->manypalestras = $manypalestras;
+        $this->manylectures = $manylectures;
         $this->permission = $permission;
     }
 

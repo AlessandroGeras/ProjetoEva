@@ -1,4 +1,4 @@
-// Mostrar formulário de criação de palestras na página palestras
+// Mostrar formulário de Criação de Palestras para Profissionais e Administradores na página Minha Conta
 
 const create_lecture = () => {
 
@@ -16,7 +16,7 @@ const create_lecture = () => {
     }
 };
 
-// Mostrar formulário de edição de palestras
+// Mostrar formulário de Edição de Palestras para Profissionais e Administradores na página Palestra
 const edit_lecture = (name, info, date, link) => {
     let edit_lecture = document.getElementById("edit_lecture");
 

@@ -1,3 +1,5 @@
+{{--Botão de DarkMode--}}
+
 <div class="inline-block w-full bg-gray-200 pb-2 dark:bg-black">
     <hr class="h-5 w-full hr after:h-px after:absolute after:left-0 after:right-0 after:hrAfter" />
     <input type="checkbox" id="darkmode_toggle" onclick="darkmode();" />
