@@ -14,7 +14,7 @@
   <div class="styled_input dark:styled_input_darkmode">
     <form class="w-full sm:ml-[7.5%]" action="{{route('create-lecture')}}" method="POST" onsubmit="if((document.getElementById('create_lecture_date').value)>=('<?php echo date('Y-m-d\TH:i') ?>')){loading('Criando palestra');}">
       @csrf
-      <input class="styled_warning dark:text-gray-200" type="text" name="name" placeholder="Digite o nome da palestra" required></input>
+      <input class="styled_warning dark:text-gray-200" type="text" name="name" placeholder="Digite o nome da palestra" maxlength="20" required></input>
 
       <button type="submit" class="styled_warning"> &#10132;</button>
 
