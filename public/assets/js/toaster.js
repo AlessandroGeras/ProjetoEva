@@ -3,6 +3,7 @@ const loading = (messagem) => {
   toastr.options = {
       progressBar: true,
       timeOut: "60000",
+      positionClass: "toast-top-center",
   };
   toastr["info"](messagem);
 };
@@ -13,6 +14,7 @@ const message = (mensagem) => {
     toastr.options = {
         progressBar: true,
         timeOut: "5000",
+        positionClass: "toast-top-center",
     };
     toastr["success"](mensagem);
 };
