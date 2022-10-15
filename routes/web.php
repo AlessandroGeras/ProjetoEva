@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AppointmentsController;
 use App\Http\Controllers\ConsultasController;
 use App\Http\Controllers\LecturesController;
 use App\Http\Controllers\UsersController;
