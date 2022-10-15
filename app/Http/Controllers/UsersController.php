@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Palestra;
+use App\Models\Lecture;
 use App\Models\Permission;
 use App\Models\Warning;
 use Illuminate\Support\Facades\Auth;
@@ -303,11 +303,11 @@ class UsersController extends Controller
 
         if (($user->permission->role) == ('Usuário')) {
 
-            $manylectures = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
+            $manylectures = $user->lectures->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
 
-            $manyconsultas = $user->consultas->sortBy('date');
+            $manyappointments = $user->appointments->sortBy('date');
 
-            return view('dashboard', ["user" => $user, "manylectures" => $manylectures, "manyconsultas" => $manyconsultas ]);
+            return view('dashboard', ["user" => $user, "manylectures" => $manylectures, "manyappointments" => $manyappointments ]);
         }
 
 
@@ -322,9 +322,9 @@ class UsersController extends Controller
 
             $warning = Warning::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'desc')->get();
 
-            $palestras = Palestra::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'asc')->get();
+            $lectures = Lecture::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'asc')->get();
 
-            return view('dashboard', ["user" => $user, "palestras" => $palestras, "warning" => $warning, 'users' => $users]);
+            return view('dashboard', ["user" => $user, "lectures" => $lectures, "warning" => $warning, 'users' => $users]);
         }
     }
 
@@ -334,11 +334,11 @@ class UsersController extends Controller
         $user = User::findOrFail($id);
         $currentUser = User::find(Auth::id());
 
-        $manylectures = $user->palestras->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
+        $manylectures = $user->lectures->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
 
-        $manyconsultas = $user->consultas->sortBy('date');
+        $manyappointments = $user->appointments->sortBy('date');
 
-        return view('user', ["currentUser" => $currentUser, "user" => $user, "manylectures" => $manylectures,"manyconsultas" => $manyconsultas]);
+        return view('user', ["currentUser" => $currentUser, "user" => $user, "manylectures" => $manylectures,"manyappointments" => $manyappointments]);
     }
 
 
