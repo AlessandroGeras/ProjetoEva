@@ -13,7 +13,7 @@
     <form action="{{ route('edit-lecture', [$lecture->id])}}" method="POST" onsubmit="if((document.getElementById('edit_lecture_date').value)>=('<?php echo date('Y-m-d\TH:i') ?>')){loading('Editando palestra');}">
       @csrf
       @method("PUT")
-      <input class="styled_warning dark:text-gray-200" id="edit_lecture_name" type="text" name="name" placeholder="Digite o nome da palestra" required></input>
+      <input class="styled_warning dark:text-gray-200" id="edit_lecture_name" type="text" name="name" placeholder="Digite o nome da palestra" maxlength="20" required></input>
 
       <button type="submit" class="styled_warning"> &#10132;</button>
 
