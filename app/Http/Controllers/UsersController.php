@@ -301,7 +301,7 @@ class UsersController extends Controller
     {
         $user = User::find(Auth::id());
 
-        if (($user->permission->role) == ('Usuário')) {
+        if (($user->permission->role) == ('User')) {
 
             $manylectures = $user->lectures->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
 
@@ -311,7 +311,7 @@ class UsersController extends Controller
         }
 
 
-        if ($user->permission->role == ('Administrador') || ('Profissional')) {
+        if ($user->permission->role == ('Professional') || ('Administrator')) {
 
             $search = request("search");
             $users = null;
