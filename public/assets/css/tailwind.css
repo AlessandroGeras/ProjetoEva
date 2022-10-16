@@ -3696,6 +3696,16 @@ input:checked + label svg.moon {
   }
 }
 
+.placeholder\:text-xs::-moz-placeholder{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.placeholder\:text-xs::placeholder{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;

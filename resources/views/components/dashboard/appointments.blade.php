@@ -14,7 +14,7 @@
 
 
 <h2 class="my_events text-xs text-center dark:text-gray-200 sm:text-base">Consultas</h2>
-<div class="carousel_appointments carousel text-xs sm:w-[450px] sm:h-24 sm:text-base">
+<div class="w-[70%] h-16 carousel_appointments carousel text-xs sm:w-[450px] sm:h-24 sm:text-base">
     @if (count($manyappointments) > 0)
     @foreach($manyappointments as $appointment)
 
@@ -47,15 +47,15 @@
     $(document).ready(function() {
         $('.carousel_appointments').slick({
             infinite: false,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              responsive: [{
-                  breakpoint: 640,
-                  settings: {
-                      slidesToShow: 2,
-                      slidesToScroll: 2,
-                  }
-              }]
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [{
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            }]
         });
     });
 </script>

@@ -30,7 +30,7 @@ const menu_click = (clicked_id) => {
         
         let my_account = document.getElementById("my_account");
         if (my_account) {
-            my_account.className = "mt-0 inline-block w-full text-black text-center lg:mt-0";
+            my_account.className = "mt-0 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
         }  
 
         let table_container = document.getElementById("table_container");
@@ -68,7 +68,8 @@ const menu_click = (clicked_id) => {
 
         let my_account = document.getElementById("my_account");
         if (my_account) {
-            my_account.className = "-mt-24 inline-block w-full text-black text-center lg:mt-0";
+            my_account.className = "-mt-24 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
+            
         }
 
         let table_container = document.getElementById("table_container");
