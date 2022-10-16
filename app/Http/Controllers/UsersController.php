@@ -303,9 +303,9 @@ class UsersController extends Controller
 
         if (($user->permission->role) == ('User')) {
 
-            $manylectures = $user->lectures->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
+            $manylectures = $user->lectures->where('date', '>=', date("Y-m-d H:i"))->sortByDesc('date');
 
-            $manyappointments = $user->appointments->sortBy('date');
+            $manyappointments = $user->appointments->sortByDesc('date');
 
             return view('dashboard', ["user" => $user, "manylectures" => $manylectures, "manyappointments" => $manyappointments ]);
         }
