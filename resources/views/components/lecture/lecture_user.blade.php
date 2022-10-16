@@ -31,14 +31,14 @@
     @if ($registered == false)
     <form action="{{ route('join', [$lecture->id])}}" method="POST">
       @csrf
-      <a class="button_join" href="#" onclick="this.closest('form').submit();loading('Confirmando presença')">Confirmar Presença</a>
+      <a class="button_join text-white dark:text-gray-200 dark:button_join_darkmode" href="#" onclick="this.closest('form').submit();loading('Confirmando presença')">Confirmar Presença</a>
     </form>
 
     @else
     <form action="{{ route('leave', [$lecture->id])}}" method="POST">
       @csrf
       @method("DELETE")
-      <a class="button_leave" href="#" onclick="
+      <a class="button_leave text-white dark:text-gray-200 dark:button_leave_darkmode" href="#" onclick="
             this.closest('form').submit();loading('Confirmando saída');return false; ">Abandonar Evento</a>
     </form>
     @endif

@@ -1,77 +1,54 @@
-<div class="styled_active" id="table_container">
-  <div id="table_group">
-    <table>
-      <tr>
-        <td colspan="2" id="table_title">{{$user->name}}</td>
-      </tr>
-      <tr>
-        <td>Email</td>
-        <td> {{$user->email}}</td>
-      </tr>
-      <tr>
-        <td>Endereço</td>
-        <td> {{$user->address}}</td>
-      </tr>
-      <tr>
-        <td>Telefone</td>
-        <td> {{$user->phone_number}}</td>
-      </tr>
-      @if (count($manypalestras) > 0)
-      <tr>
-        <td colspan="2" id="table_title">Palestras Inscritas</td>
-      </tr>
-      @foreach($manypalestras as $palestra)
-      <tr id="border_palestra">
-        <td>Palestra</td>
-        <td>{{$palestra->name}}</td>
-      </tr>
-      @endforeach
-      @endif
-      <tr id="table_title">
-        <td colspan="2">Permissão: {{$user->permission->role}}</td>
-      </tr>
-    </table>
-    <br>
+{{--Visualização do usuário pesquisado por Profissionais e Administradores pela página Minha Conta --}}
 
-    @if($currentUser->permission->role=="Administrador")
-    @if($user->permission->role=="Usuário")
-    <form action="{{ route('permission', [$user->id])}}" method="POST" onsubmit="loading('Promovendo usuário para profissional')">
-      @csrf
-      <input type="hidden" name="role" value="Profissional">
+<div class="-mt-24 inline-block w-full text-black text-center lg:mt-0" id="table_container">
 
-      <button type="submit" class="button_profissional"> Promover para Profissional</button>
-    </form>
+  {{$slot}}
 
+  {{--Tabela de informações do usuário--}}
+  <table class="mx-auto my-6 text-xs sm:text-base dark:text-gray-200">
+    <tr>
+      <td colspan="2" class="bg-black text-sm text-white text-center sm:text-lg dark:bg-sky-900 dark:text-gray-200">{{$user->name}}</td>
+    </tr>
+    <tr class="dark:bg-gray-800">
+      <td>Email</td>
+      <td> {{$user->email}}</td>
+    </tr>
+    <tr class="dark:bg-gray-800">
+      <td>Endereço</td>
+      <td> {{$user->address}}</td>
+    </tr>
+    <tr class="dark:bg-gray-800">
+      <td>Telefone</td>
+      <td> {{$user->phone_number}}</td>
+    </tr>
+    @if (count($manylectures) > 0)
+    <tr>
+      <td colspan="2" class="bg-black text-sm text-white text-center sm:text-lg dark:bg-sky-900 dark:text-gray-200">Palestras Inscritas</td>
+    </tr>
+    @foreach($manylectures as $lecture)
+    <tr class="bg-[#d6d6d6] text-xs sm:text-base dark:bg-gray-900 dark:text-gray-200">
+      <td>Palestra</td>
+      <td>{{$lecture->name}}</td>
+    </tr>
+    @endforeach
     @endif
-    @if($user->permission->role=="Profissional")
-    <form action="{{ route('permission', [$user->id])}}" method="POST" onsubmit="loading('Rebaixando profissional para usuário')">
-      @csrf
-      <input type="hidden" name="role" value="Usuário">
+    <tr class="bg-black text-sm text-white text-center sm:text-lg dark:bg-sky-900 dark:text-gray-200">
+      <td colspan="2">Permissão:
 
-      <button type="submit" class="button_user"> Rebaixar para Usuário</button>
-    </form>
-    @endif
-    @endif
+        @switch($user->permission->role)
+        @case('Administrator')
+        Administrador
+        @break
 
-    @if($currentUser->permission->role=="Profissional")
-    @if($user->permission->role=="Usuário")
-    <div class="styled_input">
-      <form action="{{ route('consultaStore', [$user->id])}}" method="POST" onsubmit="loading('Cadastrando informações da consulta')">
-        @csrf        
-        <input type="hidden" name="profissional" value="{{$currentUser->name}}">
+        @case('Professional')
+        Profissional
+        @break
 
-        <input type="hidden" name="date" value="<?php echo date("Y-m-d H:i"); ?>">
-        
-        <textarea class="styled_warning" name="consulta" cols="46" rows="5" placeholder="Registrar dados da consulta"></textarea>
+        @case('User')
+        Usuário
+        @break
+        @endswitch
 
-        <hr>
-
-        <input class="styled_warning" type="url" name="link" placeholder="Link para material de apoio"></input>
-
-        <button type="submit" class="styled_warning"> &#129122;</button>
-      </form>
-    </div>
-    @endif
-    @endif
-  </div>
-</div>
+      </td>
+    </tr>
+  </table>

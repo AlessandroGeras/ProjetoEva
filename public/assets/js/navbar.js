@@ -32,6 +32,11 @@ const menu_click = (clicked_id) => {
         if (my_account) {
             my_account.className = "mt-0 inline-block w-full text-black text-center lg:mt-0";
         }  
+
+        let table_container = document.getElementById("table_container");
+        if (table_container) {
+            table_container.className = "mt-0 inline-block w-full text-black text-center lg:mt-0";
+        }  
     }
     
     else {
@@ -65,5 +70,10 @@ const menu_click = (clicked_id) => {
         if (my_account) {
             my_account.className = "-mt-24 inline-block w-full text-black text-center lg:mt-0";
         }
+
+        let table_container = document.getElementById("table_container");
+        if (table_container) {
+            table_container.className = "-mt-24 inline-block w-full text-black text-center lg:mt-0";
+        }  
     }
 };

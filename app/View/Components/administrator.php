@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class user extends Component
+class administrator extends Component
 {
     /**
      * Create a new component instance.
@@ -13,12 +13,10 @@ class user extends Component
      */
 
     public $user;
-    public $manylectures;
 
-    public function __construct($user,$manylectures)
-    {      
+    public function __construct($user)
+    {
         $this->user = $user;
-        $this->manylectures = $manylectures;
     }
 
     /**
@@ -28,6 +26,6 @@ class user extends Component
      */
     public function render()
     {
-        return view('components.user');
+        return view('components.administrator');
     }
 }

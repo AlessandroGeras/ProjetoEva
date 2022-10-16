@@ -1,12 +1,5 @@
 /* CSS Principal */
 @import "tailwind.css";
 
-/* botões & forms */
-@import "buttons/professional.css";
-@import "buttons/user.css";
-
-/* componentes da página user */
-@import "user/table.css";
-
 /* componentes da página consultas */
 @import "consulta/consultas_painel.css";
