@@ -11,6 +11,8 @@
 <script src="/assets/js/toaster.js"></script>
 <script src="/assets/js/account.js"></script>
 
+<script src="https://cdn.tailwindcss.com"></script>
+
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 
