@@ -599,8 +599,6 @@ input[type="file"] {
 textarea {
   resize: none;
   text-align: justify;
-  font-size: 14px;
-  color: #505739;
 }
 
 /*darkmode component*/
@@ -1690,6 +1688,10 @@ input:checked + label svg.moon {
 
 .-mt-px{
   margin-top: -1px;
+}
+
+.-ml-\[20\%\]{
+  margin-left: -20%;
 }
 
 .-mt-9{

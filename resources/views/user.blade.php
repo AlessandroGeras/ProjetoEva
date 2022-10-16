@@ -12,6 +12,8 @@
 @endif
 
 @if($currentUser->permission->role=="Professional")
-<x-user.consultas_profissional :currentUser="$currentUser" :user="$user" :manyappointments="$manyappointments" />
+<x-user.appointments_professional :currentUser="$currentUser" :user="$user" :manyappointments="$manyappointments" />
+
+<x-user.professional :user="$user" :currentUser="$currentUser"/>
 @endif
 @endsection

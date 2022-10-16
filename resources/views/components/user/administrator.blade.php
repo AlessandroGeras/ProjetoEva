@@ -1,4 +1,4 @@
-{{--Opções do Administrador para promover ou rebaixar usuários na página Usuários--}}
+{{--Opções para o Administrador promover ou rebaixar usuários--}}
 
 @if($user->permission->role=="User")
   <form class="flex center justify-around mt-10" action="{{ route('permission', [$user->id])}}" method="POST">
@@ -10,7 +10,7 @@
 
   @endif
   @if($user->permission->role=="Professional")
-  <form class="flex center justify-center mt-10" action="{{ route('permission', [$user->id])}}" method="POST">
+  <form class="flex center justify-around mt-10" action="{{ route('permission', [$user->id])}}" method="POST">
     @csrf
     <input type="hidden" name="role" value="User">
 

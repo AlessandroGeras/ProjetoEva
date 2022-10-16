@@ -21,7 +21,7 @@
 
       <input class="styled_warning dark:text-gray-200" id="edit_lecture_link" type="url" name="link" placeholder="Link para conteúdo extra"></input>
 
-      <div id="warning_date_container" class="text-center">
+      <div id="warning_date_container" class="text-center -ml-[20%]">
         <input type="datetime-local" class="dark:text-gray-200 dark:calendar_darkmode" id="edit_lecture_date" name="date" value="<?php echo date("Y-m-d H:i"); ?>" min="<?php echo date('Y-m-d\TH:i') ?>">
       </div>
     </form>
