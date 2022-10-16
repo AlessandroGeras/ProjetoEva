@@ -3396,16 +3396,7 @@ input:checked + label svg.moon {
 
 /*leave lecture darkmode*/
 
-/*leave lecture*/
-
-.button_leave:after {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==")
-            no-repeat left center transparent;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(97%)
-            saturate(0%) hue-rotate(240deg) brightness(90%) contrast(100%);
-  background-size: 100% 100%;
-  transform: rotate(180deg);
-};
+/*leave lecture darkmode*/
 
 /*promote user*/
 
@@ -3428,8 +3419,12 @@ input:checked + label svg.moon {
 .button_professional:hover,
     .button_professional:focus {
   border: 1px solid #0080ff;
-  background: #0c4a6e;
-  background: linear-gradient(to bottom, rgb(0, 240, 255), #007af5);
+  background: #00c7ff;
+  background: linear-gradient(
+            to bottom,
+            rgb(0, 240, 255),
+            rgb(0, 122, 245)
+        );
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
@@ -3444,8 +3439,8 @@ input:checked + label svg.moon {
 
 /*promote user*/
 
-.button_professional:after{
-  content:  "\0000a0";
+.button_professional:after {
+  content: "\0000a0";
   display: inline-block;
   height: 24px;
   width: 24px;
@@ -3454,8 +3449,10 @@ input:checked + label svg.moon {
   position: relative;
   top: 0px;
   left: 0px;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==") no-repeat left center transparent;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(0%) hue-rotate(240deg) brightness(111%) contrast(100%);
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==")
+            no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%)
+            saturate(0%) hue-rotate(240deg) brightness(111%) contrast(100%);
   background-size: 100% 100%;
   transform: rotate(270deg);
 }
@@ -3490,7 +3487,11 @@ input:checked + label svg.moon {
 .button_user:hover,
     .button_user:focus {
   background: #ff5959;
-  background: linear-gradient(to bottom, rgb(255, 200, 200), rgb(182, 47, 47));
+  background: linear-gradient(
+            to bottom,
+            rgb(255, 200, 200),
+            rgb(182, 47, 47)
+        );
   color: #ffffff;
   text-decoration: none;
   cursor: pointer;
@@ -3505,8 +3506,8 @@ input:checked + label svg.moon {
 
 /*demote user*/
 
-.button_user:after{
-  content:  "\0000a0";
+.button_user:after {
+  content: "\0000a0";
   display: inline-block;
   height: 24px;
   width: 24px;
@@ -3515,10 +3516,12 @@ input:checked + label svg.moon {
   position: relative;
   top: 0px;
   left: 0px;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==") no-repeat left center transparent;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(0%) hue-rotate(240deg) brightness(111%) contrast(100%);
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==")
+            no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%)
+            saturate(0%) hue-rotate(240deg) brightness(111%) contrast(100%);
   background-size: 100% 100%;
-  transform: translate(0px,-1.5px) rotate(90deg) ;
+  transform: translate(0px, -1.5px) rotate(90deg);
 }
 
 /*demote user darkmode*/
@@ -4179,17 +4182,9 @@ input:checked + label svg.moon {
 }
 
 .dark .dark\:button_join_darkmode:hover,.dark .dark\:button_join_darkmode:focus {
-  background: linear-gradient(
-            to bottom,
-            #064e3b,
-            #0d9488
-        );
+  background: linear-gradient(to bottom, #064e3b, #0d9488);
   background: #064e3b;
-  background: linear-gradient(
-            to bottom,
-            #064e3b,
-            #0d9488
-        );
+  background: linear-gradient(to bottom, #064e3b, #0d9488);
   text-decoration: none;
 }
 
@@ -4211,22 +4206,23 @@ input:checked + label svg.moon {
 }
 
 .dark .dark\:button_leave_darkmode:hover,.dark .dark\:button_leave_darkmode:focus {
-  background: linear-gradient(
-            to bottom,
-            #7f1d1d,
-            #dc2626
-        );
+  background: linear-gradient(to bottom, #7f1d1d, #dc2626);
   background: #7f1d1d;
-  background: linear-gradient(
-            to bottom,
-            #7f1d1d,
-            #dc2626
-        );
+  background: linear-gradient(to bottom, #7f1d1d, #dc2626);
 }
 
 .dark .dark\:button_leave_darkmode:active {
   background: #7f1d1d;
   background: linear-gradient(to bottom, #7f1d1d, #dc2626);
+}
+
+.dark .dark\:button_leave_darkmode:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==")
+            no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%)
+            saturate(0%) hue-rotate(240deg) brightness(90%) contrast(100%);
+  background-size: 100% 100%;
+  transform: rotate(180deg);
 }
 
 .dark .dark\:button_professional_darkmode {
@@ -4245,9 +4241,11 @@ input:checked + label svg.moon {
   background: linear-gradient(to bottom, #075985, #0284c7);
 }
 
-.dark .dark\:button_professional_darkmode:after{
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==") no-repeat left center transparent;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(0%) hue-rotate(240deg) brightness(90%) contrast(100%);
+.dark .dark\:button_professional_darkmode:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==")
+            no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%)
+            saturate(0%) hue-rotate(240deg) brightness(90%) contrast(100%);
 }
 
 .dark .dark\:button_user_darkmode {
@@ -4268,11 +4266,13 @@ input:checked + label svg.moon {
   background: linear-gradient(to bottom, #7f1d1d, #dc2626);
 }
 
-.dark .dark\:button_user_darkmode:after{
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==") no-repeat left center transparent;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(97%) saturate(0%) hue-rotate(240deg) brightness(90%) contrast(100%);
+.dark .dark\:button_user_darkmode:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAsklEQVRIie2UQQ6CMBBFXwyrOYPRO3kAFx5Dl8aDcggxxoVuCmmhtvxSXfGShpDy+xg6FFYW8F4w7oABNDNEnfhi5t/kBB2wFyQGtIqgl6hVDGwKMifgWpgNCDbLsQMebu4WyZjLjHMSB+DpSfxKkgITxhF4RSQTQeNNtGJZ/aJnd72kHvoLP/lEJRRv8phYm26p2KYxAaR/tCqCFF/bNBdSBAE5weR0nCkZDsfaFazofAAK00UKReTHWAAAAABJRU5ErkJggg==")
+            no-repeat left center transparent;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(97%)
+            saturate(0%) hue-rotate(240deg) brightness(90%) contrast(100%);
   background-size: 100% 100%;
-  transform: translate(0px,-1.5px) rotate(90deg) ;
+  transform: translate(0px, -1.5px) rotate(90deg);
 }
 
 .dark .dark\:admin_button_darkmode {
