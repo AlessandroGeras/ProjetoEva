@@ -244,7 +244,9 @@ Responsividade da página palestra.
 <h4> 15/10 - Sábado - Alessandro</h4>
 Responsividade e Refatoração de código para Tailwind da view de Usuários da página Dashboard. <br>
 Responsividade e Refatoração de código para Tailwind da view de Administradores e Profissionais da página Dashboard. <br>
+Responsividade e Refatoração de código para Tailwind da view de Administradores da página Usuários. <br>
 Darkmode configurado na página Dashboard. <br>
+Darkmode configurado na página Usuários. <br>
 Refatoração final da Dashboard - Início da Sprint de testes.
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
