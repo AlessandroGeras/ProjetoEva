@@ -249,6 +249,9 @@ Darkmode configurado na página Dashboard. <br>
 Darkmode configurado na página Usuários. <br>
 Refatoração final da Dashboard - Início da Sprint de testes.
 
+<h4> 16/10 - Domingo - Alessandro</h4>
+Responsividade e Refatoração de código para Tailwind da view de Profissionais da página Usuários. <br>
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
