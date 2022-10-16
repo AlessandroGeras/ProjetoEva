@@ -336,7 +336,7 @@ class UsersController extends Controller
 
         $manylectures = $user->lectures->where('date', '>=', date("Y-m-d H:i"))->sortBy('date');
 
-        $manyappointments = $user->appointments->sortBy('date');
+        $manyappointments = $user->appointments->sortByDesc('date');
 
         return view('user', ["currentUser" => $currentUser, "user" => $user, "manylectures" => $manylectures,"manyappointments" => $manyappointments]);
     }
