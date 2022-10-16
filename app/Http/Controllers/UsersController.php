@@ -322,7 +322,7 @@ class UsersController extends Controller
 
             $warning = Warning::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'desc')->get();
 
-            $lectures = Lecture::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'asc')->get();
+            $lectures = Lecture::where('date', '>=', date("Y-m-d H:i"))->orderBy('date', 'desc')->get();
 
             return view('dashboard', ["user" => $user, "lectures" => $lectures, "warning" => $warning, 'users' => $users]);
         }
