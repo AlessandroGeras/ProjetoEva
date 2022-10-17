@@ -45,7 +45,15 @@ const menu_click = (clicked_id) => {
             appointment.className =
                 "mt-0 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
         }
-    } else {
+
+        let eva = document.getElementById("eva");
+        if (eva) {
+            eva.className =
+                "mt-0 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
+        }
+    }
+    
+    else {
         let navbar_menu = document.getElementById("navbar_menu");
         navbar_menu.className =
             "mobile_close w-full h-full block text-black bg-sky-900 float-left lg:float-right lg:w-[800px] lg:bg-transparent dark:text-gray-200";
@@ -87,6 +95,12 @@ const menu_click = (clicked_id) => {
         let appointment = document.getElementById("appointment");
         if (appointment) {
             appointment.className = "-mt-24 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
+            
+        }
+
+        let eva = document.getElementById("eva");
+        if (eva) {
+            eva.className = "-mt-24 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
             
         }
     }
