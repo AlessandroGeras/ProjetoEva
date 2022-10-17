@@ -91,11 +91,11 @@ Route::delete('/warning/destroy/{id}', [WarningsController::class, "destroy"])->
 
 
 //Profissional
-Route::get('/professionals', [WarningsController::class, "professionals"])->name('professionals');
+Route::get('/professionals', [UsersController::class, "professionals"])->name('professionals');
 
 
 //Eva
-Route::get('/eva', [WarningsController::class, "eva"])->name('eva');
+Route::get('/eva', [UsersController::class, "eva"])->name('eva');
 
 
 
