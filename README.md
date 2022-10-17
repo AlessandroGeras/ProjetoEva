@@ -235,11 +235,11 @@ Responsividade da página inicial.
 
 <h4> 04/10 - Terça - Eliabe </h4>
 Refatoração final da página palestras - Início da Sprint de testes.
-Responsividade da página palestras.
+Responsividade da página Palestras.
 
 <h4> 09/10 - Domingo - Eliabe </h4>
 Refatoração final da página palestra - Início da Sprint de testes.
-Responsividade da página palestra.
+Responsividade da página Palestra.
 
 <h4> 15/10 - Sábado - Alessandro</h4>
 Responsividade e Refatoração de código para Tailwind da view de Usuários da página Dashboard. <br>
@@ -247,13 +247,17 @@ Responsividade e Refatoração de código para Tailwind da view de Administrador
 Responsividade e Refatoração de código para Tailwind da view de Administradores da página Usuários. <br>
 Darkmode configurado na página Dashboard. <br>
 Darkmode configurado na página Usuários. <br>
-Refatoração final da Dashboard - Início da Sprint de testes.
+Refatoração final da página Dashboard - Início da Sprint de testes.
 
 <h4> 16/10 - Domingo - Alessandro</h4>
 Responsividade e Refatoração de código para Tailwind da view de Profissionais da página Usuários.
 
 <h4> 17/10 - Segunda - Alessandro</h4>
-Consertado erros do próprio Tailwind sobre herança de propriedades de pai para filho.
+Consertado erros do próprio Tailwind sobre herança de propriedades de pai para filho. <br>
+Refatoração final da página Usuários - Início da Sprint de testes. <br>
+Responsividade e Refatoração de código para Tailwind da página Consultas. <br>
+Darkmode configurado na página Consultas. <br>
+Refatoração final da página Consultas - Início da Sprint de testes.
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
