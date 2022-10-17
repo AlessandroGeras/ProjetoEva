@@ -250,7 +250,10 @@ Darkmode configurado na página Usuários. <br>
 Refatoração final da Dashboard - Início da Sprint de testes.
 
 <h4> 16/10 - Domingo - Alessandro</h4>
-Responsividade e Refatoração de código para Tailwind da view de Profissionais da página Usuários. <br>
+Responsividade e Refatoração de código para Tailwind da view de Profissionais da página Usuários.
+
+<h4> 17/10 - Segunda - Alessandro</h4>
+Consertado erros do próprio Tailwind sobre herança de propriedades de pai para filho.
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
