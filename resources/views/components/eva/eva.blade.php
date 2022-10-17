@@ -6,7 +6,7 @@
     <div class="letter text-xs sm:text-sm lg:text-base dark:text-gray-200 dark:letter_darkmode">
         <p class="font-bold">Bem vindo(a) ao Projeto Eva</p>
 
-        <p class="text-center">Aqui você pode conheçer um pouco mais sobre quem somos e como ajudamos centenas de pessoas.</p><br>
+        <p class="text-center">Aqui você pode conheçer um pouco mais sobre quem somos e como ajudamos centenas de famílias.</p><br>
 
         <p class="text-center font-bold">O que é o Eva?</p>
         <p class="text-center">O Espaço Vida Autista, é um projeto social da ADRA, Agência de Desenvolvimento e Recursos Assistênciais da Igreja Adventista do Sétimo Dia, com o propósito de atender as necessidades do TEA ( Transtorno Espectro Autista), mediante a demanda apresentada na comunidade de Garopaba, estamos comprometidos em fazer o melhor através de nossa equipe multidisciplinar, com o acompanhamento interventivo neuropsicomotor e sensorial.</p><br>
