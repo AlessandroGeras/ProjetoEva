@@ -353,4 +353,10 @@ class UsersController extends Controller
 
         return redirect()->back()->with("msg", "Permissão alterada com sucesso");
     }	
+    
+    
+     public function eva()
+    {   
+        return response()->view('eva')->setStatusCode(200);
+    }
 }
