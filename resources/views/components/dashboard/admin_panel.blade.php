@@ -7,7 +7,7 @@
 {{--Botão para abrir os Avisos Gerais--}}
 <div class="p-2.5 text-center font-bold dark:text-gray-200">Painel Administrativo</div>
 <div class="text-center">
-  <div class="admin_button text-xs w-28 px-0 py-1 sm:text-sm sm:px-1 py-2 dark:admin_button_darkmode dark:text-gray-200" onclick="warning();">Aviso Geral</div>
+  <div class="admin_button w-28 text-xs px-0 py-0 sm:text-sm sm:px-2.5 py-2.5 dark:admin_button_darkmode dark:text-gray-200" onclick="warning();">Aviso Geral</div>
 </div>
 
 {{--Formulário de criação dos Avisos Gerais--}}

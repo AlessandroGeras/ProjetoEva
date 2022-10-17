@@ -3,8 +3,8 @@
 <?php date_default_timezone_set('America/Sao_Paulo'); ?>
 
 {{--Botão para abrir o formulário de edição de Palestras--}}
-<div class="pt-2.5 text-center mb-5">
-  <div class="admin_button text-xs w-32 px-0 py-1 sm:text-sm sm:px-1 py-2 dark:admin_button_darkmode dark:text-gray-200" onclick="edit_lecture('{{ $lecture->name }}','{{ $lecture->info }}','{{ $lecture->date }}','{{ $lecture->link }}')">Editar palestra</div>
+<div class="-mt-2 text-center mb-5">
+  <div class="admin_button text-xs px-2.5 py-0 sm:text-sm sm:px-2.5 py-2.5 dark:admin_button_darkmode dark:text-gray-200" onclick="edit_lecture('{{ $lecture->name }}','{{ $lecture->info }}','{{ $lecture->date }}','{{ $lecture->link }}')">Editar palestra</div>
 </div>
 
 {{--Formulário de Edição de Palestras--}}

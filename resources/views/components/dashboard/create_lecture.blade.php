@@ -6,7 +6,7 @@
 
 {{--Botão para abrir o formulário de criação de Palestras--}}
 <div class="pt-2.5 text-center">
-  <div class="admin_button text-xs w-28 px-0 py-1 sm:text-sm sm:px-1 py-2 dark:admin_button_darkmode dark:text-gray-200" onclick="create_lecture();">Criar palestra</div>
+  <div class="admin_button w-28 text-xs px-0 py-0 sm:text-sm sm:px-2.5 py-2.5 dark:admin_button_darkmode dark:text-gray-200" onclick="create_lecture();">Criar palestra</div>
 </div>
 
 {{--Formulário de Criação de Palestras--}}

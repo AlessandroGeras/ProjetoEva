@@ -4,7 +4,7 @@
 
 {{--Botão para abrir a Pesquisa de Usuários--}}
 <div class="pt-2.5 text-center">
-  <div class="admin_button mb-5 text-xs w-28 px-0 py-1 sm:text-sm sm:px-1 py-2 dark:admin_button_darkmode dark:text-gray-200" onclick="users();">Usuários</div>
+  <div class="admin_button w-28 mb-5 text-xs px-0 py-0 sm:text-sm sm:px-2.5 py-2.5 dark:admin_button_darkmode dark:text-gray-200" onclick="users();">Usuários</div>
 </div>
 
 {{--Formulário de Pesquisa de Usuários--}}

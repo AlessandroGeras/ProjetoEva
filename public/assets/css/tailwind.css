@@ -1710,6 +1710,10 @@ input:checked + label svg.moon {
   margin-bottom: 3rem;
 }
 
+.-mt-2{
+  margin-top: -0.5rem;
+}
+
 .block{
   display: block;
 }
@@ -1896,10 +1900,6 @@ input:checked + label svg.moon {
 
 .w-44{
   width: 11rem;
-}
-
-.w-32{
-  width: 8rem;
 }
 
 .min-w-0{
@@ -2440,6 +2440,11 @@ input:checked + label svg.moon {
   padding-right: 0px;
 }
 
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-2\.5{
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -2448,6 +2453,11 @@ input:checked + label svg.moon {
 .px-3\.5{
   padding-left: 0.875rem;
   padding-right: 0.875rem;
+}
+
+.px-2\.5{
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .pt-6{
@@ -3537,7 +3547,6 @@ input:checked + label svg.moon {
 /*carousel*/
 
 .carousel {
-  width: 450px;
   height: 100px;
   margin: 0 auto;
   color: rgb(255, 255, 255);
@@ -3562,7 +3571,6 @@ input:checked + label svg.moon {
 /*admin button*/
 
 .admin_button {
-  width: 150px;
   box-shadow: 0px 1px 0px 0px #1c1b18;
   background: linear-gradient(
             to bottom,
@@ -3576,8 +3584,6 @@ input:checked + label svg.moon {
   cursor: pointer;
   color: #505739;
   font-family: Arial;
-  font-size: 14px;
-  padding: 12px 16px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
 }
@@ -4875,9 +4881,14 @@ input:checked + label svg.moon {
     padding-right: 5rem;
   }
 
-  .sm\:px-1{
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+  .sm\:px-2\.5{
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .sm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .sm\:px-10{
