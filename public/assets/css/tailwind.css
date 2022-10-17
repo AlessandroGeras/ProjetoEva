@@ -3610,6 +3610,20 @@ input:checked + label svg.moon {
 
 /*admin button*/
 
+/*appointment background*/
+
+.appointment_background {
+  margin: 25px auto;
+  width: 80%;
+  text-align: justify;
+  padding: 20px;
+  background: #ccc;
+  border: 1px solid #999;
+  animation: appointment 4s infinite;
+}
+
+/*appointment background darkmode*/
+
 @keyframes AnimationEvents {
   0% {
     background-position: 0% 50%;
@@ -3621,6 +3635,14 @@ input:checked + label svg.moon {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Standard syntax */
+
+@keyframes appointment {
+  50% {
+    box-shadow: 0px 0px 20px #999;
   }
 }
 
@@ -4303,6 +4325,12 @@ input:checked + label svg.moon {
   background-color: #1f2937;
 }
 
+.dark .dark\:appointment_background_darkmode {
+  background: #111827;
+  border: 1px solid #999;
+  animation: appointment 4s infinite;
+}
+
 @media screen and (max-width: 640px) {
   /*lectures timeline*/
 
@@ -4941,6 +4969,11 @@ input:checked + label svg.moon {
 
   .sm\:text-lg{
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .sm\:text-xl{
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 

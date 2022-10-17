@@ -5,7 +5,7 @@
     @if ($lecture->link)
     Material de apoio <br>
     &#128279;
-    <a class="text-black dark:text-gray-200" href="{{$lecture->link}}" target="_blank">{{$lecture->link}}</a>
+    <a class="text-black underline dark:text-gray-200" href="{{$lecture->link}}" target="_blank">{{$lecture->link}}</a>
 
     @else
     &#128279; Não há material de apoio

@@ -26,20 +26,26 @@ const menu_click = (clicked_id) => {
         let lecture_title = document.getElementById("lecture_title");
         if (lecture_title) {
             lecture_title.className = "mt-0 inline-block w-full lg:mt-0";
-        }  
-        
+        }
+
         let my_account = document.getElementById("my_account");
         if (my_account) {
-            my_account.className = "mt-0 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
-        }  
+            my_account.className =
+                "mt-0 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
+        }
 
         let table_container = document.getElementById("table_container");
         if (table_container) {
-            table_container.className = "mt-0 inline-block w-full text-black text-center lg:mt-0";
-        }  
-    }
-    
-    else {
+            table_container.className =
+                "mt-0 inline-block w-full text-black text-center lg:mt-0";
+        }
+
+        let appointment = document.getElementById("appointment");
+        if (appointment) {
+            appointment.className =
+                "mt-0 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
+        }
+    } else {
         let navbar_menu = document.getElementById("navbar_menu");
         navbar_menu.className =
             "mobile_close w-full h-full block text-black bg-sky-900 float-left lg:float-right lg:w-[800px] lg:bg-transparent dark:text-gray-200";
@@ -68,13 +74,20 @@ const menu_click = (clicked_id) => {
 
         let my_account = document.getElementById("my_account");
         if (my_account) {
-            my_account.className = "-mt-24 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
-            
+            my_account.className =
+                "-mt-24 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
         }
 
         let table_container = document.getElementById("table_container");
         if (table_container) {
-            table_container.className = "-mt-24 inline-block w-full text-black text-center lg:mt-0";
-        }  
+            table_container.className =
+                "-mt-24 inline-block w-full text-black text-center lg:mt-0";
+        }
+
+        let appointment = document.getElementById("appointment");
+        if (appointment) {
+            appointment.className = "-mt-24 inline-block w-full text-black text-center text-xs sm:text-base lg:mt-0 dark:text-gray-200";
+            
+        }
     }
 };
