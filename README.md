@@ -264,14 +264,12 @@ Refatoração final da página Consultas - Início da Sprint de testes.
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
 O site será feito em PHP utilizando ferramentas do framework Laravel e terá um auxílio de Javascript para o controle de alguns eventos e interações com CSS. O banco de dados que será utilizado é o PostgreSQL e terá um sistema de hierarquia de usuários (permissões). O projeto terá seu deploy feito no Heroku.<br><br>
 
-<a href="heroku.com">Heroku</a> <br/>
 <a href="https://laravel.com/">Laravel</a> <br/>
 <a href="https://tailwindcss.com/">TailwindCSS</a> <br/>
 <a href="https://www.javascript.com/">Javascript</a> <br/>
 <a href="https://www.postgresql.org/">PostgreSQL</a> <br/>
 <a href="https://github.com/CodeSeven/toastr">Toastr</a> <br/>
 <a href="https://kenwheeler.github.io/slick/">Slick</a> <br/>
-<a href="https://jquery.com/">jQuery</a> <br/><br/>
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
