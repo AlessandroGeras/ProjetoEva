@@ -21,14 +21,18 @@ No projeto, estão presentes recursos que permitem o contato e a divulgação do
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="estrutura"> Estrutura do projeto  </h2>
-Site com 4 páginas até o momento. O projeto está totalmente responsivo e seguindo os padrões REST.<br />
-Implantado sistema de recuperação de senhas por email<br /><br />
+Site com 12 páginas até o momento. O projeto está totalmente responsivo e seguindo os padrões REST.<br>
+Implantado sistema de recuperação de senhas por email<br><br>
 
 <ul>
     <li>Cabeçalho adicionado como layout, contendo logo e menu, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
     <li>Rodapé adicionado como layout, contendo informações do projeto, link e QR Code para o usuário se cadastrar no grupo de Whatsapp da instituição, sendo replicado em todas as páginas automaticamente e totalmente responsivo.</li>
     <li>Página Home, contendo uma seção de boas-vindas com opção de login da plataforma e outra seção com flex-box com links atrelados a outras páginas.</li>
     <li>Página Palestras, contendo um formulário para criação de palestras e outro para pesquisar palestras na qual são mostradas em uma timeline em ordem de data descrescente.</li>
+    <li>Página Palestra, contendo informações da palestra</li>
+    <li>Página Consultas, contendo informações da consulta</li>
+    <li>Tela de Login</li>
+    <li>Tela de Cadastro</li>
 </ul>
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
