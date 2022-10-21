@@ -1,6 +1,9 @@
 {{--Listagem de Avisos Gerais na página inicial--}}
 
 <html>
+@php 
+echo $warning;
+@endphp
 
 @if(count($warning)>0)
 <div id="index_warning" class="w-5/6 fixed text-center z-30 border-2 border-solid border-black shadow-[0_0px_2px_rgba(0,0,0,0.3)] warning rounded-lg block py-2 px-2 font-sans sm:px-10 sm:py-5 sm:w-1/2 dark:warning_darkmode">
