@@ -93,12 +93,13 @@ class UsersController extends Controller
         return redirect('/');
     }
 
-
+    //Chamar formulário para recuperar senha
     public function showForgetPassword()
     {
         return response()->view('auth.forgetPassword')->setStatusCode(200);
     }
     
+    //Enviar e-mail de recuperação de senha
      public function submitForgetPassword(Request $request)
     {
         $credentials = $request->validate([
@@ -128,11 +129,13 @@ class UsersController extends Controller
         }
     }
     
+    //Chamar formulário para resetar a senha
     public function showResetPassword($token)
     {
         return response()->view('auth.forgetPasswordLink', ['token' => $token])->setStatusCode(200);
     }
     
+    //Resetar a senha
      public function submitResetPassword(Request $request)
     {
         $request->validate([
@@ -192,13 +195,13 @@ class UsersController extends Controller
         return view('index',['warning' => $warning, 'messages' => $messages]);
     }
 
-
+    //Chamar formulário de autenticação para atualização de dados
     public function userinfo()
     {       
         return view('auth/userinfo');
     }
 
-
+    //Autenticação para atualização de dados
     public function verifyUserInfo(Request $request)
     {
         $credentials = $request->validate([
@@ -214,14 +217,14 @@ class UsersController extends Controller
         }
     }
 
-
+    //Chamar formulário para atualização de dados
     public function newUserInfo()
     {
         $user = auth()->user();
         return view('auth/newUserInfo',['user' => $user]);
     }
 
-
+    //Redefinir dados
     public function setnewUserInfo(Request $request)
     {      
         $user = User::find(Auth::user()->id);
@@ -235,13 +238,13 @@ class UsersController extends Controller
         return redirect(route('dashboard'))->with("msg", "Dados alterados com sucesso");
     }
 
-
+    //Chamar formulário de autenticação para redefinir senha
     public function password()
     {
         return view('auth/password');
     }
 
-
+    //Autenticação para redefinir senha
     public function verifyPassword(Request $request)
     {
         $credentials = $request->validate([
@@ -257,13 +260,13 @@ class UsersController extends Controller
         }
     }
 
-
+    //Chamar formulário para redefinir senha
     public function newPassword()
     {
         return view('auth/newpassword');
     }
 
-
+    //Redefinir senha
     public function setnewPassword(Request $request)
     {
         $request->validate([            
@@ -328,7 +331,7 @@ class UsersController extends Controller
         }
     }
 
-
+    //Página para mostrar usuário por ID para Administradores e Profissionais
      public function show($id)
     {
         $user = User::findOrFail($id);
@@ -341,7 +344,7 @@ class UsersController extends Controller
         return view('user', ["currentUser" => $currentUser, "user" => $user, "manylectures" => $manylectures,"manyappointments" => $manyappointments]);
     }
 
-
+    //Alteração de permissão de usuários por Administradores
     public function permission(Request $request)
     {
         $permission = Permission::where('role', '=', $request->role)->firstOrFail();
