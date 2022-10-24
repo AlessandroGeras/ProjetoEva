@@ -12,6 +12,7 @@
     <li><a href="#tecnologias">Dependências e Tecnologias usadas</a></li>
     <li><a href="#link">Projeto online</a></li>
     <li><a href="#developers">Developers</a></li>
+    <li><a href="#professor">Professor</a></li>
   </ol>
 </details>
 
@@ -259,6 +260,11 @@ Responsividade e Refatoração de código para Tailwind da página Consultas. <b
 Darkmode configurado na página Consultas. <br>
 Refatoração final da página Consultas - Início da Sprint de testes.
 
+<h4> 24/10 - Segunda - Alessandro</h4>
+Finalizada todas as sprints de testes e responsividades. <br>
+Todos os códigos refatorados. <br>
+Excluída todas as branchs antigas.
+
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
 
 <h2 name="tecnologias">Dependências e Tecnologias usadas</h2>
@@ -296,5 +302,13 @@ Vinícius Jung<br/>
 [Linkedin](https://www.linkedin.com/in/vinicius-jung) <br>
 [Github](https://github.com/Vinnie-Jung) <br>
 [Outlook](mailto:viniciusjung@outlook.com) <br><br>
+
+<p align="right">(<a href="#indice">voltar ao indice</a>)</p>
+
+
+## Professor<br /> <a name="professor"></a>
+
+Adriano Machado<br/>
+[Linkedin](https://https://www.linkedin.com/in/xadrak/) <br>
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
