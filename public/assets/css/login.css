@@ -124,15 +124,20 @@ progress {
     height:125px;
 }
 #adra {
-    position:relative;
-    top:21px;
-    width:100px;
-    height:100px;
+    position: relative;
+    top: 50px;
+    margin-right: 1rem;
+    width: 4rem;
+    height: 58px;
 }
 
-#eva{
-    width:125px;
-    height:125px;
+#eva {
+    position: relative;
+    top: 48.5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
 }
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
