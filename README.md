@@ -309,6 +309,6 @@ Vinícius Jung<br/>
 ## Professor<br /> <a name="professor"></a>
 
 Adriano Machado<br/>
-[Linkedin](https://https://www.linkedin.com/in/xadrak/) <br>
+[Linkedin](https://www.linkedin.com/in/xadrak/) <br>
 
 <p align="right">(<a href="#indice">voltar ao indice</a>)</p>
