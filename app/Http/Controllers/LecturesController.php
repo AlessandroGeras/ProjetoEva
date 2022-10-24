@@ -106,7 +106,7 @@ class LecturesController extends Controller
     }
     */
 
-
+    //Usuário ingressar em uma palestra
     public function join($id)
     {
         $user = auth()->user();
@@ -115,7 +115,7 @@ class LecturesController extends Controller
         return redirect('/lectures'.'/'.$id)->with("msg", "Você está confirmado no evento");        
     }
 
-
+    //Usuário sair de uma palestra
     public function leave($id)
     {
         $user = auth()->user();
