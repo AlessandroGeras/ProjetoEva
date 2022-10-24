@@ -95,7 +95,7 @@ Route::post('/professionals', [WarningsController::class, "professionals"])->nam
 
 
 //Eva
-Route::post('/eva', [WarningsController::class, "eva"])->name('eva');
+Route::get('/eva', [WarningsController::class, "eva"])->name('eva');
 
 
 
