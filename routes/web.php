@@ -7,7 +7,7 @@ use App\Http\Controllers\UsersController;
 use App\Http\Controllers\WarningsController;
 use Illuminate\Support\Facades\Route;
 
-//Autenticaçãi
+//Autenticação
 Route::get('/auth/register', [UsersController::class, 'register'])->name('register');
 
 Route::post('/auth/register', [UsersController::class, 'store'])->name('new-user');
@@ -52,16 +52,13 @@ Route::get('/', [UsersController::class, 'index'])->name('index');
 
 
 //Palestras
-Route::get('/lectures', [LecturesController::class, 'show'])
-    ->name('lectures');
+Route::get('/lectures', [LecturesController::class, 'show'])->name('lectures');
 
 Route::post('/create-lecture', [LecturesController::class, 'store'])->name('create-lecture');
 
 Route::get('/lectures/{id}', [LecturesController::class, 'lecture'])->name('lecture')->middleware('auth');
 
-Route::put('/lectures/edit/{id}', [LecturesController::class, 'update'])
-    ->name('edit-lecture')
-    ->middleware('auth');
+Route::put('/lectures/edit/{id}', [LecturesController::class, 'update'])->name('edit-lecture')->middleware('auth');
 
 Route::post('/lectures/join/{id}', [LecturesController::class, "join"])->name('join')->middleware('auth');
 
