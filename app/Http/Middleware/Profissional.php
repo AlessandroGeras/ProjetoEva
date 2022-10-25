@@ -20,7 +20,7 @@ class Profissional
     {
         $user = User::find(Auth::id());
 
-        if(($user->permission->role)!=('Profissional')){
+        if(($user->permission->role)!=('Professional')){
             abort(403);
         }
 
