@@ -1,6 +1,6 @@
 {{--Rodapé do Layout principal--}}
-
-<div class="sticky top-[100vh] w-full h-[525px] bg-zinc-900 text-white sm:h-72 dark:text-gray-200 dark:bg-black">
+<div class="sticky top-[100vh]">
+<div class="w-full h-[525px] bg-zinc-900 text-white sm:h-72 dark:text-gray-200 dark:bg-black">
   <div class="grid center grid-cols-1 gap-y-6 sm:grid-cols-3">
     <div class="m-auto text-center">
       <div class="text-base lg:text-lg font-bold">PROJETO EVA</div><br>
@@ -30,4 +30,7 @@
       <img class="w-20 h-20 mx-auto" src="/assets/img/site/qrcode.png">
     </div>
   </div>
+</div>
+
+<div class="w-full bg-zinc-800 text-white text-center text-xs lg:text-sm dark:text-gray-200">Este domínio foi desenvolvido por <a href="https://www.linkedin.com/in/alessandrogeras">Alessandro Geras</a>, <a href="https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/">Eliabe Ribeiro</a> e <a href="https://www.linkedin.com/in/vinicius-jung">Vinícius Jung</a></div>
 </div>
