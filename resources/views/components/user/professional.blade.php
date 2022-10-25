@@ -14,7 +14,7 @@
 
     <input type="hidden" name="date" value="<?php echo date("Y-m-d H:i"); ?>">
 
-    <textarea class="styled_warning w-full h-20 placeholder:text-xs dark:text-gray-200" name="appointment" placeholder="Registrar dados da consulta"></textarea>
+    <textarea class="styled_warning w-full h-20 placeholder:text-xs dark:text-gray-200" name="appointment" placeholder="Registrar dados da consulta" required></textarea>
 
     <hr>
 
