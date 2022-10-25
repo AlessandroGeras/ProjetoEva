@@ -15,7 +15,7 @@
   <div class="styled_input dark:styled_input_darkmode">
     <form class="w-full sm:ml-[7.5%]" action="{{route('warning')}}" method="POST" onsubmit="if((document.getElementById('warning_date').value)>=('<?php echo date('Y-m-d\TH:i') ?>')){loading('Criando aviso geral');}">>
       @csrf
-      <input class="styled_warning dark:text-gray-200" type="text" name="warning" placeholder="Digite o aviso geral" maxlength="175"></input>
+      <input class="styled_warning dark:text-gray-200" type="text" name="warning" placeholder="Digite o aviso geral" maxlength="175 required"></input>
       <button type="submit" class="styled_warning"> &#10132;</button>
       <div id="warning_date_container" class="text-center">
         <input type="datetime-local" id="warning_date" class="dark:calendar_darkmode dark:text-gray-200" name="date" value="<?php echo date("Y-m-d H:i"); ?>" min="<?php echo date('Y-m-d\TH:i') ?>">
