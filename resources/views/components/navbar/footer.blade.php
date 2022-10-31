@@ -32,5 +32,5 @@
   </div>
 </div>
 
-<div class="w-full bg-zinc-800 text-white text-center text-xs lg:text-sm dark:text-gray-200">Este domínio foi desenvolvido por <a href="https://www.linkedin.com/in/alessandrogeras">Alessandro Geras</a>, <a href="https://www.linkedin.com/in/eliabe-ribeiro-mota-b9a1b7233/">Eliabe Ribeiro</a> e <a href="https://www.linkedin.com/in/vinicius-jung">Vinícius Jung</a></div>
+<div class="w-full bg-zinc-800 text-white text-center text-xs lg:text-sm dark:text-gray-200">Este domínio foi desenvolvido por <a href="https://www.linkedin.com/in/alessandrogeras">Alessandro Geras</a>, <a href="https://www.linkedin.com/in/eliabemota/">Eliabe Ribeiro</a> e <a href="https://www.linkedin.com/in/vinicius-jung">Vinícius Jung</a></div>
 </div>
